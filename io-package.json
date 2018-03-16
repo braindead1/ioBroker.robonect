@@ -1,6 +1,7 @@
 {
     "common": {
         "name": "robonect",
+        "title": "Robonect",
         "version": "0.0.2",
         "news": {
             "0.0.2": {
@@ -9,38 +10,30 @@
             },
             "0.0.1": {
                 "en": "initial adapter",
-                "de": "Initiale Version",
-                "ru": "Первоначальный адаптер",
-                "pt": "Versão inicial",
-                "fr": "Version initiale",
-                "nl": "Eerste release"
+                "de": "Initiale Version"
             }
         },
-        "title": "Robonect HX adapter",
         "desc": {
-            "en": "Robonect HX mower Adapter",
-            "de": "Robonect HX Rasenmäher Adapter",
-            "ru": "Robonect HX драйвер как образец",
-            "pt": "Robonect HX cortador de grama"
+            "en": "Robonect HX adapter",
+            "de": "Robonect HX Adapter"
         },
-        "platform": "Javascript/Node.js",
         "mode": "daemon",
+        "platform": "Javascript/Node.js",
+        "loglevel": "info",
         "icon": "robonect.png",
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/sthufnagl/ioBroker.robonect/master/admin/robonect.png",
         "keywords": [
             "robonect",
-            "vis",
-            "GUI",
-            "graphical",
-            "scada"
+            "lawn mower"
         ],
         "readme": "https://github.com/sthufnagl/ioBroker.robonect/blob/master/README.md",
-        "loglevel": "info",
+        "authors": [
+            "StefSign <hufnagl@hotmail.com>",
+            "braindead1"
+        ],
         "type": "garden",
-        "restartAdapters": [
-            "vis"
-        ]
+        "license": "MIT"
     },
     "native": {
         "poll": 60

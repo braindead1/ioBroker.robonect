@@ -65,7 +65,7 @@
     "grunt-replace": "^0.9.3",
     "mocha": "^2.3.4"
   },
-  "homepage": "https://github.com/ioBroker/ioBroker.robonect",
+  "homepage": "https://github.com/sthufnagl/ioBroker.robonect",
   "keywords": [
     "ioBroker",
     "robonect",
