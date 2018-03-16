@@ -3,6 +3,10 @@
         "name": "robonect",
         "version": "0.0.2",
         "news": {
+            "0.0.2": {
+                "en": "updated to work with Robonect HX version 1.0 Beta2",
+                "de": "aktualisiert für Robonect HX Version 1.0 Beta2"
+            },
             "0.0.1": {
                 "en": "initial adapter",
                 "de": "Initiale Version",

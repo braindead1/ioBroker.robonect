@@ -1,16 +1,15 @@
 ![Logo](admin/robonect.png)
-ioBroker.robonect
-=============
+# ioBroker.robonect
 
-### A Robonect HX adapter for ioBroker
+## A Robonect HX adapter for ioBroker
 This is an ioBroker adapter for your Robonect HX enabled lawn mower. It have been tested with a Gardena R70Li.
 
 ## Changelog
 
-#### 0.0.2
+### 0.0.2
 * (braindead1) updated to work with Robonect HX version 1.0 Beta2
 
-#### 0.0.1
+### 0.0.1
 * (StefSign) initial commit
 
 ## License
