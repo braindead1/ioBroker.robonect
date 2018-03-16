@@ -1,31 +1,17 @@
 ![Logo](admin/robonect.png)
-# ioBroker.robonect
-=================
-iobroker adapter to work with the Robonect HX Module (Gardena Sileno Mower).
+ioBroker.robonect
+=============
 
-##Steps 
-1. download and unpack this packet from github ```https://github.com/ioBroker/ioBroker.robonect/archive/master.zip```
-  or clone git repository ```git clone https://github.com/ioBroker/ioBroker.robonect.git```
-
-2. download required npm packets. Write in ioBroker.robonect directory:
-
-  ```npm install```
-  
-3. rename directory from *ioBroker.robonect* (can be *ioBroker.robonect-master*) to *iobroker.mynewname*
-
-5. to use this robonect you should copy it into *.../iobroker/node_modules* directory and then create an instance for it with iobroker.admin
-
-
+### A Robonect HX adapter for ioBroker
+This is an ioBroker adapter for your Robonect HX enabled lawn mower. It have been tested with a Gardena R70Li.
 
 ## Changelog
 
-### 0.5.2
-  running example but limited functionality
-#### 0.4.0
-* (bluefox) fix errors with grunt
+#### 0.0.2
+* (braindead1) updated to work with Robonect HX version 1.0 Beta2
 
-#### 0.2.0
-* (bluefox) initial release
+#### 0.0.1
+* (StefSign) initial commit
 
 ## License
 The MIT License (MIT)

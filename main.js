@@ -4,10 +4,10 @@
 "use strict";
 
 // you have to require the utils module and call adapter function
-var utils   = require(__dirname + '/lib/utils'); // Get common adapter utils
+var utils = require(__dirname + '/lib/utils'); // Get common adapter utils
+var ping = require('ping');
 var request = require('request');
-var ping    = require("ping");
-var ip, pin, data, secs, getOptions;
+var ip, username, password, poll, url;
 
 // you have to call the adapter function and pass a options object
 // name has to be set and has to be equal to adapters folder name and main file name excluding extension
@@ -18,13 +18,13 @@ var adapter = utils.adapter('robonect');
 function startMower() {
     adapter.log.info("Start Gardena Sileno with the help of Robonect HX");
     doGET('json?cmd=start');
-    adapter.setState("mower.start", {val: false, ack: true});
+    adapter.setState("mower.start", { val: false, ack: true });
 }
 
 function stopMower() {
     adapter.log.info("Stop Gardena Sileno with the help of Robonect HX");
     doGET('json?cmd=stop');
-    adapter.setState("mower.stop", {val: false, ack: true});
+    adapter.setState("mower.stop", { val: false, ack: true });
 }
 
 
@@ -76,77 +76,153 @@ adapter.on('message', function (obj) {
 
 // is called when databases are connected and adapter received configuration.
 // start here!
-adapter.on('ready', function () {
-    main();
-});
-
-
-
-function doGET(cmd){
-    var options = {
-        url:      "http://" + ip + ":80/"  + cmd,
-        async:    true,
-        method:   'GET',
-        cache:    false,
-        headers: {'Accept': 'application/json'}
-    };
-
-    request(options, function (error, response, body) {
-        if (!error && response.statusCode == 200) {
-            data = JSON.parse(body);
-            evaluateResponse(data);
-        }
-    });
-}
-
-function evaluateResponse(responseData){
-  adapter.setState("lastsync", {val: new Date().toISOString(), ack: true});
-  adapter.log.info(responseData);
-  var v_status = responseData.status.status;
-  if (v_status === 1) adapter.setState('mower.status', {val: 'parkt', ack: true});
-  if (v_status === 2) adapter.setState('mower.status', {val: 'mäht', ack: true});
-  if (v_status === 3) adapter.setState('mower.status', {val: 'sucht die Ladestation', ack: true});
-  if (v_status === 4) adapter.setState('mower.status', {val: 'lädt', ack: true});
-  if (v_status === 5) adapter.setState('mower.status', {val: 'wartet auf Umsetzen im manuellen Modus', ack: true});
-  if (v_status === 7) adapter.setState('mower.status', {val: 'Fehlerstatus', ack: true});
-  if (v_status === 8) adapter.setState('mower.status', {val: 'Schleifensignal verloren', ack: true});
-  if (v_status === 16) adapter.setState('mower.status', {val: 'abgeschaltet', ack: true});
-  if (v_status === 17) adapter.setState('mower.status', {val: 'schläft', ack: true});
-
-  var v_stopped = responseData.status.stopped;
-  if (v_stopped === false) adapter.setState('mower.status.auftrag2', {val: 'parkt', ack: true});
-  if (v_stopped === true) adapter.setState('mower.status.auftrag2', {val: 'fährt', ack: true});
-
-  adapter.setState('duration', responseData.status.duration);
-  adapter.setState('mower.status.battery', {val: responseData.status.battery, ack: true});
-  adapter.setState('mower.status.hours', {val: responseData.status.hours, ack: true});
-  adapter.setState('mower.wlan.signal', {val: responseData.wlan.signal, ack: true});
-
-  var v_mode = responseData.status.mode;
-  if (v_mode === 0) adapter.setState('mower.mode', {val: 'Auto', ack: true});
-  if (v_mode === 1) adapter.setState('mower.mode', {val: 'manuell', ack: true});
-  if (v_mode === 2) adapter.setState('mower.mode', {val: 'Home', ack: true});
-  if (v_mode === 3) adapter.setState('mower.mode', {val: 'Demo', ack: true});
-
-  var v_timer_status = responseData.timer.status;
-  if (v_timer_status === 0) adapter.setState('mower.status.timer', {val: 'Deaktiviert', ack: true});
-  if (v_timer_status === 1) adapter.setState('mower.status.timer', {val: 'Aktiv', ack: true});
-  if (v_timer_status === 2) adapter.setState('mower.status.timer', {val: 'Standby', ack: true});
-}
-
+adapter.on('ready', main);
 
 function checkStatus() {
     ping.sys.probe(ip, function (isAlive) {
-        adapter.setState("mower.connected", {val: isAlive, ack: true});
+        adapter.setState("last_sync", { val: new Date().toISOString(), ack: true});    
+        adapter.setState("active", { val: isAlive, ack: true });
+
         if (isAlive) {
-            request(getOptions, function (error, response, body) {
-                if (!error && response.statusCode == 200) {
-                    try{
-                        var responseData = JSON.parse(body);
-                        evaluateResponse(responseData);
-                    }catch(e){
-                        adapter.log.warn(e);
+            // Get status
+            request.get({url: url + "/json?cmd=status"}, function (err, response, body) {
+                if (!err) {
+                    adapter.log.info(body);
+                    
+                    var data = JSON.parse(body);
+                    
+                    if(typeof data === 'object' && data.successful === true) {
+                        adapter.setState('name', {val: data["name"], ack: true});
+                        adapter.setState('id', {val: data["id"], ack: true});
+                        
+                        adapter.setState('status.status', {val: data["status"]["status"], ack: true});
+                        adapter.setState('status.duration', {val: data["status"]["duration"], ack: true});
+                        adapter.setState('status.mode', {val: data["status"]["mode"], ack: true});
+                        adapter.setState('status.battery', {val: data["status"]["battery"], ack: true});
+                        adapter.setState('status.hours', {val: data["status"]["hours"], ack: true});
+                        
+                        adapter.setState('timer.status', {val: data["timer"]["status"], ack: true});
+                        if(data["timer"]["next"] != undefined) {
+                            adapter.setState('timer.next_date', {val: data["timer"]["next"]["date"], ack: true});
+                            adapter.setState('timer.next_time', {val: data["timer"]["next"]["time"], ack: true});
+                        } else {
+                            adapter.setState('timer.next_date', {val: '', ack: true});
+                            adapter.setState('timer.next_time', {val: '', ack: true});
+                        }                    
+
+                        adapter.setState('wlan.signal', {val: data["wlan"]["signal"], ack: true});
+
+                        adapter.setState('health.temperature', {val: data["health"]["temperature"], ack: true});
+                        adapter.setState('health.humidity', {val: data["health"]["humidity"], ack: true});
+                        
+                        adapter.setState('clock.date', {val: data["clock"]["date"], ack: true});
+                        adapter.setState('clock.time', {val: data["clock"]["time"], ack: true});
+                        adapter.setState('clock.unix_timestamp', {val: data["clock"]["unix"], ack: true});                  
                     }
+                } else {
+                    adapter.log.error(err);
+                }
+            });
+
+            // Get hour
+            request.get({url: url + "/json?cmd=hour"}, function (err, response, body) {
+                if (!err) {
+                    adapter.log.info(body);
+                    
+                    var data = JSON.parse(body);
+                    
+                    if(typeof data === 'object' && data.successful === true) {
+                        adapter.setState('hours.run', {val: data["general"]["run"], ack: true});
+                        adapter.setState('hours.mow', {val: data["general"]["mow"], ack: true});
+                        adapter.setState('hours.search', {val: data["general"]["search"], ack: true});
+                        adapter.setState('hours.charge', {val: data["general"]["charge"], ack: true});
+                        adapter.setState('hours.charges', {val: data["general"]["charges"], ack: true});
+                        adapter.setState('hours.errors', {val: data["general"]["errors"], ack: true});
+                        adapter.setState('hours.since', {val: data["general"]["since"], ack: true});
+                    }
+                } else {
+                    adapter.log.error(err);
+                }
+            });
+
+            // Get ext
+            request.get({url: url + "/json?cmd=ext"}, function (err, response, body) {
+                if (!err) {
+                    adapter.log.info(body);
+                    
+                    var data = JSON.parse(body);
+                    
+                    if(typeof data === 'object' && data.successful === true) {
+                        adapter.setState('extension.gpio1.inverted', {val: data["ext"]["gpio1"]["inverted"], ack: true});
+                        adapter.setState('extension.gpio1.status', {val: data["ext"]["gpio1"]["status"], ack: true});
+                        adapter.setState('extension.gpio2.inverted', {val: data["ext"]["gpio2"]["inverted"], ack: true});
+                        adapter.setState('extension.gpio2.status', {val: data["ext"]["gpio2"]["status"], ack: true});
+                        adapter.setState('extension.out1.inverted', {val: data["ext"]["out1"]["inverted"], ack: true});
+                        adapter.setState('extension.out1.status', {val: data["ext"]["out1"]["status"], ack: true});
+                        adapter.setState('extension.out2.inverted', {val: data["ext"]["out2"]["inverted"], ack: true});
+                        adapter.setState('extension.out2.status', {val: data["ext"]["out2"]["status"], ack: true});
+                    }
+                } else {
+                    adapter.log.error(err);
+                }
+            });
+
+            // Get version
+            request.get({url: url + "/json?cmd=version"}, function (err, response, body) {
+                if (!err) {
+                    adapter.log.info(body);
+                    
+                    var data = JSON.parse(body);
+                    
+                    if(typeof data === 'object' && data.successful === true) {
+                        adapter.setState('info.hardware.production', {val: data["mower"]["hardware"]["production"], ack: true});
+                        adapter.setState('info.hardware.serial', {val: data["mower"]["hardware"]["serial"].toString(), ack: true});
+                        
+                        adapter.setState('info.msw.compiled', {val: data["mower"]["msw"]["compiled"], ack: true});
+                        adapter.setState('info.msw.title', {val: data["mower"]["msw"]["title"], ack: true});
+                        adapter.setState('info.msw.version', {val: data["mower"]["msw"]["version"], ack: true});
+                        
+                        adapter.setState('info.sub.version', {val: data["mower"]["sub"]["version"], ack: true});
+                        
+                        adapter.setState('info.robonect.serial', {val: data["serial"], ack: true});
+                        adapter.setState('info.robonect.comment', {val: data["application"]["comment"], ack: true});
+                        adapter.setState('info.robonect.compiled', {val: data["application"]["compiled"], ack: true});
+                        adapter.setState('info.robonect.version', {val: data["application"]["version"], ack: true});
+                        
+                        adapter.setState('info.bootloader.comment', {val: data["bootloader"]["comment"], ack: true});
+                        adapter.setState('info.bootloader.compiled', {val: data["bootloader"]["compiled"], ack: true});
+                        adapter.setState('info.bootloader.version', {val: data["bootloader"]["version"], ack: true});
+                        
+                        adapter.setState('info.wlan.at-version', {val: data["wlan"]["at-version"], ack: true});
+                        adapter.setState('info.wlan.sdk-version', {val: data["wlan"]["sdk-version"], ack: true});
+                    }
+                } else {
+                    adapter.log.error(err);
+                }
+            });
+
+            // Get motor
+            request.get({url: url + "/json?cmd=motor"}, function (err, response, body) {
+                if (!err) {
+                    adapter.log.info(body);
+                    
+                    var data = JSON.parse(body);
+                    
+                    if(typeof data === 'object' && data.successful === true) {
+                        adapter.setState('motor.drive.left.current', {val: data["drive"]["left"]["current"], ack: true});
+                        adapter.setState('motor.drive.left.power', {val: data["drive"]["left"]["power"], ack: true});
+                        adapter.setState('motor.drive.left.speed', {val: data["drive"]["left"]["speed"], ack: true});
+                        
+                        adapter.setState('motor.drive.right.current', {val: data["drive"]["right"]["current"], ack: true});
+                        adapter.setState('motor.drive.right.power', {val: data["drive"]["right"]["power"], ack: true});
+                        adapter.setState('motor.drive.right.speed', {val: data["drive"]["right"]["speed"], ack: true});
+                        
+                        adapter.setState('motor.blade.current', {val: data["blade"]["current"], ack: true});
+                        adapter.setState('motor.blade.speed', {val: data["blade"]["speed"], ack: true});
+                        adapter.setState('motor.blade.average', {val: data["blade"]["average"], ack: true});
+                    }
+                } else {
+                    adapter.log.error(err);
                 }
             });
         }
@@ -154,31 +230,27 @@ function checkStatus() {
 }
 
 function main() {
+    ip = adapter.config.ip;    
+    username = adapter.config.username;
+    password = adapter.config.password;
+    poll = adapter.config.poll;
 
-  ip  = adapter.config.ip;
-  pin = adapter.config.pin;
-  secs = adapter.config.poll;
+    adapter.log.info('Config IP: ' + ip);
+    adapter.log.info('Config Username: ' + username);
+    adapter.log.info('Config Password: ' + password);
+    adapter.log.info('Config Poll: ' + poll);
 
+    if(username != '' && password != '') {
+        url = 'http://' + username + ':' + password + '@' + ip;
+    } else {
+        url = 'http://' + ip;
+    }
 
-  adapter.log.info('config IP Adresse: ' + ip);
-  adapter.log.info('config PIN: ' + pin);
-  adapter.log.info('config Poll: ' + secs);
+    if (isNaN(poll) || poll < 1) {
+        poll = 10;
+    }
 
-  getOptions = {
-    headers:  {'Accept': 'application/json'},
-    type:     "GET",
-    url:      "http://" + ip + ":80/"+ 'json?cmd=status'
-  };
+    checkStatus();
 
-
-  if (isNaN(secs) || secs < 1) {
-    secs = 10;
-  }
-
-  adapter.subscribeStates("mower.start");
-  adapter.subscribeStates("mower.stop");
-
-  setInterval(checkStatus, secs * 1000);
-
-
+    setInterval(checkStatus, poll * 1000);
 }

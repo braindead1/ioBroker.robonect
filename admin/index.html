@@ -1,7 +1,7 @@
 <html>
 
 <!-- these 4 files always have to be included -->
-<link rel="stylesheet" type="text/css" href="../../lib/css/themes/jquery-ui/redmond/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="../../lib/css/themes/jquery-ui/redmond/jquery-ui.min.css" />
 <script type="text/javascript" src="../../lib/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="../../socket.io/socket.io.js"></script>
 <script type="text/javascript" src="../../lib/js/jquery-ui-1.10.3.full.min.js"></script>
@@ -19,7 +19,7 @@
 -->
 
 <!-- these two file always have to be included -->
-<link rel="stylesheet" type="text/css" href="../../css/adapter.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/adapter.css" />
 <script type="text/javascript" src="../../js/translate.js"></script>
 <script type="text/javascript" src="../../js/adapter-settings.js"></script>
 <script type="text/javascript" src="words.js"></script>
@@ -33,17 +33,17 @@
         // example: select elements with id=key and class=value and insert value
         for (var key in settings) {
             // example: select elements with id=key and class=value and insert value
-			var value = $('#' + key + '.value');
+            var value = $('#' + key + '.value');
             if (value.attr('type') === 'checkbox') {
                 value.prop('checked', settings[key]).change(function () {
-					onChange();
-				});
+                    onChange();
+                });
             } else {
                 value.val(settings[key]).change(function () {
-					onChange();
-				}).keyup(function () {
-					$(this).trigger('change');
-				});
+                    onChange();
+                }).keyup(function () {
+                    $(this).trigger('change');
+                });
             }
         }
         // Signal to admin, that no changes yet
@@ -57,11 +57,11 @@
         var obj = {};
         $('.value').each(function () {
             var $this = $(this);
-			if ($this.attr('type') === 'checkbox') {
-				obj[$this.attr('id')] = $this.prop('checked');
-			} else {
-				obj[$this.attr('id')] = $this.val();
-			}
+            if ($this.attr('type') === 'checkbox') {
+                obj[$this.attr('id')] = $this.prop('checked');
+            } else {
+                obj[$this.attr('id')] = $this.val();
+            }
         });
         callback(obj);
     }
@@ -70,38 +70,53 @@
 <!-- you have to put your config page in a div with id adapter-container -->
 <div id="adapter-container">
 
-  <table>
-    <tr>
-        <td><h3 class="translate">robonect adapter settings</h3></td>
-        <td><img src="robonect.png"/></td>
-    </tr>
-  </table>
+    <table>
+        <tr>
+            <td>
+                <img src="robonect.png" />
+            </td>
+            <td>
+                <h3 class="translate">Robonect adapter settings</h3>
+            </td>
+        </tr>
+    </table>
 
-  <table>
-     <tr>
-       <td><label class="translate" for="ip">IP</label></td>
-       <td><input class="value" id="ip" placeholder="192.168.x.x" type="text" size="15" maxlength="15"/></td>
-     </tr>
-  </table>
-
-  <table>
-    <tr>
-        <td class="translate"><label class="translate" for="pin">pinCode</label></td>
-        <td><input class="value" id="pin" placeholder="xxxx" type="password" size="6" maxlength="4"/></td>
-    </tr>
-  </table>
-
-  <table>
-     <tr>
-       <td class="translate"><label class="translate" for="poll">Intervall</label></td>
-       <td><input class="value" id="poll" type="text" size="6" maxlength="4"/>
-       </td>
-     </tr>
-  </table>
+    <table>
+        <tr>
+            <td>
+                <label class="translate" for="ip">IP</label>
+            </td>
+            <td>
+                <input class="value" id="ip" placeholder="192.168.x.x" type="text" size="15" maxlength="15" />
+            </td>
+        </tr>
+        <tr>
+            <td class="translate">
+                <label class="translate" for="username">Username</label>
+            </td>
+            <td>
+                <input class="value" id="username" placeholder="Username" type="text" size="20" />
+            </td>
+        </tr>
+        <tr>
+            <td class="translate">
+                <label class="translate" for="password">Password</label>
+            </td>
+            <td>
+                <input class="value" id="password" placeholder="Password" type="password" />
+            </td>
+        </tr>
+        <tr>
+            <td class="translate">
+                <label class="translate" for="poll">Interval</label>
+            </td>
+            <td>
+                <input class="value" id="poll" type="number" />
+            </td>
+        </tr>
+    </table>
 
 
     <p class="translate">on save Robonect adapter restarts with new config immediately</p>
-
 </div>
-
 </html>

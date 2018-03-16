@@ -14,7 +14,7 @@
     ]
   ],
   "_from": "node_modules/iobroker.robonect",
-  "_id": "iobroker.robonect@0.5.0",
+  "_id": "iobroker.robonect@0.0.2",
   "_inCache": true,
   "_location": "/iobroker.robonect",
   "_phantomChildren": {},
@@ -40,17 +40,20 @@
     "email": "hufnagl@hotmail.com"
   },
   "bugs": {
-    "url": "https://github.com/ioBroker/ioBroker.robonect/issues"
+    "url": "https://github.com/sthufnagl/ioBroker.robonect/issues"
   },
   "contributors": [
     {
       "name": "StefSign",
       "email": "hufnagl@hotmail.com"
+    },
+    {
+      "name": "braindead1"
     }
   ],
   "dependencies": {
-     "ping":    "^0.2.1",
-     "request": "^2.79.0"
+    "ping": "^0.2.1",
+    "request": "^2.79.0"
   },
   "description": "ioBroker robonect Adapter",
   "devDependencies": {
@@ -82,5 +85,5 @@
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
   },
-  "version": "0.5.1"
+  "version": "0.0.2"
 }

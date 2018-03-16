@@ -1,16 +1,8 @@
 {
     "common": {
         "name": "robonect",
-        "version": "0.5.5",
+        "version": "0.0.2",
         "news": {
-            "0.5.5": {
-                "en": "beta version",
-                "de": "Betaversion",
-                "ru": "Бета версия",
-                "pt": "Versão beta",
-                "fr": "Version bêta",
-                "nl": "Beta versie"
-            },
             "0.0.1": {
                 "en": "initial adapter",
                 "de": "Initiale Version",
@@ -20,227 +12,819 @@
                 "nl": "Eerste release"
             }
         },
-        "title": "Javascript/Node.js based robonect adapter",
+        "title": "Robonect HX adapter",
         "desc": {
-            "en": "ioBroker robonect Adapter",
-            "de": "ioBroker Robonect Adapter",
-            "ru": "ioBroker Robonect драйвер как образец",
-            "pt": "Modelo de adaptador para o ioBroker",
-            "fr": "ioBroker adaptateur modèle",
-            "nl": "ioBroker Robonect Adapter"
+            "en": "Robonect HX mower Adapter",
+            "de": "Robonect HX Rasenmäher Adapter",
+            "ru": "Robonect HX драйвер как образец",
+            "pt": "Robonect HX cortador de grama"
         },
         "platform": "Javascript/Node.js",
         "mode": "daemon",
         "icon": "robonect.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.robonect/master/admin/robonect.png",
-        "keywords": ["robonect", "vis", "GUI", "graphical", "scada"],
-        "readme": "https://github.com/ioBroker/ioBroker.robonect/blob/master/README.md",
+        "extIcon": "https://raw.githubusercontent.com/sthufnagl/ioBroker.robonect/master/admin/robonect.png",
+        "keywords": [
+            "robonect",
+            "vis",
+            "GUI",
+            "graphical",
+            "scada"
+        ],
+        "readme": "https://github.com/sthufnagl/ioBroker.robonect/blob/master/README.md",
         "loglevel": "info",
-        "type": "general",
-        "restartAdapters": ["vis"]
+        "type": "garden",
+        "restartAdapters": [
+            "vis"
+        ]
     },
     "native": {
-        "ip": "192.168.0.109",
-        "poll": 20
+        "poll": 60
     },
     "objects": [],
     "instanceObjects": [
-      {
-          "_id": "duration",
-          "type": "state",
-          "common": {
-              "name": "Mower duration",
-              "type": "string",
-              "role": "meta.version",
-              "read": true,
-              "write": false,
-              "desc": "Firmware Version"
-          },
-          "native": {}
-      },
-      {
-          "_id": "firmware",
-          "type": "state",
-          "common": {
-              "name": "Firmware Version",
-              "type": "string",
-              "role": "meta.version",
-              "read": true,
-              "write": false,
-              "desc": "Firmware Version"
-          },
-          "native": {}
-      },
-      {
-          "_id": "lastsync",
-          "type": "state",
-          "common": {
-              "name": "Last successful sync",
-              "type": "string",
-              "role": "value.datetime",
-              "read": true,
-              "write": false,
-              "desc": "Last successful synchronization"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower",
-          "type": "channel",
-          "common": {
-              "name": "mower",
-              "role": "info"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.connected",
-          "type": "state",
-          "common": {
-              "name": "Mower connected",
-              "type": "boolean",
-              "role": "indicator.connected",
-              "read": true,
-              "write": false,
-              "def": false,
-              "desc": "Is Mower mower connected?"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.mode",
-          "type": "state",
-          "common": {
-              "name": "Landroid mode",
-              "type": "string",
-              "role": "text",
-              "read": true,
-              "write": false,
-              "desc": "Current status of lawn mower"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.start",
-          "type": "state",
-          "common": {
-              "name": "Start Mower",
-              "type": "boolean",
-              "role": "button",
-              "read": true,
-              "write": true,
-              "def": false,
-              "desc": "Start Mower"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.status",
-          "type": "state",
-          "common": {
-              "name": "Mower status",
-              "type": "string",
-              "role": "text",
-              "read": true,
-              "write": false,
-              "desc": "Current status of lawn mower"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.status.auftrag",
-          "type": "state",
-          "common": {
-              "name": "Mower status Auftrag",
-              "type": "string",
-              "role": "text",
-              "read": true,
-              "write": false,
-              "desc": "Current status of lawn mower"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.status.auftrag2",
-          "type": "state",
-          "common": {
-              "name": "Mower status Auftrag2",
-              "type": "string",
-              "role": "text",
-              "read": true,
-              "write": false,
-              "desc": "Current status of lawn mower"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.status.battery",
-          "type": "state",
-          "common": {
-              "name": "Mower status battery",
-              "type": "string",
-              "role": "text",
-              "read": true,
-              "write": false,
-              "desc": "Current status of lawn mower"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.status.hours",
-          "type": "state",
-          "common": {
-              "name": "Mower status hours",
-              "type": "string",
-              "role": "text",
-              "read": true,
-              "write": false,
-              "desc": "Current status of lawn mower"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.stop",
-          "type": "state",
-          "common": {
-              "name": "Stop Mower",
-              "type": "boolean",
-              "role": "button",
-              "read": true,
-              "write": true,
-              "def": false,
-              "desc": "Stop Mower"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.status.timer",
-          "type": "state",
-          "common": {
-              "name": "Mower status timer",
-              "type": "string",
-              "role": "text",
-              "read": true,
-              "write": false,
-              "desc": "Current status of lawn mower"
-          },
-          "native": {}
-      },
-      {
-          "_id": "mower.wlan.signal",
-          "type": "state",
-          "common": {
-              "name": ".wlan signal",
-              "type": "string",
-              "role": "text",
-              "read": true,
-              "write": false,
-              "desc": "Current status of lawn mower"
-          },
-          "native": {}
-      }
-  ]
-
-
+        {
+            "_id": "active",
+            "type": "state",
+            "common": {
+                "name": "Mower active",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "id",
+            "type": "state",
+            "common": {
+                "name": "ID",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "last_sync",
+            "type": "state",
+            "common": {
+                "name": "Last synchronization",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "name",
+            "type": "state",
+            "common": {
+                "name": "Mower name",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "clock.date",
+            "type": "state",
+            "common": {
+                "name": "Date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "clock.time",
+            "type": "state",
+            "common": {
+                "name": "Time",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "clock.unix_timestamp",
+            "type": "state",
+            "common": {
+                "name": "Unix timestamp",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "extension.gpio1.inverted",
+            "type": "state",
+            "common": {
+                "name": "Inverted",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "extension.gpio1.status",
+            "type": "state",
+            "common": {
+                "name": "Status",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "extension.gpio2.inverted",
+            "type": "state",
+            "common": {
+                "name": "Inverted",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "extension.gpio2.status",
+            "type": "state",
+            "common": {
+                "name": "Status",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "extension.out1.inverted",
+            "type": "state",
+            "common": {
+                "name": "Inverted",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "extension.out1.status",
+            "type": "state",
+            "common": {
+                "name": "Status",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "extension.out2.inverted",
+            "type": "state",
+            "common": {
+                "name": "Inverted",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "extension.out2.status",
+            "type": "state",
+            "common": {
+                "name": "Status",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "hours.run",
+            "type": "state",
+            "common": {
+                "name": "Run",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "hours"
+            },
+            "native": {}
+        },
+        {
+            "_id": "hours.mow",
+            "type": "state",
+            "common": {
+                "name": "Mow",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "hours"
+            },
+            "native": {}
+        },
+        {
+            "_id": "hours.search",
+            "type": "state",
+            "common": {
+                "name": "Search",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "hours"
+            },
+            "native": {}
+        },
+        {
+            "_id": "hours.charge",
+            "type": "state",
+            "common": {
+                "name": "Charge",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "hours"
+            },
+            "native": {}
+        },
+        {
+            "_id": "hours.charges",
+            "type": "state",
+            "common": {
+                "name": "Number of charges",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "hours.errors",
+            "type": "state",
+            "common": {
+                "name": "Number of errors",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "hours.since",
+            "type": "state",
+            "common": {
+                "name": "Since",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.bootloader.comment",
+            "type": "state",
+            "common": {
+                "name": "Comment",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.bootloader.compiled",
+            "type": "state",
+            "common": {
+                "name": "Compilation date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.bootloader.version",
+            "type": "state",
+            "common": {
+                "name": "Version",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.hardware.production",
+            "type": "state",
+            "common": {
+                "name": "Production date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.hardware.serial",
+            "type": "state",
+            "common": {
+                "name": "Serial no.",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.msw.compiled",
+            "type": "state",
+            "common": {
+                "name": "Compilation date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.msw.title",
+            "type": "state",
+            "common": {
+                "name": "Title",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.msw.version",
+            "type": "state",
+            "common": {
+                "name": "Version",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.robonect.comment",
+            "type": "state",
+            "common": {
+                "name": "Comment",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.robonect.compiled",
+            "type": "state",
+            "common": {
+                "name": "Compilation date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.robonect.serial",
+            "type": "state",
+            "common": {
+                "name": "Serial no.",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.robonect.version",
+            "type": "state",
+            "common": {
+                "name": "Version",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.sub.version",
+            "type": "state",
+            "common": {
+                "name": "Version",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.wlan.at-version",
+            "type": "state",
+            "common": {
+                "name": "AT-Version",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.wlan.sdk-version",
+            "type": "state",
+            "common": {
+                "name": "SDK-Version",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "status.status",
+            "type": "state",
+            "common": {
+                "name": "Current status",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "states": {
+                    "0": "Unbekannt",
+                    "1": "Parken",
+                    "2": "Mähen",
+                    "3": "Suchen der Ladestation",
+                    "4": "Laden",
+                    "5": "Umsetzen",
+                    "7": "Fehler",
+                    "8": "Schleifensignal verloren",
+                    "16": "Abgeschaltet",
+                    "17": "Schlafen"
+                }
+            },
+            "native": {}
+        },
+        {
+            "_id": "status.battery",
+            "type": "state",
+            "common": {
+                "name": "Battery",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "%"
+            },
+            "native": {}
+        },
+        {
+            "_id": "status.duration",
+            "type": "state",
+            "common": {
+                "name": "Status duration",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "seconds"
+            },
+            "native": {}
+        },
+        {
+            "_id": "status.mode",
+            "type": "state",
+            "common": {
+                "name": "Current mode",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "states": {
+                    "0": "Auto",
+                    "1": "Manuell",
+                    "2": "Home",
+                    "3": "Demo"
+                }
+            },
+            "native": {}
+        },
+        {
+            "_id": "status.hours",
+            "type": "state",
+            "common": {
+                "name": "Operating hours",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "hours"
+            },
+            "native": {}
+        },
+        {
+            "_id": "health.humidity",
+            "type": "state",
+            "common": {
+                "name": "Humidity",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "%"
+            },
+            "native": {}
+        },
+        {
+            "_id": "motor.blade.average",
+            "type": "state",
+            "common": {
+                "name": "Average",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "RPM"
+            },
+            "native": {}
+        },
+        {
+            "_id": "motor.blade.current",
+            "type": "state",
+            "common": {
+                "name": "Current",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "mA"
+            },
+            "native": {}
+        },
+        {
+            "_id": "motor.blade.speed",
+            "type": "state",
+            "common": {
+                "name": "Speed",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "RPM"
+            },
+            "native": {}
+        },
+        {
+            "_id": "motor.drive.left.current",
+            "type": "state",
+            "common": {
+                "name": "Current",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "mA"
+            },
+            "native": {}
+        },
+        {
+            "_id": "motor.drive.left.power",
+            "type": "state",
+            "common": {
+                "name": "Power",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "%"
+            },
+            "native": {}
+        },
+        {
+            "_id": "motor.drive.left.speed",
+            "type": "state",
+            "common": {
+                "name": "Speed",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "cm/s"
+            },
+            "native": {}
+        },
+        {
+            "_id": "motor.drive.right.current",
+            "type": "state",
+            "common": {
+                "name": "Current",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "mA"
+            },
+            "native": {}
+        },
+        {
+            "_id": "motor.drive.right.power",
+            "type": "state",
+            "common": {
+                "name": "Power",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "%"
+            },
+            "native": {}
+        },
+        {
+            "_id": "motor.drive.right.speed",
+            "type": "state",
+            "common": {
+                "name": "Speed",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "cm/s"
+            },
+            "native": {}
+        },
+        {
+            "_id": "health.temperature",
+            "type": "state",
+            "common": {
+                "name": "Temperature",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "°C"
+            },
+            "native": {}
+        },
+        {
+            "_id": "timer.next_date",
+            "type": "state",
+            "common": {
+                "name": "Next timer date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "timer.next_time",
+            "type": "state",
+            "common": {
+                "name": "Next timer time",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "timer.status",
+            "type": "state",
+            "common": {
+                "name": "Timer status",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "states": {
+                    "0": "Deaktiviert",
+                    "1": "Aktiv",
+                    "2": "Standby"
+                }
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.signal",
+            "type": "state",
+            "common": {
+                "name": "Signal strenght",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": "",
+                "unit": "dB"
+            },
+            "native": {}
+        }
+    ]
 }
