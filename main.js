@@ -15,19 +15,6 @@ var ip, username, password, poll, url;
 
 var adapter = utils.adapter('robonect');
 
-function startMower() {
-    adapter.log.info("Start Gardena Sileno with the help of Robonect HX");
-    doGET('json?cmd=start');
-    adapter.setState("mower.start", { val: false, ack: true });
-}
-
-function stopMower() {
-    adapter.log.info("Stop Gardena Sileno with the help of Robonect HX");
-    doGET('json?cmd=stop');
-    adapter.setState("mower.stop", { val: false, ack: true });
-}
-
-
 // is called when adapter shuts down - callback has to be called under any circumstances!
 adapter.on('unload', function (callback) {
     try {
@@ -47,17 +34,18 @@ adapter.on('objectChange', function (id, obj) {
 // is called if a subscribed state changes
 adapter.on('stateChange', function (id, state) {
     // Warning, state can be null if it was deleted
-    adapter.log.info('stateChange ' + id + ' ' + JSON.stringify(state));
+    //adapter.log.info('stateChange ' + id + ' ' + JSON.stringify(state));
 
-    if (id === adapter.namespace + ".mower.start" && state.val) {
-        startMower();
-    }
-    else if (id === adapter.namespace + ".mower.stop" && state.val) {
-        stopMower();
-    }
-    // you can use the ack flag to detect if it is status (true) or command (false)
     if (state && !state.ack) {
-        adapter.log.info('ack is not set!');
+        if (id === adapter.namespace + ".extension.gpio1.status") {
+            setExtensionStatus('gpio1', state.val);
+        } else if (id === adapter.namespace + ".extension.gpio2.status") {
+            setExtensionStatus('gpio2', state.val);
+        } else if (id === adapter.namespace + ".extension.out1.status") {
+            setExtensionStatus('out1', state.val);
+        } else if (id === adapter.namespace + ".extension.out2.status") {
+            setExtensionStatus('out2', state.val);
+        }
     }
 });
 
@@ -78,6 +66,39 @@ adapter.on('message', function (obj) {
 // start here!
 adapter.on('ready', main);
 
+function setExtensionStatus(ext, status) {
+    if(status === true) {
+        status = 1;
+    } else {
+        status = 0;
+    }
+
+    request.get({url: url + "/json?cmd=ext&" + ext + "=" + status}, function (err, response, body) {
+        if (!err) {
+            var data = JSON.parse(body);
+            
+            if(typeof data === 'object' && data.successful === true) {
+                adapter.setState('extension.gpio1.inverted', {val: data["ext"]["gpio1"]["inverted"], ack: true});
+                adapter.setState('extension.gpio1.status', {val: data["ext"]["gpio1"]["status"], ack: true});
+                adapter.setState('extension.gpio2.inverted', {val: data["ext"]["gpio2"]["inverted"], ack: true});
+                adapter.setState('extension.gpio2.status', {val: data["ext"]["gpio2"]["status"], ack: true});
+                adapter.setState('extension.out1.inverted', {val: data["ext"]["out1"]["inverted"], ack: true});
+                adapter.setState('extension.out1.status', {val: data["ext"]["out1"]["status"], ack: true});
+                adapter.setState('extension.out2.inverted', {val: data["ext"]["out2"]["inverted"], ack: true});
+                adapter.setState('extension.out2.status', {val: data["ext"]["out2"]["status"], ack: true});
+            }
+
+            if(data["ext"][ext]["status"] == status) {
+                adapter.log.info(ext + ' set to ' + status);
+            } else {
+                adapter.log.info(ext + ' could not be set to ' + status + '. Is the extension mode set to API?');
+            }
+        } else {
+            adapter.log.error(err);
+        }
+    });
+}
+
 function checkStatus() {
     ping.sys.probe(ip, function (isAlive) {
         adapter.setState("last_sync", { val: new Date().toISOString(), ack: true});    
@@ -87,8 +108,6 @@ function checkStatus() {
             // Get status
             request.get({url: url + "/json?cmd=status"}, function (err, response, body) {
                 if (!err) {
-                    adapter.log.info(body);
-                    
                     var data = JSON.parse(body);
                     
                     if(typeof data === 'object' && data.successful === true) {
@@ -127,8 +146,6 @@ function checkStatus() {
             // Get hour
             request.get({url: url + "/json?cmd=hour"}, function (err, response, body) {
                 if (!err) {
-                    adapter.log.info(body);
-                    
                     var data = JSON.parse(body);
                     
                     if(typeof data === 'object' && data.successful === true) {
@@ -148,8 +165,6 @@ function checkStatus() {
             // Get ext
             request.get({url: url + "/json?cmd=ext"}, function (err, response, body) {
                 if (!err) {
-                    adapter.log.info(body);
-                    
                     var data = JSON.parse(body);
                     
                     if(typeof data === 'object' && data.successful === true) {
@@ -170,8 +185,6 @@ function checkStatus() {
             // Get version
             request.get({url: url + "/json?cmd=version"}, function (err, response, body) {
                 if (!err) {
-                    adapter.log.info(body);
-                    
                     var data = JSON.parse(body);
                     
                     if(typeof data === 'object' && data.successful === true) {
@@ -204,8 +217,6 @@ function checkStatus() {
             // Get motor
             request.get({url: url + "/json?cmd=motor"}, function (err, response, body) {
                 if (!err) {
-                    adapter.log.info(body);
-                    
                     var data = JSON.parse(body);
                     
                     if(typeof data === 'object' && data.successful === true) {
@@ -249,6 +260,11 @@ function main() {
     if (isNaN(poll) || poll < 1) {
         poll = 10;
     }
+
+    adapter.subscribeStates("extension.gpio1.status");
+    adapter.subscribeStates("extension.gpio2.status");
+    adapter.subscribeStates("extension.out1.status");
+    adapter.subscribeStates("extension.out2.status");
 
     checkStatus();
 
