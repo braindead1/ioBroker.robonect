@@ -93,6 +93,103 @@
             "native": {}
         },
         {
+            "_id": "battery.id",
+            "type": "state",
+            "common": {
+                "name": "ID",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "battery.charge",
+            "type": "state",
+            "common": {
+                "name": "Ladung",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "%"
+            },
+            "native": {}
+        },
+        {
+            "_id": "battery.voltage",
+            "type": "state",
+            "common": {
+                "name": "Spannung",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "V"
+            },
+            "native": {}
+        },
+        {
+            "_id": "battery.current",
+            "type": "state",
+            "common": {
+                "name": "Ladestrom",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "mA"
+            },
+            "native": {}
+        },
+        {
+            "_id": "battery.temperature",
+            "type": "state",
+            "common": {
+                "name": "Temperatur",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "°C"
+            },
+            "native": {}
+        },
+        {
+            "_id": "battery.capacity.full",
+            "type": "state",
+            "common": {
+                "name": "Gesamtkapazität",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "mAh"
+            },
+            "native": {}
+        },
+        {
+            "_id": "battery.capacity.remaining",
+            "type": "state",
+            "common": {
+                "name": "Restkapazität",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "mAh"
+            },
+            "native": {}
+        },
+        {
             "_id": "clock.date",
             "type": "state",
             "common": {
@@ -120,6 +217,331 @@
         },
         {
             "_id": "clock.unix_timestamp",
+            "type": "state",
+            "common": {
+                "name": "Unix timestamp",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.0.code",
+            "type": "state",
+            "common": {
+                "name": "Error code",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.0.message",
+            "type": "state",
+            "common": {
+                "name": "Error message",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.0.date",
+            "type": "state",
+            "common": {
+                "name": "Date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.0.time",
+            "type": "state",
+            "common": {
+                "name": "Time",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.0.unix_timestamp",
+            "type": "state",
+            "common": {
+                "name": "Unix timestamp",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.1.code",
+            "type": "state",
+            "common": {
+                "name": "Error code",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.1.message",
+            "type": "state",
+            "common": {
+                "name": "Error message",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.1.date",
+            "type": "state",
+            "common": {
+                "name": "Date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.1.time",
+            "type": "state",
+            "common": {
+                "name": "Time",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.1.unix_timestamp",
+            "type": "state",
+            "common": {
+                "name": "Unix timestamp",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.2.code",
+            "type": "state",
+            "common": {
+                "name": "Error code",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.2.message",
+            "type": "state",
+            "common": {
+                "name": "Error message",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.2.date",
+            "type": "state",
+            "common": {
+                "name": "Date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.2.time",
+            "type": "state",
+            "common": {
+                "name": "Time",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.2.unix_timestamp",
+            "type": "state",
+            "common": {
+                "name": "Unix timestamp",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.3.code",
+            "type": "state",
+            "common": {
+                "name": "Error code",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.3.message",
+            "type": "state",
+            "common": {
+                "name": "Error message",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.3.date",
+            "type": "state",
+            "common": {
+                "name": "Date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.3.time",
+            "type": "state",
+            "common": {
+                "name": "Time",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.3.unix_timestamp",
+            "type": "state",
+            "common": {
+                "name": "Unix timestamp",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.4.code",
+            "type": "state",
+            "common": {
+                "name": "Error code",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.4.message",
+            "type": "state",
+            "common": {
+                "name": "Error message",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.4.date",
+            "type": "state",
+            "common": {
+                "name": "Date",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.4.time",
+            "type": "state",
+            "common": {
+                "name": "Time",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "error.4.unix_timestamp",
             "type": "state",
             "common": {
                 "name": "Unix timestamp",
@@ -817,9 +1239,309 @@
                 "type": "number",
                 "role": "",
                 "read": true,
-                "write": true,
+                "write": false,
                 "desc": "",
                 "unit": "dB"
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.enable",
+            "type": "state",
+            "common": {
+                "name": "AP aktiviert",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.mac",
+            "type": "state",
+            "common": {
+                "name": "MAC Adresse",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.hidden",
+            "type": "state",
+            "common": {
+                "name": "SSID verstecken",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.ssid",
+            "type": "state",
+            "common": {
+                "name": "SSID",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.password",
+            "type": "state",
+            "common": {
+                "name": "Passwort",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.channel",
+            "type": "state",
+            "common": {
+                "name": "Kanal",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.encryption",
+            "type": "state",
+            "common": {
+                "name": "Verschlüsselung",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.maxconn",
+            "type": "state",
+            "common": {
+                "name": "Max. Verbindungen",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.ip",
+            "type": "state",
+            "common": {
+                "name": "IP Adresse",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.netmask",
+            "type": "state",
+            "common": {
+                "name": "Netzwerkmaske",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.gateway",
+            "type": "state",
+            "common": {
+                "name": "Gateway",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.dhcp.enable",
+            "type": "state",
+            "common": {
+                "name": "DHCP aktiviert",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.dhcp.start",
+            "type": "state",
+            "common": {
+                "name": "DHCP Start",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.ap.dhcp.end",
+            "type": "state",
+            "common": {
+                "name": "DHCP Ende",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.station.enable",
+            "type": "state",
+            "common": {
+                "name": "Heimzetz aktiviert",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.station.mac",
+            "type": "state",
+            "common": {
+                "name": "MAC Adresse",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.station.signal",
+            "type": "state",
+            "common": {
+                "name": "Signalstärke",
+                "type": "number",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": "",
+                "unit": "dB"
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.station.ssid",
+            "type": "state",
+            "common": {
+                "name": "SSID",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.station.password",
+            "type": "state",
+            "common": {
+                "name": "Passwort",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.station.dhcp",
+            "type": "state",
+            "common": {
+                "name": "DHCP aktiviert",
+                "type": "boolean",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.station.ip",
+            "type": "state",
+            "common": {
+                "name": "IP Adresse",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.station.netmask",
+            "type": "state",
+            "common": {
+                "name": "Netzwerkmaske",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "wlan.station.gateway",
+            "type": "state",
+            "common": {
+                "name": "Gateway",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": false,
+                "desc": ""
             },
             "native": {}
         }

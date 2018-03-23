@@ -236,6 +236,88 @@ function checkStatus() {
                     adapter.log.error(err);
                 }
             });
+
+            // Get error
+            request.get({url: url + "/json?cmd=error"}, function (err, response, body) {
+                if (!err) {
+                    var data = JSON.parse(body);
+                    
+                    if(typeof data === 'object' && data.successful === true) {
+                        for(var i=0; i<=4; i++) {
+                            if(typeof data["errors"][i] === 'object') {
+                                adapter.setState('error.' + i + '.code', {val: data["errors"][i]["error_code"], ack: true});
+                                adapter.setState('error.' + i + '.message', {val: data["errors"][i]["error_message"], ack: true});
+                                adapter.setState('error.' + i + '.date', {val: data["errors"][i]["date"], ack: true});
+                                adapter.setState('error.' + i + '.time', {val: data["errors"][i]["time"], ack: true});
+                                adapter.setState('error.' + i + '.unix_timestamp', {val: data["errors"][i]["unix"], ack: true});
+                            } else {
+                                adapter.setState('error.' + i + '.code', {val: "", ack: true});
+                                adapter.setState('error.' + i + '.message', {val: "", ack: true});
+                                adapter.setState('error.' + i + '.date', {val: "", ack: true});
+                                adapter.setState('error.' + i + '.time', {val: "", ack: true});
+                                adapter.setState('error.' + i + '.unix_timestamp', {val: "", ack: true});
+                            }
+                        }
+                    }
+                } else {
+                    adapter.log.error(err);
+                }
+            });
+
+            // Get battery
+            request.get({url: url + "/json?cmd=battery"}, function (err, response, body) {
+                if (!err) {
+                    var data = JSON.parse(body);
+                    
+                    if(typeof data === 'object' && data.successful === true) {
+                        adapter.setState('battery.id', {val: data["battery"]["id"], ack: true});
+                        adapter.setState('battery.charge', {val: data["battery"]["charge"], ack: true});
+                        adapter.setState('battery.voltage', {val: data["battery"]["voltage"]/1000, ack: true});
+                        adapter.setState('battery.current', {val: data["battery"]["current"], ack: true});
+                        adapter.setState('battery.temperature', {val: data["battery"]["temperature"]/10, ack: true});
+                        adapter.setState('battery.capacity.full', {val: data["battery"]["capacity"]["full"], ack: true});
+                        adapter.setState('battery.capacity.remaining', {val: data["battery"]["capacity"]["remaining"], ack: true});
+                    }
+                } else {
+                    adapter.log.error(err);
+                }
+            });
+
+            // Get wlan
+            request.get({url: url + "/json?cmd=wlan"}, function (err, response, body) {
+                if (!err) {
+                    var data = JSON.parse(body);
+                    
+                    if(typeof data === 'object' && data.successful === true) {
+                        adapter.setState('wlan.ap.enable', {val: data["ap"]["enable"], ack: true});
+                        adapter.setState('wlan.ap.mac', {val: data["ap"]["mac"], ack: true});
+                        adapter.setState('wlan.ap.hidden', {val: data["ap"]["hidden"], ack: true});
+                        adapter.setState('wlan.ap.ssid', {val: data["ap"]["ssid"], ack: true});
+                        adapter.setState('wlan.ap.password', {val: data["ap"]["password"], ack: true});
+                        adapter.setState('wlan.ap.channel', {val: data["ap"]["channel"], ack: true});
+                        adapter.setState('wlan.ap.encryption', {val: data["ap"]["encryption"], ack: true});
+                        adapter.setState('wlan.ap.maxconn', {val: data["ap"]["maxconn"], ack: true});
+                        adapter.setState('wlan.ap.ip', {val: data["ap"]["ip"], ack: true});
+                        adapter.setState('wlan.ap.netmask', {val: data["ap"]["netmask"], ack: true});
+                        adapter.setState('wlan.ap.gateway', {val: data["ap"]["gateway"], ack: true});
+                        adapter.setState('wlan.ap.dhcp.enable', {val: data["ap"]["dhcp"]["enable"], ack: true});
+                        adapter.setState('wlan.ap.dhcp.start', {val: data["ap"]["dhcp"]["start"], ack: true});
+                        adapter.setState('wlan.ap.dhcp.end', {val: data["ap"]["dhcp"]["end"], ack: true});
+
+                        adapter.setState('wlan.station.enable', {val: data["station"]["enable"], ack: true});
+                        adapter.setState('wlan.station.mac', {val: data["station"]["mac"], ack: true});
+                        adapter.setState('wlan.station.signal', {val: data["station"]["signal"], ack: true});
+                        adapter.setState('wlan.station.ssid', {val: data["station"]["ssid"], ack: true});
+                        adapter.setState('wlan.station.password', {val: data["station"]["password"], ack: true});
+                        adapter.setState('wlan.station.dhcp', {val: data["station"]["dhcp"], ack: true});
+                        adapter.setState('wlan.station.ip', {val: data["station"]["ip"], ack: true});
+                        adapter.setState('wlan.station.netmask', {val: data["station"]["netmask"], ack: true});
+                        adapter.setState('wlan.station.gateway', {val: data["station"]["gateway"], ack: true});
+                    }
+                } else {
+                    adapter.log.error(err);
+                }
+            });
         }
     });
 }
