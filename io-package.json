@@ -37,7 +37,7 @@
     },
     "native": {
         "statusInterval": 60,
-        "infoInterval": 360
+        "infoInterval": 900
     },
     "objects": [],
     "instanceObjects": [
