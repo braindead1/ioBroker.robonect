@@ -7,7 +7,7 @@
 var utils = require(__dirname + '/lib/utils'); // Get common adapter utils
 var ping = require('ping');
 var request = require('request');
-var ip, username, password, poll, url;
+var ip, username, password, statusInterval, infoInterval, url;
 
 // you have to call the adapter function and pass a options object
 // name has to be set and has to be equal to adapters folder name and main file name excluding extension
@@ -318,6 +318,51 @@ function checkStatus() {
                     adapter.log.error(err);
                 }
             });
+
+            // Get timer
+            request.get({url: url + "/json?cmd=timer"}, function (err, response, body) {
+                if (!err) {
+                    var data = JSON.parse(body);
+                    
+                    if(typeof data === 'object' && data.successful === true) {
+                        for(var i=0; i<=13; i++) {
+                            adapter.setState('timer.' + i + '.id', {val: data["timer"][i]["id"], ack: true});
+                            adapter.setState('timer.' + i + '.enabled', {val: data["timer"][i]["enabled"], ack: true});
+                            adapter.setState('timer.' + i + '.start_time', {val: data["timer"][i]["start"], ack: true});
+                            adapter.setState('timer.' + i + '.end_time', {val: data["timer"][i]["end"], ack: true});
+                            adapter.setState('timer.' + i + '.weekdays.monday', {val: data["timer"][i]["weekdays"]["mo"], ack: true});
+                            adapter.setState('timer.' + i + '.weekdays.tuesday', {val: data["timer"][i]["weekdays"]["tu"], ack: true});
+                            adapter.setState('timer.' + i + '.weekdays.wednesday', {val: data["timer"][i]["weekdays"]["we"], ack: true});
+                            adapter.setState('timer.' + i + '.weekdays.thursday', {val: data["timer"][i]["weekdays"]["th"], ack: true});
+                            adapter.setState('timer.' + i + '.weekdays.friday', {val: data["timer"][i]["weekdays"]["fr"], ack: true});
+                            adapter.setState('timer.' + i + '.weekdays.saturday', {val: data["timer"][i]["weekdays"]["sa"], ack: true});
+                            adapter.setState('timer.' + i + '.weekdays.sunday', {val: data["timer"][i]["weekdays"]["su"], ack: true});
+                        }
+                    }
+                } else {
+                    adapter.log.error(err);
+                }
+            });
+
+            // Get push
+            request.get({url: url + "/json?cmd=push"}, function (err, response, body) {
+                if (!err) {
+                    var data = JSON.parse(body);
+                    
+                    if(typeof data === 'object' && data.successful === true) {
+                        adapter.setState('push.server_url', {val: data["push"]["server"]["url"], ack: true});
+                        adapter.setState('push.interval', {val: data["push"]["trigger"]["interval"]/1000, ack: true});
+
+                        for(var i=0; i<=9; i++) {
+                            adapter.setState('push.trigger.' + i + '.name', {val: data["push"]["trigger"]["trigger" + i]["name"], ack: true});
+                            adapter.setState('push.trigger.' + i + '.enter', {val: data["push"]["trigger"]["trigger" + i]["enter"], ack: true});
+                            adapter.setState('push.trigger.' + i + '.leave', {val: data["push"]["trigger"]["trigger" + i]["leave"], ack: true});
+                        }
+                    }
+                } else {
+                    adapter.log.error(err);
+                }
+            });
         }
     });
 }
@@ -326,12 +371,14 @@ function main() {
     ip = adapter.config.ip;    
     username = adapter.config.username;
     password = adapter.config.password;
-    poll = adapter.config.poll;
+    statusInterval = adapter.config.statusInterval;
+    infoInterval = adapter.config.infoInterval;
 
     adapter.log.info('Config IP: ' + ip);
     adapter.log.info('Config Username: ' + username);
     adapter.log.info('Config Password: ' + password);
-    adapter.log.info('Config Poll: ' + poll);
+    adapter.log.info('Config Status Interval: ' + statusInterval);
+    adapter.log.info('Config Info Interval: ' + infoInterval);
 
     if(username != '' && password != '') {
         url = 'http://' + username + ':' + password + '@' + ip;
@@ -339,8 +386,12 @@ function main() {
         url = 'http://' + ip;
     }
 
-    if (isNaN(poll) || poll < 1) {
-        poll = 10;
+    if (isNaN(statusInterval) || statusInterval < 1) {
+        statusInterval = 60;
+    }
+
+    if (isNaN(infoInterval) || infoInterval < 1) {
+        infoInterval = 360;
     }
 
     adapter.subscribeStates("extension.gpio1.status");
@@ -350,5 +401,5 @@ function main() {
 
     checkStatus();
 
-    setInterval(checkStatus, poll * 1000);
+    setInterval(checkStatus, statusInterval * 1000);
 }
