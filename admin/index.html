@@ -70,61 +70,131 @@
 <!-- you have to put your config page in a div with id adapter-container -->
 <div id="adapter-container">
 
-    <table>
-        <tr>
-            <td>
-                <img src="robonect.png" />
-            </td>
-            <td>
-                <h3 class="translate">Robonect adapter settings</h3>
-            </td>
-        </tr>
-    </table>
+    <table><tr><td><img src="robonect.png" width="64" height="64"></td><td><h3 class="translate">Robonect adapter settings</h3></td></tr></table>
 
     <table>
         <tr>
+            <td><label for="ip" class="translate">IP</label></td>
+            <td><input type="text" id="ip" placeholder="192.168.x.x" size="15" maxlength="15" class="value" /></td>
+        </tr>
+        <tr>
+            <td><label for="username" class="translate">Username</label></td>
+            <td><input type="text" id="username" placeholder="Username" size="20" class="value" /></td>
+        </tr>
+        <tr>
+            <td><label for="password" class="translate">Password</label></td>
+            <td><input type="password" id="password" placeholder="Password" class="value" /></td>
+        </tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr>
+            <td><label for="statusInterval" class="translate">Status interval (sec)</label></td>
+            <td><input type="number" id="statusInterval" min="0" class="value" /></td>
+        </tr>
+        <tr>
+            <td><label for="infoInterval" class="translate">Info interval (sec)</label></td>
+            <td><input type="number" id="infoInterval" min="0" class="value" /></td>
+        </tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr>
+            <td><label for="batteryPollType" class="translate">Battery poll type</label></td>
             <td>
-                <label class="translate" for="ip">IP</label>
-            </td>
-            <td>
-                <input class="value" id="ip" placeholder="192.168.x.x" type="text" size="15" maxlength="15" />
+                <select id="batteryPollType" class="value">
+                    <option value="NoPoll">No poll</option>
+                    <option selected>Status</option>
+                    <option>Info</option>
+                </select>
             </td>
         </tr>
         <tr>
-            <td class="translate">
-                <label class="translate" for="username">Username</label>
-            </td>
+            <td><label for="errorsPollType" class="translate">Errors poll type</label></td>
             <td>
-                <input class="value" id="username" placeholder="Username" type="text" size="20" />
+                <select id="errorsPollType" class="value">
+                    <option value="NoPoll">No poll</option>
+                    <option selected>Status</option>
+                    <option>Info</option>
+                </select>
             </td>
         </tr>
         <tr>
-            <td class="translate">
-                <label class="translate" for="password">Password</label>
-            </td>
+            <td><label for="extensionPollType" class="translate">Extension poll type</label></td>
             <td>
-                <input class="value" id="password" placeholder="Password" type="password" />
+                <select id="extensionPollType" class="value">
+                    <option value="NoPoll">No poll</option>
+                    <option selected>Status</option>
+                    <option>Info</option>
+                </select>
             </td>
         </tr>
         <tr>
-            <td class="translate">
-                <label class="translate" for="statusInterval">Status Interval</label>
-            </td>
+            <td><label for="hoursPollType" class="translate">Hours poll type</label></td>
             <td>
-                <input class="value" id="statusInterval" type="number" />
+                <select id="hoursPollType" class="value">
+                    <option value="NoPoll">No poll</option>
+                    <option>Status</option>
+                    <option selected>Info</option>
+                </select>
             </td>
         </tr>
         <tr>
-            <td class="translate">
-                <label class="translate" for="infoInterval">Info Interval</label>
-            </td>
+            <td><label for="motorPollType" class="translate">Motor poll type</label></td>
             <td>
-                <input class="value" id="infoInterval" type="number" />
+                <select id="hourPollType" class="value">
+                    <option value="NoPoll">No poll</option>
+                    <option selected>Status</option>
+                    <option>Info</option>
+                </select>
             </td>
         </tr>
+        <tr>
+            <td><label for="pushPollType" class="translate">Push poll type</label></td>
+            <td>
+                <select id="pushPollType" class="value">
+                    <option value="NoPoll">No poll</option>
+                    <option>Status</option>
+                    <option selected>Info</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="statusPollType" class="translate">Status poll type</label></td>
+            <td>
+                <select id="statusPollType" class="value">
+                    <option value="NoPoll">No poll</option>
+                    <option selected>Status</option>
+                    <option>Info</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="timerPollType" class="translate">Timer poll type</label></td>
+            <td>
+                <select id="timerPollType" class="value">
+                    <option value="NoPoll">No poll</option>
+                    <option>Status</option>
+                    <option selected>Info</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="versionPollType" class="translate">Version poll type</label></td>
+            <td>
+                <select id="versionPollType" class="value">
+                    <option value="NoPoll">No poll</option>
+                    <option>Status</option>
+                    <option selected>Info</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="wlanPollType" class="translate">WLAN poll type</label></td>
+            <td>
+                <select id="wlanPollType" class="value">
+                    <option value="NoPoll">No poll</option>
+                    <option>Status</option>
+                    <option selected>Info</option>
+                </select>
+            </td>
+        </tr>        
     </table>
-
-
-    <p class="translate">on save Robonect adapter restarts with new config immediately</p>
 </div>
 </html>
