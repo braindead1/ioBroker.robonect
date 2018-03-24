@@ -22,15 +22,15 @@
         "loglevel": "info",
         "icon": "robonect.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/sthufnagl/ioBroker.robonect/master/admin/robonect.png",
+        "extIcon": "https://raw.githubusercontent.com/braindead1/ioBroker.robonect/master/admin/robonect.png",
         "keywords": [
             "robonect",
             "lawn mower"
         ],
-        "readme": "https://github.com/sthufnagl/ioBroker.robonect/blob/master/README.md",
+        "readme": "https://github.com/braindead1/ioBroker.robonect/blob/master/README.md",
         "authors": [
-            "StefSign <hufnagl@hotmail.com>",
-            "braindead1"
+            "braindead1",
+            "StefSign <hufnagl@hotmail.com>"            
         ],
         "type": "garden",
         "license": "MIT"

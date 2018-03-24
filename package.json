@@ -36,19 +36,18 @@
   "_spec": "/opt/iobroker/node_modules/iobroker.robonect",
   "_where": "/",
   "author": {
-    "name": "StefSign",
-    "email": "hufnagl@hotmail.com"
+    "name": "braindead1"
   },
   "bugs": {
-    "url": "https://github.com/sthufnagl/ioBroker.robonect/issues"
+    "url": "https://github.com/braindead1/ioBroker.robonect/issues"
   },
   "contributors": [
     {
-      "name": "StefSign",
-      "email": "hufnagl@hotmail.com"
+      "name": "braindead1"
     },
     {
-      "name": "braindead1"
+      "name": "StefSign",
+      "email": "hufnagl@hotmail.com"
     }
   ],
   "dependencies": {
@@ -65,7 +64,7 @@
     "grunt-replace": "^0.9.3",
     "mocha": "^2.3.4"
   },
-  "homepage": "https://github.com/sthufnagl/ioBroker.robonect",
+  "homepage": "https://github.com/braindead1/ioBroker.robonect",
   "keywords": [
     "ioBroker",
     "robonect",
