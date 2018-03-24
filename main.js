@@ -385,10 +385,14 @@ function updateExtensionStatus(ext, status) {
 
 function pollRobonect(type) {
     ping.sys.probe(ip, function (isAlive) {
+        adapter.log.info('Poll type: ' + type);
+
         adapter.setState("last_sync", { val: new Date().toISOString(), ack: true});    
         adapter.setState("active", { val: isAlive, ack: true });
 
         if(isAlive) {
+            adapter.setState('info.connection', {val: true, ack: true});
+
             if(type === 'Initial') {
                 pollBattery();
                 pollErrors();
@@ -412,9 +416,9 @@ function pollRobonect(type) {
                 if(versionPollType === type) pollVersion();
                 if(wlanPollType === type) pollWlan();
             }
-        }
-
-        adapter.log.info('Poll type: ' + type);
+        } else {
+            adapter.setState('info.connection', {val: false, ack: true});
+        }        
     });
 }
 
