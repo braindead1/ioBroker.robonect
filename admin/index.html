@@ -72,126 +72,133 @@
 
     <table><tr><td><img src="robonect.png" width="64" height="64"></td><td><h3 class="translate">Robonect adapter settings</h3></td></tr></table>
 
-    <table>
+    <h4 style="width: 98%;" class="translate">Network</h4>
+    <table style="width: 98%;">
         <tr>
-            <td><label for="ip" class="translate">IP</label></td>
+            <td style="width: 30%;"><label for="ip" class="translate">IP address</label></td>
             <td><input type="text" id="ip" placeholder="192.168.x.x" size="15" maxlength="15" class="value" /></td>
         </tr>
         <tr>
-            <td><label for="username" class="translate">Username</label></td>
+            <td style="width: 30%;"><label for="username" class="translate">Username</label></td>
             <td><input type="text" id="username" placeholder="Username" size="20" class="value" /></td>
         </tr>
         <tr>
-            <td><label for="password" class="translate">Password</label></td>
+            <td style="width: 30%;"><label for="password" class="translate">Password</label></td>
             <td><input type="password" id="password" placeholder="Password" class="value" /></td>
         </tr>
-        <tr><td colspan="2">&nbsp;</td></tr>
+    </table>
+
+    <h4 style="width: 98%;" class="translate">Polling interval</h4>
+    <table style="width: 98%;">
         <tr>
-            <td><label for="statusInterval" class="translate">Status interval (sec)</label></td>
+            <td style="width: 30%;"><label for="statusInterval" class="translate">Status (sec)</label></td>
             <td><input type="number" id="statusInterval" min="0" class="value" /></td>
         </tr>
         <tr>
-            <td><label for="infoInterval" class="translate">Info interval (sec)</label></td>
+            <td style="width: 30%;"><label for="infoInterval" class="translate">Info (sec)</label></td>
             <td><input type="number" id="infoInterval" min="0" class="value" /></td>
         </tr>
-        <tr><td colspan="2">&nbsp;</td></tr>
+    </table>
+
+    <h4 style="width: 98%;" class="translate">Polling type</h4>
+    <table style="width: 98%;">
         <tr>
-            <td><label for="batteryPollType" class="translate">Battery poll type</label></td>
+            <td style="width: 30%;"><label for="batteryPollType" class="translate">Battery</label></td>
             <td>
                 <select id="batteryPollType" class="value">
-                    <option value="NoPoll">No poll</option>
-                    <option selected>Status</option>
-                    <option>Info</option>
+                    <option value="NoPoll" class="translate">No poll</option>
+                    <option value="Status" selected>Status</option>
+                    <option value="Info">Info</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <td><label for="errorsPollType" class="translate">Errors poll type</label></td>
+            <td style="width: 30%;"><label for="errorsPollType" class="translate">Errors</label></td>
             <td>
                 <select id="errorsPollType" class="value">
-                    <option value="NoPoll">No poll</option>
-                    <option selected>Status</option>
-                    <option>Info</option>
+                    <option value="NoPoll" class="translate">No poll</option>
+                    <option value="Status" selected>Status</option>
+                    <option value="Info">Info</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <td><label for="extensionPollType" class="translate">Extension poll type</label></td>
+            <td style="width: 30%;"><label for="extensionPollType" class="translate">Extensions</label></td>
             <td>
                 <select id="extensionPollType" class="value">
-                    <option value="NoPoll">No poll</option>
-                    <option selected>Status</option>
-                    <option>Info</option>
+                    <option value="NoPoll" class="translate">No poll</option>
+                    <option value="Status" selected>Status</option>
+                    <option value="Info">Info</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <td><label for="hoursPollType" class="translate">Hours poll type</label></td>
+            <td style="width: 30%;"><label for="hoursPollType" class="translate">Hours</label></td>
             <td>
                 <select id="hoursPollType" class="value">
-                    <option value="NoPoll">No poll</option>
-                    <option>Status</option>
-                    <option selected>Info</option>
+                    <option value="NoPoll" class="translate">No poll</option>
+                    <option value="Status">Status</option>
+                    <option value="Info" selected>Info</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <td><label for="motorPollType" class="translate">Motor poll type</label></td>
+            <td style="width: 30%;"><label for="motorPollType" class="translate">Motor</label></td>
             <td>
                 <select id="hourPollType" class="value">
-                    <option value="NoPoll">No poll</option>
-                    <option selected>Status</option>
-                    <option>Info</option>
+                    <option value="NoPoll" class="translate">No poll</option>
+                    <option value="Status" selected>Status</option>
+                    <option value="Info">Info</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <td><label for="pushPollType" class="translate">Push poll type</label></td>
+            <td style="width: 30%;"><label for="pushPollType" class="translate">Push</label></td>
             <td>
                 <select id="pushPollType" class="value">
-                    <option value="NoPoll">No poll</option>
-                    <option>Status</option>
-                    <option selected>Info</option>
+                    <option value="NoPoll" class="translate">No poll</option>
+                    <option value="Status">Status</option>
+                    <option value="Info" selected>Info</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <td><label for="statusPollType" class="translate">Status poll type</label></td>
+            <td style="width: 30%;"><label for="statusPollType" class="translate">Status</label></td>
             <td>
                 <select id="statusPollType" class="value">
-                    <option value="NoPoll">No poll</option>
-                    <option selected>Status</option>
-                    <option>Info</option>
+                    <option value="NoPoll" class="translate">No poll</option>
+                    <option value="Status" selected>Status</option>
+                    <option value="Info">Info</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <td><label for="timerPollType" class="translate">Timer poll type</label></td>
+            <td style="width: 30%;"><label for="timerPollType" class="translate">Timer</label></td>
             <td>
                 <select id="timerPollType" class="value">
-                    <option value="NoPoll">No poll</option>
-                    <option>Status</option>
-                    <option selected>Info</option>
+                    <option value="NoPoll" class="translate">No poll</option>
+                    <option value="Status">Status</option>
+                    <option value="Info" selected>Info</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <td><label for="versionPollType" class="translate">Version poll type</label></td>
+            <td style="width: 30%;"><label for="versionPollType" class="translate">Version</label></td>
             <td>
                 <select id="versionPollType" class="value">
-                    <option value="NoPoll">No poll</option>
-                    <option>Status</option>
-                    <option selected>Info</option>
+                    <option value="NoPoll" class="translate">No poll</option>
+                    <option value="Status">Status</option>
+                    <option value="Info" selected>Info</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <td><label for="wlanPollType" class="translate">WLAN poll type</label></td>
+            <td style="width: 30%;"><label for="wlanPollType" class="translate">WLAN</label></td>
             <td>
                 <select id="wlanPollType" class="value">
-                    <option value="NoPoll">No poll</option>
-                    <option>Status</option>
-                    <option selected>Info</option>
+                    <option value="NoPoll" class="translate">No poll</option>
+                    <option value="Status">Status</option>
+                    <option value="Info" selected>Info</option>
                 </select>
             </td>
         </tr>        

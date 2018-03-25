@@ -4,9 +4,13 @@ systemDictionary = {
         "de": "Robonect Adapter Einstellungen",
         "en": "Robonect adapter settings"
     },
-    "IP": {
-        "de": "IP Adresse des Robonect HX Modules",
-        "en": "IP address of the Robonect HX modul"
+    "Network": {
+        "de": "Netzwerk",
+        "en": "Network"
+    },
+    "IP address": {
+        "de": "IP Adresse",
+        "en": "IP address"
     },
     "Username": {
         "de": "Benutzername",
@@ -16,52 +20,64 @@ systemDictionary = {
         "de": "Passwort",
         "en": "Password"
     },
-    "Status interval (sec)": {
-        "de": "Status Abfrageintervall (Sekunden)",
-        "en": "Status interval (sec)"
+    "Polling interval": {
+        "de": "Abfrageintervall",
+        "en": "Polling interval"
     },
-    "Info interval (sec)": {
-        "de": "Info Abfrageintervall (Sekunden)",
-        "en": "Info interval (sec)"
+    "Status (sec)": {
+        "de": "Status (Sekunden)",
+        "en": "Status (sec)"
     },
-    "Battery poll type": {
-        "de": "Batterie Abfragetyp",
-        "en": "Battery poll type"
+    "Info (sec)": {
+        "de": "Info (Sekunden)",
+        "en": "Info (sec)"
     },
-    "Errors poll type": {
-        "de": "Fehler Abfragetyp",
-        "en": "Errors poll type"
+    "Polling type": {
+        "de": "Abfragetyp",
+        "en": "Polling type"
     },
-    "Extension poll type": {
-        "de": "Erweiterungen Abfragetyp",
-        "en": "Extension poll type"
+    "Battery": {
+        "de": "Batterie",
+        "en": "Battery"
     },
-    "Hours poll type": {
-        "de": "Betriebsstunden Abfragetyp",
-        "en": "Hours poll type"
+    "Errors": {
+        "de": "Fehler",
+        "en": "Errors"
     },
-    "Motor poll type": {
-        "de": "Motor Abfragetyp",
-        "en": "Motor poll type"
+    "Extensions": {
+        "de": "Erweiterungen",
+        "en": "Extensions"
     },
-    "Push poll type": {
-        "de": "Push Abfragetyp",
-        "en": "Push poll type"
+    "Hours": {
+        "de": "Betriebsstunden",
+        "en": "Hours"
     },
-    "Status poll type": {
-        "de": "Status Abfragetyp",
-        "en": "Status poll type"
+    "Motor": {
+        "de": "Motor",
+        "en": "Motor"
     },
-    "Timer poll type": {
-        "de": "Timer Abfragetyp",
-        "en": "Timer poll type"
+    "Push": {
+        "de": "Push",
+        "en": "Push"
     },
-    "Version poll type": {
-        "de": "Version Abfragetyp",
-        "en": "Version poll type"
+    "Status": {
+        "de": "Status",
+        "en": "Status"
     },
-    "WLAN poll type": {
-        "de": "WLAN Abfragetyp",
-        "en": "WLAN poll type"
+    "Timer": {
+        "de": "Timer",
+        "en": "Timer"
+    },
+    "Version": {
+        "de": "Version",
+        "en": "Version"
+    },
+    "WLAN": {
+        "de": "WLAN",
+        "en": "WLAN"
+    },
+    "No poll": {
+        "de": "Nicht abfragen",
+        "en": "No poll"
     }
 };
