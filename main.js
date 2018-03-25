@@ -447,27 +447,33 @@ function main() {
     adapter.log.info('Config Status Interval: ' + statusInterval);
     adapter.log.info('Config Info Interval: ' + infoInterval);
 
-    if(username != '' && password != '') {
-        url = 'http://' + username + ':' + password + '@' + ip;
+    if(ip === undefined || ip === '') {
+        adapter.log.error('No IP address set. Adapter will not be executed.');
     } else {
-        url = 'http://' + ip;
+        if(username != '' && password != '') {
+            url = 'http://' + username + ':' + password + '@' + ip;
+        } else {
+            url = 'http://' + ip;
+        }
+
+        if (isNaN(statusInterval) || statusInterval < 1) {
+            adapter.log.warn('No status interval set. Using default value (60 seconds).');
+            statusInterval = 60;
+        }
+
+        if (isNaN(infoInterval) || infoInterval < 1) {
+            adapter.log.warn('No info interval set. Using default value (900 seconds).');
+            infoInterval = 900;
+        }
+
+        adapter.subscribeStates("extension.gpio1.status");
+        adapter.subscribeStates("extension.gpio2.status");
+        adapter.subscribeStates("extension.out1.status");
+        adapter.subscribeStates("extension.out2.status");
+
+        pollRobonect('Initial');
+
+        setInterval(function() { pollRobonect('Info') }, infoInterval * 1000);
+        setInterval(function() { pollRobonect('Status') }, statusInterval * 1000);
     }
-
-    if (isNaN(statusInterval) || statusInterval < 1) {
-        statusInterval = 60;
-    }
-
-    if (isNaN(infoInterval) || infoInterval < 1) {
-        infoInterval = 360;
-    }
-
-    adapter.subscribeStates("extension.gpio1.status");
-    adapter.subscribeStates("extension.gpio2.status");
-    adapter.subscribeStates("extension.out1.status");
-    adapter.subscribeStates("extension.out2.status");
-
-    pollRobonect('Initial');
-
-    setInterval(function() { pollRobonect('Info') }, infoInterval * 1000);
-    setInterval(function() { pollRobonect('Status') }, statusInterval * 1000);
 }
