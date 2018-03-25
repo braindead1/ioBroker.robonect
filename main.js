@@ -28,7 +28,7 @@ var ip,
 // name has to be set and has to be equal to adapters folder name and main file name excluding extension
 // adapter will be restarted automatically every time as the configuration changed, e.g system.adapter.robonect.0
 
-var adapter = utils.Adapter('robonect');
+var adapter = utils.adapter('robonect');
 
 // is called when adapter shuts down - callback has to be called under any circumstances!
 adapter.on('unload', function (callback) {
