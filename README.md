@@ -1,7 +1,10 @@
 ![Logo](admin/robonect.png)
-# ioBroker.robonect
+ioBroker.robonect
+=============
 
-## A Robonect HX adapter for ioBroker
+**Tests:** Linux/Mac: [![Build Status](https://travis-ci.org/braindead1/ioBroker.robonect.svg?branch=master)](https://travis-ci.org/braindead1/ioBroker.robonect)
+Windows: [![Build status](https://ci.appveyor.com/api/projects/status/yl79oamamifjvqrq?svg=true)](https://ci.appveyor.com/project/braindead1/iobroker-robonect)
+
 This is an ioBroker adapter for your Robonect HX enabled lawn mower. It have been tested with a Gardena R70Li.
 
 ## Changelog
