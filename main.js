@@ -43,15 +43,15 @@ adapter.on('unload', function (callback) {
 // is called if a subscribed object changes
 adapter.on('objectChange', function (id, obj) {
     // Warning, obj can be null if it was deleted
-    adapter.log.info('objectChange ' + id + ' ' + JSON.stringify(obj));
+    if(typeof obj == 'object') {
+        adapter.log.info('objectChange ' + id + ' ' + JSON.stringify(obj));
+    }
 });
 
 // is called if a subscribed state changes
 adapter.on('stateChange', function (id, state) {
     // Warning, state can be null if it was deleted
-    //adapter.log.info('stateChange ' + id + ' ' + JSON.stringify(state));
-
-    if (state && !state.ack) {
+    if (typeof state == 'object' && !state.ack) {
         if (id === adapter.namespace + ".extension.gpio1.status") {
             updateExtensionStatus('gpio1', state.val);
         } else if (id === adapter.namespace + ".extension.gpio2.status") {
