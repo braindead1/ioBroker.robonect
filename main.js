@@ -33,13 +33,13 @@ adapter.on('objectChange', function (id, obj) {
 adapter.on('stateChange', function (id, state) {
     // Warning, state can be null if it was deleted
     if (typeof state == 'object' && !state.ack) {
-        if (id === self.adapter.namespace + ".extension.gpio1.status") {
+        if (id === adapter.namespace + ".extension.gpio1.status") {
             robonect.updateExtensionStatus('gpio1', state.val);
-        } else if (id === self.adapter.namespace + ".extension.gpio2.status") {
+        } else if (id === adapter.namespace + ".extension.gpio2.status") {
             robonect.updateExtensionStatus('gpio2', state.val);
-        } else if (id === self.adapter.namespace + ".extension.out1.status") {
+        } else if (id === adapter.namespace + ".extension.out1.status") {
             robonect.updateExtensionStatus('out1', state.val);
-        } else if (id === self.adapter.namespace + ".extension.out2.status") {
+        } else if (id === adapter.namespace + ".extension.out2.status") {
             robonect.updateExtensionStatus('out2', state.val);
         }
     }
