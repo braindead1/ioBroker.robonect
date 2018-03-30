@@ -5,7 +5,10 @@
 
 // you have to require the utils module and call adapter function
 var utils = require(__dirname + '/lib/utils'); // Get common adapter utils
-var adapter = utils.adapter('robonect');
+var adapter = utils.adapter({
+    name: 'robonect', // adapter name
+    useFormatDate: true // load from system.config the global date format
+});
 var Robonect = require(__dirname + '/lib/robonect');
 
 var robonect;
