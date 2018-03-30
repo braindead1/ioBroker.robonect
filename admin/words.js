@@ -36,7 +36,15 @@ systemDictionary = {
         "de": "Abfragetyp",
         "en": "Polling type"
     },
-    "Battery": {
+    "Status": {
+        "de": "Status",
+        "en": "Status"
+    },
+    "Will be polled everytime": {
+        "de": "Wird jedesmal abgefragt",
+        "en": "Will be polled everytime"
+    },
+     "Battery": {
         "de": "Batterie",
         "en": "Battery"
     },
@@ -59,10 +67,6 @@ systemDictionary = {
     "Push": {
         "de": "Push",
         "en": "Push"
-    },
-    "Status": {
-        "de": "Status",
-        "en": "Status"
     },
     "Timer": {
         "de": "Timer",

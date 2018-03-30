@@ -103,6 +103,10 @@
     <h4 style="width: 98%;" class="translate">Polling type</h4>
     <table style="width: 98%;">
         <tr>
+            <td style="width: 30%;"><label class="translate">Status</label></td>
+            <td class="translate">Will be polled everytime</td>
+        </tr>
+        <tr>
             <td style="width: 30%;"><label for="batteryPollType" class="translate">Battery</label></td>
             <td>
                 <select id="batteryPollType" class="value">
@@ -145,7 +149,7 @@
         <tr>
             <td style="width: 30%;"><label for="motorPollType" class="translate">Motor</label></td>
             <td>
-                <select id="hourPollType" class="value">
+                <select id="motorPollType" class="value">
                     <option value="NoPoll" class="translate">No poll</option>
                     <option value="Status" selected>Status</option>
                     <option value="Info">Info</option>
@@ -159,16 +163,6 @@
                     <option value="NoPoll" class="translate">No poll</option>
                     <option value="Status">Status</option>
                     <option value="Info" selected>Info</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 30%;"><label for="statusPollType" class="translate">Status</label></td>
-            <td>
-                <select id="statusPollType" class="value">
-                    <option value="NoPoll" class="translate">No poll</option>
-                    <option value="Status" selected>Status</option>
-                    <option value="Info">Info</option>
                 </select>
             </td>
         </tr>

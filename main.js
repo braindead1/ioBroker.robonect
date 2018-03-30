@@ -75,7 +75,7 @@ function main() {
     // Initialize the adapter and create missinf states
     robonect.initialize();
 
-    // Do the initial poll
+    // Do the initial polling
     robonect.poll('Initial');
 
     adapter.subscribeStates("*");
