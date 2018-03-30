@@ -41,6 +41,8 @@ adapter.on('stateChange', function (id, state) {
             robonect.updateExtensionStatus('out1', state.val);
         } else if (id === adapter.namespace + ".extension.out2.status") {
             robonect.updateExtensionStatus('out2', state.val);
+        } else if (id === adapter.namespace + ".status.mode") {
+            robonect.updateMode(state.val);
         }
     }
 });
