@@ -14,7 +14,7 @@ This is an ioBroker adapter for your Robonect HX enabled lawn mower. It have bee
 
 ## Control
 ### Mode
-The mode of the lawn mower can be controlled by changing Robonect.0.status.mode. Possible modes are "Auto", "Home", "Manual", "End of day" and "Job" (not fully implemented at the moment).
+The mode of the lawn mower can be controlled by changing robonect.0.status.mode. Possible modes are "Auto", "Home", "Manual", "End of day" and "Job" (not fully implemented at the moment).
 
 ### Extensions
 It is possible to control the extensions GPIO 1, GPIO 2, OUT 1 and OUT 2 of the Robonect module. Requirement is that the mode of the extension is configured as "API" via the Robonect Web-UI. If for example LEDs are connected to OUT1, it is possible to switch them on in the night and off in the morning by setting Robonect.0.extension.out1.status to "true" or "false".
