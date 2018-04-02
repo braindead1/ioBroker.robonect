@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <!-- these 4 files always have to be included -->
+    <link rel="stylesheet" type="text/css" href="../../lib/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/adapter.css" />
+    <script type="text/javascript" src="../../lib/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../socket.io/socket.io.js"></script>
+
+    <!-- these files always have to be included -->
+    <script type="text/javascript" src="../../js/translate.js"></script>
+    <script type="text/javascript" src="../../lib/js/materialize.js"></script>
+    <script type="text/javascript" src="../../js/adapter-settings.js"></script>
+    <script type="text/javascript" src="words.js"></script>
+    <style>
+        .m .col .select-wrapper+label {
+            top: -26px;
+        }
+
+        .m span {
+            font-size: 0.9em;
+        }
+    </style>
+    <!-- you have to define 2 functions in the global scope: -->
+    <script type="text/javascript">
+
+        // the function loadSettings has to exist ...
+        function load(settings, onChange) {
+            // example: select elements with id=key and class=value and insert value
+            if (!settings) return;
+
+            $('.value').each(function () {
+                var $key = $(this);
+                var id = $key.attr('id');
+                if ($key.attr('type') === 'checkbox') {
+                    // do not call onChange direct, because onChange could expect some arguments
+                    $key.prop('checked', settings[id]).change(function () {
+                        onChange();
+                    });
+                } else {
+                    // do not call onChange direct, because onChange could expect some arguments
+                    $key.val(settings[id]).change(function () {
+                        onChange();
+                    }).keyup(function () {
+                        onChange();
+                    });
+                }
+            });
+            onChange(false);
+            M.updateTextFields();  // function Materialize.updateTextFields(); to reinitialize all the Materialize labels on the page if you are dynamically adding inputs.
+        }
+
+        // ... and the function save has to exist.
+        // you have to make sure the callback is called with the settings object as first param!
+        function save(callback) {
+            // example: select elements with class=value and build settings object
+            var obj = {};
+            $('.value').each(function () {
+                var $this = $(this);
+                if ($this.attr('type') === 'checkbox') {
+                    obj[$this.attr('id')] = $this.prop('checked');
+                } else {
+                    obj[$this.attr('id')] = $this.val();
+                }
+            });
+            callback(obj);
+        }
+    </script>
+
+    <style>
+        .sub-title {
+            margin-top: 2rem!important;
+            padding: 0.5rem;
+            background: #64b5f6;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- you have to put your config page in a div with id adapter-container -->
+    <div class="m adapter-container">
+        <div class="row">
+            <!-- Forms are the standard way to receive user inputted data. Learn more http://materializecss.com/forms.html-->
+            <div class="row">
+                <div class="input-field col s6">
+                    <img src="robonect.png" class="logo">
+                </div>
+            </div>
+            <h6 class="translate sub-title">Network</h6>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input type="text" id="ip" placeholder="192.168.x.x" maxlength="15" class="value" />
+                    <label for="ip" class="translate">IP address</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input type="text" id="username" placeholder="Username" class="value" />
+                    <label for="username" class="translate">Username</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input type="password" id="password" placeholder="Password" class="value" />
+                    <label for="password" class="translate">Password</label>
+                </div>
+            </div>
+            <h6 class="translate sub-title">Polling interval</h6>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input type="number" id="statusInterval" min="0" class="value" />
+                    <label for="statusInterval" class="translate">Status (sec)</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input type="number" id="infoInterval" min="0" class="value" />
+                    <label for="infoInterval" class="translate">Info (sec)</label>
+                </div>
+            </div>
+            <h6 class="translate sub-title">Polling type</h6>
+            <div class="row">
+                <div class="input-field col s12 m6 l4">
+                    <select id="batteryPollType" class="value">
+                        <option value="NoPoll" class="translate">No poll</option>
+                        <option value="Status">Status</option>
+                        <option value="Info">Info</option>
+                    </select>
+                    <label for="batteryPollType" class="translate">Battery</label>
+                </div>
+                <div class="input-field col s12 m6 l4">
+                    <select id="errorsPollType" class="value">
+                        <option value="NoPoll" class="translate">No poll</option>
+                        <option value="Status">Status</option>
+                        <option value="Info">Info</option>
+                    </select>
+                    <label for="errorsPollType" class="translate">Errors</label>
+                </div>
+                <div class="input-field col s12 m6 l4">
+                    <select id="extensionPollType" class="value">
+                        <option value="NoPoll" class="translate">No poll</option>
+                        <option value="Status">Status</option>
+                        <option value="Info">Info</option>
+                    </select>
+                    <label for="extensionPollType" class="translate">Extensions</label>
+                </div>
+                <div class="input-field col s12 m6 l4">
+                    <select id="hoursPollType" class="value">
+                        <option value="NoPoll" class="translate">No poll</option>
+                        <option value="Status">Status</option>
+                        <option value="Info">Info</option>
+                    </select>
+                    <label for="hoursPollType" class="translate">Hours</label>
+                </div>
+                <div class="input-field col s12 m6 l4">
+                    <select id="motorPollType" class="value">
+                        <option value="NoPoll" class="translate">No poll</option>
+                        <option value="Status">Status</option>
+                        <option value="Info">Info</option>
+                    </select>
+                    <label for="motorPollType" class="translate">Motor</label>
+                </div>
+                <div class="input-field col s12 m6 l4">
+                    <select id="pushPollType" class="value">
+                        <option value="NoPoll" class="translate">No poll</option>
+                        <option value="Status">Status</option>
+                        <option value="Info">Info</option>
+                    </select>
+                    <label for="pushPollType" class="translate">Push</label>
+                </div>
+                <div class="input-field col s12 m6 l4">
+                    <select id="timerPollType" class="value">
+                        <option value="NoPoll" class="translate">No poll</option>
+                        <option value="Status">Status</option>
+                        <option value="Info">Info</option>
+                    </select>
+                    <label for="timerPollType" class="translate">Timer</label>
+                </div>
+                <div class="input-field col s12 m6 l4">
+                    <select id="versionPollType" class="value">
+                        <option value="NoPoll" class="translate">No poll</option>
+                        <option value="Status">Status</option>
+                        <option value="Info">Info</option>
+                    </select>
+                    <label for="versionPollType" class="translate">Version</label>
+                </div>
+                <div class="input-field col s12 m6 l4">
+                    <select id="wlanPollType" class="value">
+                        <option value="NoPoll" class="translate">No poll</option>
+                        <option value="Status">Status</option>
+                        <option value="Info">Info</option>
+                    </select>
+                    <label for="wlanPollType" class="translate">WLAN</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -18,6 +18,7 @@
             "de": "Robonect HX Adapter"
         },
         "mode": "daemon",
+        "materialize": true,
         "platform": "Javascript/Node.js",
         "loglevel": "info",
         "icon": "robonect.png",
@@ -37,7 +38,16 @@
     },
     "native": {
         "statusInterval": 60,
-        "infoInterval": 900
+        "infoInterval": 900,
+        "batteryPollType": "Status",
+        "errorsPollType": "Status",
+        "extensionPollType": "Status",
+        "hoursPollType": "Info",
+        "motorPollType": "Status",
+        "pushPollType": "Info",
+        "timerPollType": "Info",
+        "versionPollType": "Info",
+        "wlanPollType": "Info"
     },
     "objects": [],
     "instanceObjects": []
