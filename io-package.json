@@ -2,8 +2,12 @@
     "common": {
         "name": "robonect",
         "title": "Robonect",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "news": {
+            "0.0.4": {
+                "en": "updated to work with Robonect HX version 1.0 Beta5",
+                "de": "aktualisiert für Robonect HX Version 1.0 Beta5"
+            },
             "0.0.3": {
                 "en": "support of Admin3",
                 "de": "Unterstützung von Admin3"
