@@ -64,6 +64,10 @@ systemDictionary = {
         "de": "Motor",
         "en": "Motor"
     },
+    "Portal": {
+        "de": "Portal",
+        "en": "Portal"
+    },
     "Push": {
         "de": "Push",
         "en": "Push"
