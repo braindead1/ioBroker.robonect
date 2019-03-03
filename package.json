@@ -12,10 +12,10 @@
   "bugs": {
     "url": "https://github.com/braindead1/ioBroker.robonect/issues"
   },
-  "license": "MIT",  
+  "license": "MIT",
   "author": {
     "name": "braindead1"
-  },  
+  },
   "contributors": [
     {
       "name": "braindead1"
@@ -36,7 +36,7 @@
   "dependencies": {
     "ping": "^0.2.1",
     "request": "^2.79.0"
-  },  
+  },
   "devDependencies": {
     "chai": "^4.1.2",
     "grunt": "^1.0.1",
@@ -44,6 +44,7 @@
     "grunt-http": "^2.2.0",
     "grunt-jscs": "^3.0.1",
     "grunt-replace": "^1.0.1",
-    "mocha": "^4.1.0"
+    "mocha": "^4.1.0",
+    "@iobroker/adapter-core": "^1.0.3"
   }
 }
