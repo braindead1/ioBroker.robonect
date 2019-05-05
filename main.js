@@ -4,7 +4,7 @@
 "use strict";
 
 // you have to require the utils module and call adapter function
-var utils = require(__dirname + '/lib/utils'); // Get common adapter utils
+var utils = require('@iobroker/adapter-core'); // Get common adapter utils
 var adapter = utils.Adapter({
     name: 'robonect', // adapter name
     useFormatDate: true // load from system.config the global date format
