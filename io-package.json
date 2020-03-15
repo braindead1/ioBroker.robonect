@@ -40,6 +40,7 @@
             "robonect",
             "lawn mower"
         ],
+        "localLink": "http://%robonectIp%",
         "readme": "https://github.com/braindead1/ioBroker.robonect/blob/master/README.md",
         "authors": [
             "braindead1",

@@ -70,7 +70,7 @@ adapter.on('ready', main);
 function main() {
     robonect = new Robonect(adapter);
 
-    if (adapter.config.ip === undefined || adapter.config.ip === '') {
+    if (adapter.config.robonectIp === undefined || adapter.config.robonectIp === '') {
         adapter.log.error('No IP address set. Adapter will not be executed.');
         adapter.setState('info.connection', false, true);
 
