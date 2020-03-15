@@ -1,91 +1,267 @@
 // Dictionary (systemDictionary is global variable from adapter-settings.js)
 systemDictionary = {
     "Robonect adapter settings": {
+        "en": "Robonect adapter settings",
         "de": "Robonect Adapter Einstellungen",
-        "en": "Robonect adapter settings"
+        "ru": "Настройки адаптера Robonect",
+        "pt": "Configurações do adaptador Robonect",
+        "nl": "Instellingen van de Robonect-adapter",
+        "fr": "Paramètres de l'adaptateur Robonect",
+        "it": "Impostazioni dell'adattatore Robonect",
+        "es": "Configuración del adaptador Robonect",
+        "pl": "Ustawienia adaptera Robonect",
+        "zh-cn": "Robonect适配器设置"
     },
     "Network": {
+        "en": "Network",
         "de": "Netzwerk",
-        "en": "Network"
+        "ru": "сеть",
+        "pt": "Rede",
+        "nl": "Netwerk",
+        "fr": "Réseau",
+        "it": "Rete",
+        "es": "Red",
+        "pl": "Sieć",
+        "zh-cn": "网络"
     },
     "IP address": {
+        "en": "IP address",
         "de": "IP Adresse",
-        "en": "IP address"
+        "ru": "айпи адрес",
+        "pt": "endereço de IP",
+        "nl": "IP adres",
+        "fr": "adresse IP",
+        "it": "indirizzo IP",
+        "es": "dirección IP",
+        "pl": "adres IP",
+        "zh-cn": "IP地址"
     },
     "Username": {
-        "de": "Benutzername",
         "en": "Username",
+        "de": "Benutzername",
+        "ru": "имя пользователя",
+        "pt": "Nome do usuário",
+        "nl": "Gebruikersnaam",
+        "fr": "Nom d'utilisateur",
+        "it": "Nome utente",
+        "es": "Nombre de usuario",
+        "pl": "Nazwa Użytkownika",
+        "zh-cn": "用户名"
     },
     "Password": {
+        "en": "Password",
         "de": "Passwort",
-        "en": "Password"
+        "ru": "пароль",
+        "pt": "Senha",
+        "nl": "Wachtwoord",
+        "fr": "Mot de passe",
+        "it": "Parola d'ordine",
+        "es": "Contraseña",
+        "pl": "Hasło",
+        "zh-cn": "密码"
     },
     "Polling interval": {
+        "en": "Polling interval",
         "de": "Abfrageintervall",
-        "en": "Polling interval"
+        "ru": "Интервал опроса",
+        "pt": "Intervalo de pesquisa",
+        "nl": "Polling-interval",
+        "fr": "Intervalle d'interrogation",
+        "it": "Intervallo di polling",
+        "es": "Intervalo de votación",
+        "pl": "Interwał odpytywania",
+        "zh-cn": "轮询间隔"
     },
     "Status (sec)": {
+        "en": "Status (sec)",
         "de": "Status (Sekunden)",
-        "en": "Status (sec)"
+        "ru": "Статус (сек)",
+        "pt": "Status (s)",
+        "nl": "Status (sec)",
+        "fr": "Statut (sec)",
+        "it": "Stato (sec)",
+        "es": "Estado (seg.)",
+        "pl": "Status (s)",
+        "zh-cn": "状态（秒）"
     },
     "Info (sec)": {
+        "en": "Info (sec)",
         "de": "Info (Sekunden)",
-        "en": "Info (sec)"
+        "ru": "Инфо (сек)",
+        "pt": "Informações (s)",
+        "nl": "Info (sec)",
+        "fr": "Info (sec)",
+        "it": "Informazioni (sec)",
+        "es": "Información (seg.)",
+        "pl": "Informacje (s)",
+        "zh-cn": "信息（秒）"
     },
     "Polling type": {
+        "en": "Polling type",
         "de": "Abfragetyp",
-        "en": "Polling type"
+        "ru": "Тип опроса",
+        "pt": "Tipo de pesquisa",
+        "nl": "Type peiling",
+        "fr": "Type d'interrogation",
+        "it": "Tipo di polling",
+        "es": "Tipo de sondeo",
+        "pl": "Rodzaj odpytywania",
+        "zh-cn": "轮询类型"
     },
     "Status": {
+        "en": "Status",
         "de": "Status",
-        "en": "Status"
+        "ru": "Положение дел",
+        "pt": "Status",
+        "nl": "Toestand",
+        "fr": "Statut",
+        "it": "Stato",
+        "es": "Estado",
+        "pl": "Status",
+        "zh-cn": "状态"
     },
     "Will be polled everytime": {
-        "de": "Wird jedesmal abgefragt",
-        "en": "Will be polled everytime"
+        "en": "Will be polled everytime",
+        "de": "Wird jedes Mal abgefragt",
+        "ru": "Будут опрошены каждый раз",
+        "pt": "Será pesquisado toda vez",
+        "nl": "Zal elke keer worden opgevraagd",
+        "fr": "Sera interrogé à chaque fois",
+        "it": "Verrà eseguito il polling ogni volta",
+        "es": "Será encuestado cada vez",
+        "pl": "Będzie za każdym razem ankietowany",
+        "zh-cn": "每次都会被轮询"
     },
-     "Battery": {
+    "Battery": {
+        "en": "Battery",
         "de": "Batterie",
-        "en": "Battery"
+        "ru": "аккумулятор",
+        "pt": "Bateria",
+        "nl": "Accu",
+        "fr": "Batterie",
+        "it": "Batteria",
+        "es": "Batería",
+        "pl": "Bateria",
+        "zh-cn": "电池"
     },
     "Errors": {
+        "en": "Errors",
         "de": "Fehler",
-        "en": "Errors"
+        "ru": "ошибки",
+        "pt": "Erros",
+        "nl": "Fouten",
+        "fr": "les erreurs",
+        "it": "Errori",
+        "es": "Errores",
+        "pl": "Błędy",
+        "zh-cn": "失误"
     },
     "Extensions": {
+        "en": "Extensions",
         "de": "Erweiterungen",
-        "en": "Extensions"
+        "ru": "расширения",
+        "pt": "Extensões",
+        "nl": "Extensies",
+        "fr": "Extensions",
+        "it": "estensioni",
+        "es": "Extensiones",
+        "pl": "Rozszerzenia",
+        "zh-cn": "扩展名"
     },
     "Hours": {
+        "en": "Hours",
         "de": "Betriebsstunden",
-        "en": "Hours"
+        "ru": "часов",
+        "pt": "Horas",
+        "nl": "Uren",
+        "fr": "Heures",
+        "it": "Ore",
+        "es": "Horas",
+        "pl": "godziny",
+        "zh-cn": "小时"
     },
     "Motor": {
+        "en": "Motor",
         "de": "Motor",
-        "en": "Motor"
+        "ru": "двигатель",
+        "pt": "Motor",
+        "nl": "Motor",
+        "fr": "Moteur",
+        "it": "Il motore",
+        "es": "Motor",
+        "pl": "Silnik",
+        "zh-cn": "发动机"
     },
     "Portal": {
+        "en": "Portal",
         "de": "Portal",
-        "en": "Portal"
+        "ru": "Портал",
+        "pt": "Portal",
+        "nl": "Portaal",
+        "fr": "Portail",
+        "it": "Portale",
+        "es": "Portal",
+        "pl": "Portal",
+        "zh-cn": "门户网站"
     },
     "Push": {
+        "en": "Push",
         "de": "Push",
-        "en": "Push"
+        "ru": "От себя",
+        "pt": "Empurrar",
+        "nl": "Duwen",
+        "fr": "Pousser",
+        "it": "spingere",
+        "es": "empujar",
+        "pl": "Pchać",
+        "zh-cn": "推"
     },
     "Timer": {
+        "en": "Timer",
         "de": "Timer",
-        "en": "Timer"
+        "ru": "таймер",
+        "pt": "Cronômetro",
+        "nl": "Timer",
+        "fr": "Minuteur",
+        "it": "Timer",
+        "es": "Temporizador",
+        "pl": "Regulator czasowy",
+        "zh-cn": "计时器"
     },
     "Version": {
+        "en": "Version",
         "de": "Version",
-        "en": "Version"
+        "ru": "Версия",
+        "pt": "Versão",
+        "nl": "Versie",
+        "fr": "Version",
+        "it": "Versione",
+        "es": "Versión",
+        "pl": "Wersja",
+        "zh-cn": "版"
     },
     "WLAN": {
+        "en": "WLAN",
         "de": "WLAN",
-        "en": "WLAN"
+        "ru": "WLAN",
+        "pt": "WLAN",
+        "nl": "WLAN",
+        "fr": "WLAN",
+        "it": "WLAN",
+        "es": "WLAN",
+        "pl": "WLAN",
+        "zh-cn": "无线局域网"
     },
     "No poll": {
+        "en": "No poll",
         "de": "Nicht abfragen",
-        "en": "No poll"
+        "ru": "Нет опрос",
+        "pt": "Nenhuma enquete",
+        "nl": "Geen poll",
+        "fr": "Pas de sondage",
+        "it": "Nessun sondaggio",
+        "es": "Ninguna encuesta",
+        "pl": "Brak ankiety",
+        "zh-cn": "没有民意调查"
     }
 };

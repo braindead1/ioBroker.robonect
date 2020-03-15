@@ -6,28 +6,76 @@
         "news": {
             "0.0.5": {
                 "en": "updated to work with Robonect HX version 1.1b",
-                "de": "aktualisiert für Robonect HX Version 1.1b"
+                "de": "aktualisiert für Robonect HX Version 1.1b",
+                "ru": "обновлен для работы с Robonect HX версии 1.1b",
+                "pt": "atualizado para funcionar com o Robonect HX versão 1.1b",
+                "nl": "bijgewerkt om te werken met Robonect HX versie 1.1b",
+                "fr": "mis à jour pour fonctionner avec Robonect HX version 1.1b",
+                "it": "aggiornato per funzionare con Robonect HX versione 1.1b",
+                "es": "actualizado para trabajar con Robonect HX versión 1.1b",
+                "pl": "zaktualizowano do pracy z Robonect HX wersja 1.1b",
+                "zh-cn": "更新为可与Robonect HX版本1.1b一起使用"
             },
             "0.0.4": {
                 "en": "updated to work with Robonect HX version 1.0 Beta5",
-                "de": "aktualisiert für Robonect HX Version 1.0 Beta5"
+                "de": "aktualisiert für Robonect HX Version 1.0 Beta5",
+                "ru": "обновлен для работы с Robonect HX версии 1.0 Beta5",
+                "pt": "atualizado para funcionar com o Robonect HX versão 1.0 Beta5",
+                "nl": "bijgewerkt om te werken met Robonect HX versie 1.0 Beta5",
+                "fr": "mis à jour pour fonctionner avec Robonect HX version 1.0 Beta5",
+                "it": "aggiornato per funzionare con Robonect HX versione 1.0 Beta5",
+                "es": "actualizado para trabajar con Robonect HX versión 1.0 Beta5",
+                "pl": "zaktualizowano do pracy z Robonect HX wersja 1.0 Beta5",
+                "zh-cn": "更新为可与Robonect HX版本1.0 Beta5一起使用"
             },
             "0.0.3": {
                 "en": "support of Admin3",
-                "de": "Unterstützung von Admin3"
+                "de": "Unterstützung von Admin3",
+                "ru": "поддержка Admin3",
+                "pt": "suporte de Admin3",
+                "nl": "ondersteuning van Admin3",
+                "fr": "prise en charge d'Admin3",
+                "it": "supporto di Admin3",
+                "es": "soporte de Admin3",
+                "pl": "obsługa Admin3",
+                "zh-cn": "支持Admin3"
             },
             "0.0.2": {
                 "en": "updated to work with Robonect HX version 1.0 Beta2",
-                "de": "aktualisiert für Robonect HX Version 1.0 Beta2"
+                "de": "aktualisiert für Robonect HX Version 1.0 Beta2",
+                "ru": "обновлен для работы с Robonect HX версии 1.0 Beta2",
+                "pt": "atualizado para funcionar com o Robonect HX versão 1.0 Beta2",
+                "nl": "bijgewerkt om te werken met Robonect HX versie 1.0 Beta2",
+                "fr": "mis à jour pour fonctionner avec Robonect HX version 1.0 Beta2",
+                "it": "aggiornato per funzionare con Robonect HX versione 1.0 Beta2",
+                "es": "actualizado para trabajar con Robonect HX versión 1.0 Beta2",
+                "pl": "zaktualizowano do pracy z Robonect HX wersja 1.0 Beta2",
+                "zh-cn": "更新为可与Robonect HX版本1.0 Beta2"
             },
             "0.0.1": {
-                "en": "initial adapter",
-                "de": "Initiale Version"
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Первый выпуск",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "初始发行"
             }
         },
         "desc": {
             "en": "Robonect HX adapter",
-            "de": "Robonect HX Adapter"
+            "de": "Robonect HX Adapter",
+            "ru": "Адаптер Robonect HX",
+            "pt": "Adaptador Robonect HX",
+            "nl": "Robonect HX-adapter",
+            "fr": "Adaptateur Robonect HX",
+            "it": "Adattatore Robonect HX",
+            "es": "Adaptador Robonect HX",
+            "pl": "Adapter Robonect HX",
+            "zh-cn": "Robonect HX适配器"
         },
         "mode": "daemon",
         "materialize": true,
@@ -43,7 +91,7 @@
         "localLink": "http://%robonectIp%",
         "readme": "https://github.com/braindead1/ioBroker.robonect/blob/master/README.md",
         "authors": [
-            "braindead1",
+            "braindead1 <os.braindead1@gmail.com>",
             "StefSign <hufnagl@hotmail.com>"            
         ],
         "type": "garden",
