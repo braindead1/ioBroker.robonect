@@ -5,10 +5,11 @@ ioBroker.robonect
 **Tests:** Linux/Mac: [![Build Status](https://travis-ci.org/braindead1/ioBroker.robonect.svg?branch=master)](https://travis-ci.org/braindead1/ioBroker.robonect)
 Windows: [![Build status](https://ci.appveyor.com/api/projects/status/yl79oamamifjvqrq?svg=true)](https://ci.appveyor.com/project/braindead1/iobroker-robonect)
 
+![Number of Installations](http://iobroker.live/badges/robonect-installed.svg) ![Number of Installations](http://iobroker.live/badges/robonect-stable.svg) 
+
 This is an ioBroker adapter for your Robonect HX enabled lawn mower. It has been tested with Robonect v1.1b and a Gardena R70Li.
 
 ## Settings
-![Number of Installations](http://iobroker.live/badges/robonect-installed.svg) ![Number of Installations](http://iobroker.live/badges/robonect-stable.svg) 
 * It is required to enter the IP address of the Robonect module. In case username and password are set, they are required, too.
 * ioBroker.robonect polls data at different intervals: By default status information is polled every 60 seconds (1 minute) and other information is polled every 900 seconds (15 minutes).
 * For every API request it is possible to choose the polling interval (status or info) or don't poll at all.
