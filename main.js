@@ -77,7 +77,7 @@ function main() {
         return;
     }
     
-    // Initialize the adapter and create missinf states
+    // Initialize the adapter and create missing states
     robonect.initialize();
 
     // Do the initial polling
