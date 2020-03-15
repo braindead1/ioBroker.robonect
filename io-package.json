@@ -4,6 +4,18 @@
         "title": "Robonect",
         "version": "0.0.5",
         "news": {
+            "0.0.6": {
+                "en": "fixed minor issues",
+                "de": "kleinere Probleme behoben",
+                "ru": "исправлены мелкие проблемы",
+                "pt": "problemas menores corrigidos",
+                "nl": "kleine problemen opgelost",
+                "fr": "correction de problèmes mineurs",
+                "it": "risolti problemi minori",
+                "es": "problemas menores solucionados",
+                "pl": "naprawiono drobne problemy",
+                "zh-cn": "解决小问题"
+            },
             "0.0.5": {
                 "en": "updated to work with Robonect HX version 1.1b",
                 "de": "aktualisiert für Robonect HX Version 1.1b",
