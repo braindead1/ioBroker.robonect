@@ -13,10 +13,15 @@ var Robonect = require(__dirname + '/lib/robonect');
 
 var robonect;
 
+var infoInterval = null;
+var statusInterval = null;
 
 // is called when adapter shuts down - callback has to be called under any circumstances!
 adapter.on('unload', function (callback) {
     try {
+        clearInterval(infoInterval);
+        clearInterval(statusInterval);
+
         adapter.log.info('cleaned everything up...');
         callback();
     } catch (e) {
@@ -85,8 +90,8 @@ function main() {
 
     adapter.subscribeStates("*");
 
-    setInterval(function() { robonect.poll('Info') }, robonect.infoInterval * 1000);
-    setInterval(function() { robonect.poll('Status') }, robonect.statusInterval * 1000);
+    infoInterval = setInterval(function() { robonect.poll('Info') }, robonect.infoInterval * 1000);
+    statusInterval = setInterval(function() { robonect.poll('Status') }, robonect.statusInterval * 1000);
 
     adapter.log.info('Done');
 }
