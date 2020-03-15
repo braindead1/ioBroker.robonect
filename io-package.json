@@ -2,7 +2,7 @@
     "common": {
         "name": "robonect",
         "title": "Robonect",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "news": {
             "0.0.6": {
                 "en": "fixed minor issues",
