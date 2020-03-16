@@ -1,129 +1,4291 @@
 {
-    "common": {
-        "name": "robonect",
-        "title": "Robonect",
-        "version": "0.0.6",
-        "news": {
-            "0.0.6": {
-                "en": "fixed minor issues",
-                "de": "kleinere Probleme behoben",
-                "ru": "исправлены мелкие проблемы",
-                "pt": "problemas menores corrigidos",
-                "nl": "kleine problemen opgelost",
-                "fr": "correction de problèmes mineurs",
-                "it": "risolti problemi minori",
-                "es": "problemas menores solucionados",
-                "pl": "naprawiono drobne problemy",
-                "zh-cn": "解决小问题"
-            },
-            "0.0.5": {
-                "en": "updated to work with Robonect HX version 1.1b",
-                "de": "aktualisiert für Robonect HX Version 1.1b",
-                "ru": "обновлен для работы с Robonect HX версии 1.1b",
-                "pt": "atualizado para funcionar com o Robonect HX versão 1.1b",
-                "nl": "bijgewerkt om te werken met Robonect HX versie 1.1b",
-                "fr": "mis à jour pour fonctionner avec Robonect HX version 1.1b",
-                "it": "aggiornato per funzionare con Robonect HX versione 1.1b",
-                "es": "actualizado para trabajar con Robonect HX versión 1.1b",
-                "pl": "zaktualizowano do pracy z Robonect HX wersja 1.1b",
-                "zh-cn": "更新为可与Robonect HX版本1.1b一起使用"
-            },
-            "0.0.4": {
-                "en": "updated to work with Robonect HX version 1.0 Beta5",
-                "de": "aktualisiert für Robonect HX Version 1.0 Beta5",
-                "ru": "обновлен для работы с Robonect HX версии 1.0 Beta5",
-                "pt": "atualizado para funcionar com o Robonect HX versão 1.0 Beta5",
-                "nl": "bijgewerkt om te werken met Robonect HX versie 1.0 Beta5",
-                "fr": "mis à jour pour fonctionner avec Robonect HX version 1.0 Beta5",
-                "it": "aggiornato per funzionare con Robonect HX versione 1.0 Beta5",
-                "es": "actualizado para trabajar con Robonect HX versión 1.0 Beta5",
-                "pl": "zaktualizowano do pracy z Robonect HX wersja 1.0 Beta5",
-                "zh-cn": "更新为可与Robonect HX版本1.0 Beta5一起使用"
-            },
-            "0.0.3": {
-                "en": "support of Admin3",
-                "de": "Unterstützung von Admin3",
-                "ru": "поддержка Admin3",
-                "pt": "suporte de Admin3",
-                "nl": "ondersteuning van Admin3",
-                "fr": "prise en charge d'Admin3",
-                "it": "supporto di Admin3",
-                "es": "soporte de Admin3",
-                "pl": "obsługa Admin3",
-                "zh-cn": "支持Admin3"
-            },
-            "0.0.2": {
-                "en": "updated to work with Robonect HX version 1.0 Beta2",
-                "de": "aktualisiert für Robonect HX Version 1.0 Beta2",
-                "ru": "обновлен для работы с Robonect HX версии 1.0 Beta2",
-                "pt": "atualizado para funcionar com o Robonect HX versão 1.0 Beta2",
-                "nl": "bijgewerkt om te werken met Robonect HX versie 1.0 Beta2",
-                "fr": "mis à jour pour fonctionner avec Robonect HX version 1.0 Beta2",
-                "it": "aggiornato per funzionare con Robonect HX versione 1.0 Beta2",
-                "es": "actualizado para trabajar con Robonect HX versión 1.0 Beta2",
-                "pl": "zaktualizowano do pracy z Robonect HX wersja 1.0 Beta2",
-                "zh-cn": "更新为可与Robonect HX版本1.0 Beta2"
-            },
-            "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Первый выпуск",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "zh-cn": "初始发行"
-            }
-        },
-        "desc": {
-            "en": "Robonect HX adapter",
-            "de": "Robonect HX Adapter",
-            "ru": "Адаптер Robonect HX",
-            "pt": "Adaptador Robonect HX",
-            "nl": "Robonect HX-adapter",
-            "fr": "Adaptateur Robonect HX",
-            "it": "Adattatore Robonect HX",
-            "es": "Adaptador Robonect HX",
-            "pl": "Adapter Robonect HX",
-            "zh-cn": "Robonect HX适配器"
-        },
-        "mode": "daemon",
-        "materialize": true,
-        "compact": true,
-        "platform": "Javascript/Node.js",
-        "loglevel": "info",
-        "icon": "robonect.png",
-        "enabled": false,
-        "extIcon": "https://raw.githubusercontent.com/braindead1/ioBroker.robonect/master/admin/robonect.png",
-        "keywords": [
-            "robonect",
-            "lawn mower"
-        ],
-        "localLink": "http://%robonectIp%",
-        "readme": "https://github.com/braindead1/ioBroker.robonect/blob/master/README.md",
-        "authors": [
-            "braindead1 <os.braindead1@gmail.com>",
-            "StefSign <hufnagl@hotmail.com>"            
-        ],
-        "type": "garden",
-        "license": "MIT"
+  "common": {
+    "name": "robonect",
+    "title": "Robonect",
+    "version": "0.0.6",
+    "news": {
+      "0.0.6": {
+        "en": "fixed minor issues",
+        "de": "kleinere Probleme behoben",
+        "ru": "исправлены мелкие проблемы",
+        "pt": "problemas menores corrigidos",
+        "nl": "kleine problemen opgelost",
+        "fr": "correction de problèmes mineurs",
+        "it": "risolti problemi minori",
+        "es": "problemas menores solucionados",
+        "pl": "naprawiono drobne problemy",
+        "zh-cn": "解决小问题"
+      },
+      "0.0.5": {
+        "en": "updated to work with Robonect HX version 1.1b",
+        "de": "aktualisiert für Robonect HX Version 1.1b",
+        "ru": "обновлен для работы с Robonect HX версии 1.1b",
+        "pt": "atualizado para funcionar com o Robonect HX versão 1.1b",
+        "nl": "bijgewerkt om te werken met Robonect HX versie 1.1b",
+        "fr": "mis à jour pour fonctionner avec Robonect HX version 1.1b",
+        "it": "aggiornato per funzionare con Robonect HX versione 1.1b",
+        "es": "actualizado para trabajar con Robonect HX versión 1.1b",
+        "pl": "zaktualizowano do pracy z Robonect HX wersja 1.1b",
+        "zh-cn": "更新为可与Robonect HX版本1.1b一起使用"
+      },
+      "0.0.4": {
+        "en": "updated to work with Robonect HX version 1.0 Beta5",
+        "de": "aktualisiert für Robonect HX Version 1.0 Beta5",
+        "ru": "обновлен для работы с Robonect HX версии 1.0 Beta5",
+        "pt": "atualizado para funcionar com o Robonect HX versão 1.0 Beta5",
+        "nl": "bijgewerkt om te werken met Robonect HX versie 1.0 Beta5",
+        "fr": "mis à jour pour fonctionner avec Robonect HX version 1.0 Beta5",
+        "it": "aggiornato per funzionare con Robonect HX versione 1.0 Beta5",
+        "es": "actualizado para trabajar con Robonect HX versión 1.0 Beta5",
+        "pl": "zaktualizowano do pracy z Robonect HX wersja 1.0 Beta5",
+        "zh-cn": "更新为可与Robonect HX版本1.0 Beta5一起使用"
+      },
+      "0.0.3": {
+        "en": "support of Admin3",
+        "de": "Unterstützung von Admin3",
+        "ru": "поддержка Admin3",
+        "pt": "suporte de Admin3",
+        "nl": "ondersteuning van Admin3",
+        "fr": "prise en charge d'Admin3",
+        "it": "supporto di Admin3",
+        "es": "soporte de Admin3",
+        "pl": "obsługa Admin3",
+        "zh-cn": "支持Admin3"
+      },
+      "0.0.2": {
+        "en": "updated to work with Robonect HX version 1.0 Beta2",
+        "de": "aktualisiert für Robonect HX Version 1.0 Beta2",
+        "ru": "обновлен для работы с Robonect HX версии 1.0 Beta2",
+        "pt": "atualizado para funcionar com o Robonect HX versão 1.0 Beta2",
+        "nl": "bijgewerkt om te werken met Robonect HX versie 1.0 Beta2",
+        "fr": "mis à jour pour fonctionner avec Robonect HX version 1.0 Beta2",
+        "it": "aggiornato per funzionare con Robonect HX versione 1.0 Beta2",
+        "es": "actualizado para trabajar con Robonect HX versión 1.0 Beta2",
+        "pl": "zaktualizowano do pracy z Robonect HX wersja 1.0 Beta2",
+        "zh-cn": "更新为可与Robonect HX版本1.0 Beta2"
+      },
+      "0.0.1": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "Первый выпуск",
+        "pt": "lançamento inicial",
+        "nl": "Eerste uitgave",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Versión inicial",
+        "pl": "Pierwsze wydanie",
+        "zh-cn": "初始发行"
+      }
     },
-    "native": {
-        "statusInterval": 60,
-        "infoInterval": 900,
-        "batteryPollType": "Status",
-        "errorsPollType": "Status",
-        "extensionPollType": "Status",
-        "hoursPollType": "Info",
-        "motorPollType": "Status",
-        "portalPollType": "Info",
-        "pushPollType": "Info",
-        "timerPollType": "Info",
-        "versionPollType": "Info",
-        "wlanPollType": "Info"
+    "desc": {
+      "en": "Robonect HX adapter",
+      "de": "Robonect HX Adapter",
+      "ru": "Адаптер Robonect HX",
+      "pt": "Adaptador Robonect HX",
+      "nl": "Robonect HX-adapter",
+      "fr": "Adaptateur Robonect HX",
+      "it": "Adattatore Robonect HX",
+      "es": "Adaptador Robonect HX",
+      "pl": "Adapter Robonect HX",
+      "zh-cn": "Robonect HX适配器"
     },
-    "objects": [],
-    "instanceObjects": []
+    "mode": "daemon",
+    "materialize": true,
+    "compact": true,
+    "platform": "Javascript/Node.js",
+    "loglevel": "info",
+    "icon": "robonect.png",
+    "enabled": false,
+    "extIcon": "https://raw.githubusercontent.com/braindead1/ioBroker.robonect/master/admin/robonect.png",
+    "keywords": [
+      "robonect",
+      "lawn mower"
+    ],
+    "localLink": "http://%robonectIp%",
+    "readme": "https://github.com/braindead1/ioBroker.robonect/blob/master/README.md",
+    "authors": [
+      "braindead1 <os.braindead1@gmail.com>",
+      "StefSign <hufnagl@hotmail.com>"
+    ],
+    "type": "garden",
+    "license": "MIT"
+  },
+  "native": {
+    "statusInterval": 60,
+    "infoInterval": 900,
+    "batteryPollType": "Status",
+    "errorsPollType": "Status",
+    "extensionPollType": "Status",
+    "hoursPollType": "Info",
+    "motorPollType": "Status",
+    "portalPollType": "Info",
+    "pushPollType": "Info",
+    "timerPollType": "Info",
+    "versionPollType": "Info",
+    "wlanPollType": "Info"
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "batteries.0.capacity.full",
+      "type": "state",
+      "common": {
+        "name": "Full capacity",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "mAh"
+      },
+      "native": {}
+    },
+    {
+      "_id": "batteries.0.capacity.remaining",
+      "type": "state",
+      "common": {
+        "name": "Remaining capacity",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "mAh"
+      },
+      "native": {}
+    },
+    {
+      "_id": "batteries.0.charge",
+      "type": "state",
+      "common": {
+        "name": "Charge",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "%"
+      },
+      "native": {}
+    },
+    {
+      "_id": "batteries.0.current",
+      "type": "state",
+      "common": {
+        "name": "Current",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "mA"
+      },
+      "native": {}
+    },
+    {
+      "_id": "batteries.0.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "batteries.0.temperature",
+      "type": "state",
+      "common": {
+        "name": "Temperature",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "°C"
+      },
+      "native": {}
+    },
+    {
+      "_id": "batteries.0.voltage",
+      "type": "state",
+      "common": {
+        "name": "Voltage",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "V"
+      },
+      "native": {}
+    },
+    {
+      "_id": "blades.days",
+      "type": "state",
+      "common": {
+        "name": "Blades days",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "blades.hours",
+      "type": "state",
+      "common": {
+        "name": "Blades hours",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "blades.quality",
+      "type": "state",
+      "common": {
+        "name": "Blades quality",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "%"
+      },
+      "native": {}
+    },
+    {
+      "_id": "clock.date",
+      "type": "state",
+      "common": {
+        "name": "Date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "clock.time",
+      "type": "state",
+      "common": {
+        "name": "Time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "clock.unix_timestamp",
+      "type": "state",
+      "common": {
+        "name": "Unix timestamp",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.0.code",
+      "type": "state",
+      "common": {
+        "name": "Error code",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.0.date",
+      "type": "state",
+      "common": {
+        "name": "Date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.0.message",
+      "type": "state",
+      "common": {
+        "name": "Error message",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.0.time",
+      "type": "state",
+      "common": {
+        "name": "Time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.0.unix_timestamp",
+      "type": "state",
+      "common": {
+        "name": "Unix timestamp",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.1.code",
+      "type": "state",
+      "common": {
+        "name": "Error code",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.1.date",
+      "type": "state",
+      "common": {
+        "name": "Date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.1.message",
+      "type": "state",
+      "common": {
+        "name": "Error message",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.1.time",
+      "type": "state",
+      "common": {
+        "name": "Time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.1.unix_timestamp",
+      "type": "state",
+      "common": {
+        "name": "Unix timestamp",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.2.code",
+      "type": "state",
+      "common": {
+        "name": "Error code",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.2.date",
+      "type": "state",
+      "common": {
+        "name": "Date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.2.message",
+      "type": "state",
+      "common": {
+        "name": "Error message",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.2.time",
+      "type": "state",
+      "common": {
+        "name": "Time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.2.unix_timestamp",
+      "type": "state",
+      "common": {
+        "name": "Unix timestamp",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.3.code",
+      "type": "state",
+      "common": {
+        "name": "Error code",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.3.date",
+      "type": "state",
+      "common": {
+        "name": "Date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.3.message",
+      "type": "state",
+      "common": {
+        "name": "Error message",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.3.time",
+      "type": "state",
+      "common": {
+        "name": "Time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.3.unix_timestamp",
+      "type": "state",
+      "common": {
+        "name": "Unix timestamp",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.4.code",
+      "type": "state",
+      "common": {
+        "name": "Error code",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.4.date",
+      "type": "state",
+      "common": {
+        "name": "Date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.4.message",
+      "type": "state",
+      "common": {
+        "name": "Error message",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.4.time",
+      "type": "state",
+      "common": {
+        "name": "Time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "error.4.unix_timestamp",
+      "type": "state",
+      "common": {
+        "name": "Unix timestamp",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.gpio1.flashonerror",
+      "type": "state",
+      "common": {
+        "name": "Flash on error",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.gpio1.inverted",
+      "type": "state",
+      "common": {
+        "name": "Inverted",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.gpio1.status",
+      "type": "state",
+      "common": {
+        "name": "Status",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": true,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.gpio2.flashonerror",
+      "type": "state",
+      "common": {
+        "name": "Flash on error",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.gpio2.inverted",
+      "type": "state",
+      "common": {
+        "name": "Inverted",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.gpio2.status",
+      "type": "state",
+      "common": {
+        "name": "Status",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": true,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.out1.flashonerror",
+      "type": "state",
+      "common": {
+        "name": "Flash on error",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.out1.inverted",
+      "type": "state",
+      "common": {
+        "name": "Inverted",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.out1.status",
+      "type": "state",
+      "common": {
+        "name": "Status",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": true,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.out2.flashonerror",
+      "type": "state",
+      "common": {
+        "name": "Flash on error",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.out2.inverted",
+      "type": "state",
+      "common": {
+        "name": "Inverted",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "extension.out2.status",
+      "type": "state",
+      "common": {
+        "name": "Status",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": true,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "health.humidity",
+      "type": "state",
+      "common": {
+        "name": "Humidity",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "%"
+      },
+      "native": {}
+    },
+    {
+      "_id": "health.temperature",
+      "type": "state",
+      "common": {
+        "name": "Temperature",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "°C"
+      },
+      "native": {}
+    },
+    {
+      "_id": "hours.charge",
+      "type": "state",
+      "common": {
+        "name": "Charge",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "hours"
+      },
+      "native": {}
+    },
+    {
+      "_id": "hours.charges",
+      "type": "state",
+      "common": {
+        "name": "Number of charges",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "hours.errors",
+      "type": "state",
+      "common": {
+        "name": "Number of errors",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "hours.mow",
+      "type": "state",
+      "common": {
+        "name": "Mow",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "hours"
+      },
+      "native": {}
+    },
+    {
+      "_id": "hours.run",
+      "type": "state",
+      "common": {
+        "name": "Run",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "hours"
+      },
+      "native": {}
+    },
+    {
+      "_id": "hours.search",
+      "type": "state",
+      "common": {
+        "name": "Search",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "hours"
+      },
+      "native": {}
+    },
+    {
+      "_id": "hours.since",
+      "type": "state",
+      "common": {
+        "name": "Since",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.bootloader.comment",
+      "type": "state",
+      "common": {
+        "name": "Comment",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.bootloader.compiled",
+      "type": "state",
+      "common": {
+        "name": "Compilation date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.bootloader.version",
+      "type": "state",
+      "common": {
+        "name": "Version",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.hardware.production",
+      "type": "state",
+      "common": {
+        "name": "Production date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.hardware.serial",
+      "type": "state",
+      "common": {
+        "name": "Serial no.",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.msw.compiled",
+      "type": "state",
+      "common": {
+        "name": "Compilation date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.msw.title",
+      "type": "state",
+      "common": {
+        "name": "Title",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.msw.version",
+      "type": "state",
+      "common": {
+        "name": "Version",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.robonect.comment",
+      "type": "state",
+      "common": {
+        "name": "Comment",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.robonect.compiled",
+      "type": "state",
+      "common": {
+        "name": "Compilation date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.robonect.serial",
+      "type": "state",
+      "common": {
+        "name": "Serial no.",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.robonect.version",
+      "type": "state",
+      "common": {
+        "name": "Version",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.sub.version",
+      "type": "state",
+      "common": {
+        "name": "Version",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.wlan.at-version",
+      "type": "state",
+      "common": {
+        "name": "AT-Version",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.wlan.sdk-version",
+      "type": "state",
+      "common": {
+        "name": "SDK-Version",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Connected to lawn mower",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "motor.blade.average",
+      "type": "state",
+      "common": {
+        "name": "Average",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "RPM"
+      },
+      "native": {}
+    },
+    {
+      "_id": "motor.blade.current",
+      "type": "state",
+      "common": {
+        "name": "Current",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "mA"
+      },
+      "native": {}
+    },
+    {
+      "_id": "motor.blade.speed",
+      "type": "state",
+      "common": {
+        "name": "Speed",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "RPM"
+      },
+      "native": {}
+    },
+    {
+      "_id": "motor.drive.left.current",
+      "type": "state",
+      "common": {
+        "name": "Current",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "mA"
+      },
+      "native": {}
+    },
+    {
+      "_id": "motor.drive.left.power",
+      "type": "state",
+      "common": {
+        "name": "Power",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "%"
+      },
+      "native": {}
+    },
+    {
+      "_id": "motor.drive.left.speed",
+      "type": "state",
+      "common": {
+        "name": "Speed",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "cm/s"
+      },
+      "native": {}
+    },
+    {
+      "_id": "motor.drive.right.current",
+      "type": "state",
+      "common": {
+        "name": "Current",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "mA"
+      },
+      "native": {}
+    },
+    {
+      "_id": "motor.drive.right.power",
+      "type": "state",
+      "common": {
+        "name": "Power",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "%"
+      },
+      "native": {}
+    },
+    {
+      "_id": "motor.drive.right.speed",
+      "type": "state",
+      "common": {
+        "name": "Speed",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "cm/s"
+      },
+      "native": {}
+    },
+    {
+      "_id": "portal.address.host.default",
+      "type": "state",
+      "common": {
+        "name": "Default",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "portal.address.host.friendly",
+      "type": "state",
+      "common": {
+        "name": "Friendly",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "portal.address.domain",
+      "type": "state",
+      "common": {
+        "name": "Domain",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "portal.address.url",
+      "type": "state",
+      "common": {
+        "name": "URL",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "portal.connected",
+      "type": "state",
+      "common": {
+        "name": "Connected",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "portal.enabled",
+      "type": "state",
+      "common": {
+        "name": "Enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.0.enter",
+      "type": "state",
+      "common": {
+        "name": "Trigger at enter",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.0.leave",
+      "type": "state",
+      "common": {
+        "name": "Trigger at leave",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.0.name",
+      "type": "state",
+      "common": {
+        "name": "Name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.1.enter",
+      "type": "state",
+      "common": {
+        "name": "Trigger at enter",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.1.leave",
+      "type": "state",
+      "common": {
+        "name": "Trigger at leave",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.1.name",
+      "type": "state",
+      "common": {
+        "name": "Name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.2.enter",
+      "type": "state",
+      "common": {
+        "name": "Trigger at enter",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.2.leave",
+      "type": "state",
+      "common": {
+        "name": "Trigger at leave",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.2.name",
+      "type": "state",
+      "common": {
+        "name": "Name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.3.enter",
+      "type": "state",
+      "common": {
+        "name": "Trigger at enter",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.3.leave",
+      "type": "state",
+      "common": {
+        "name": "Trigger at leave",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.3.name",
+      "type": "state",
+      "common": {
+        "name": "Name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.4.enter",
+      "type": "state",
+      "common": {
+        "name": "Trigger at enter",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.4.leave",
+      "type": "state",
+      "common": {
+        "name": "Trigger at leave",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.4.name",
+      "type": "state",
+      "common": {
+        "name": "Name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.5.enter",
+      "type": "state",
+      "common": {
+        "name": "Trigger at enter",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.5.leave",
+      "type": "state",
+      "common": {
+        "name": "Trigger at leave",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.5.name",
+      "type": "state",
+      "common": {
+        "name": "Name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.6.enter",
+      "type": "state",
+      "common": {
+        "name": "Trigger at enter",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.6.leave",
+      "type": "state",
+      "common": {
+        "name": "Trigger at leave",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.6.name",
+      "type": "state",
+      "common": {
+        "name": "Name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.7.enter",
+      "type": "state",
+      "common": {
+        "name": "Trigger at enter",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.7.leave",
+      "type": "state",
+      "common": {
+        "name": "Trigger at leave",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.7.name",
+      "type": "state",
+      "common": {
+        "name": "Name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.8.enter",
+      "type": "state",
+      "common": {
+        "name": "Trigger at enter",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.8.leave",
+      "type": "state",
+      "common": {
+        "name": "Trigger at leave",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.8.name",
+      "type": "state",
+      "common": {
+        "name": "Name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.9.enter",
+      "type": "state",
+      "common": {
+        "name": "Trigger at enter",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.9.leave",
+      "type": "state",
+      "common": {
+        "name": "Trigger at leave",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.trigger.9.name",
+      "type": "state",
+      "common": {
+        "name": "Name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.interval",
+      "type": "state",
+      "common": {
+        "name": "Interval",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "Sekunden"
+      },
+      "native": {}
+    },
+    {
+      "_id": "push.server_url",
+      "type": "state",
+      "common": {
+        "name": "Server URL",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.battery",
+      "type": "state",
+      "common": {
+        "name": "Battery",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "%"
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.distance",
+      "type": "state",
+      "common": {
+        "name": "Status distance",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "meters"
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.duration",
+      "type": "state",
+      "common": {
+        "name": "Status duration",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "seconds"
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.hours",
+      "type": "state",
+      "common": {
+        "name": "Operating hours",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "hours"
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.mode",
+      "type": "state",
+      "common": {
+        "name": "Current mode",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": true,
+        "desc": "",
+        "states": {
+          "0": "Auto",
+          "1": "Manuell",
+          "2": "Home",
+          "98": "End of day",
+          "99": "Job"
+        }
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.status",
+      "type": "state",
+      "common": {
+        "name": "Current status",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "states": {
+          "0": "Unbekannt",
+          "1": "Parken",
+          "2": "Mähen",
+          "3": "Suchen der Ladestation",
+          "4": "Laden",
+          "5": "Umsetzen",
+          "7": "Fehler",
+          "8": "Schleifensignal verloren",
+          "16": "Abgeschaltet",
+          "17": "Schlafen"
+        }
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.stopped",
+      "type": "state",
+      "common": {
+        "name": "Stopped",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.0.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.1.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.2.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.3.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.4.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.5.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.6.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.7.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.8.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.9.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.10.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.11.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.weekdays.friday",
+      "type": "state",
+      "common": {
+        "name": "Friday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.weekdays.monday",
+      "type": "state",
+      "common": {
+        "name": "Monday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.weekdays.saturday",
+      "type": "state",
+      "common": {
+        "name": "Saturday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.12.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.13.weekdays.sunday",
+      "type": "state",
+      "common": {
+        "name": "Sunday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.13.weekdays.thursday",
+      "type": "state",
+      "common": {
+        "name": "Thursday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.13.weekdays.tuesday",
+      "type": "state",
+      "common": {
+        "name": "Tuesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.13.weekdays.wednesday",
+      "type": "state",
+      "common": {
+        "name": "Wednesday",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.13.enabled",
+      "type": "state",
+      "common": {
+        "name": "Timer enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.13.end_time",
+      "type": "state",
+      "common": {
+        "name": "End time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.13.id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.13.start_time",
+      "type": "state",
+      "common": {
+        "name": "Start time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.next_date",
+      "type": "state",
+      "common": {
+        "name": "Next timer date",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.next_time",
+      "type": "state",
+      "common": {
+        "name": "Next timer time",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.next_unix",
+      "type": "state",
+      "common": {
+        "name": "Next timer time",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "timer.status",
+      "type": "state",
+      "common": {
+        "name": "Timer status",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "states": {
+          "0": "Deaktiviert",
+          "1": "Aktiv",
+          "2": "Standby"
+        }
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.dhcp.enable",
+      "type": "state",
+      "common": {
+        "name": "DHCP enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.dhcp.end",
+      "type": "state",
+      "common": {
+        "name": "DHCP end",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.dhcp.start",
+      "type": "state",
+      "common": {
+        "name": "DHCP start",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.channel",
+      "type": "state",
+      "common": {
+        "name": "Channel",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.enable",
+      "type": "state",
+      "common": {
+        "name": "AP enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.encryption",
+      "type": "state",
+      "common": {
+        "name": "Encryption",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.gateway",
+      "type": "state",
+      "common": {
+        "name": "Gateway",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.hidden",
+      "type": "state",
+      "common": {
+        "name": "SSID hidden",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.ip",
+      "type": "state",
+      "common": {
+        "name": "IP address",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.mac",
+      "type": "state",
+      "common": {
+        "name": "MAC address",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.maxconn",
+      "type": "state",
+      "common": {
+        "name": "Max. connections",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.netmask",
+      "type": "state",
+      "common": {
+        "name": "Netmask",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.password",
+      "type": "state",
+      "common": {
+        "name": "Password",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.ap.ssid",
+      "type": "state",
+      "common": {
+        "name": "SSID",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.station.dhcp",
+      "type": "state",
+      "common": {
+        "name": "DHCP activated",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.station.enable",
+      "type": "state",
+      "common": {
+        "name": "Enabled",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.station.gateway",
+      "type": "state",
+      "common": {
+        "name": "Gateway",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.station.ip",
+      "type": "state",
+      "common": {
+        "name": "IP address",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.station.mac",
+      "type": "state",
+      "common": {
+        "name": "MAC address",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.station.netmask",
+      "type": "state",
+      "common": {
+        "name": "Netmask",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.station.password",
+      "type": "state",
+      "common": {
+        "name": "Password",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.station.ping",
+      "type": "state",
+      "common": {
+        "name": "Ping activated",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.station.signal",
+      "type": "state",
+      "common": {
+        "name": "Signal strength",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "dB"
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.station.ssid",
+      "type": "state",
+      "common": {
+        "name": "SSID",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "wlan.signal",
+      "type": "state",
+      "common": {
+        "name": "Signal strenght",
+        "type": "number",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": "",
+        "unit": "dB"
+      },
+      "native": {}
+    },
+    {
+      "_id": "active",
+      "type": "state",
+      "common": {
+        "name": "Mower active",
+        "type": "boolean",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "id",
+      "type": "state",
+      "common": {
+        "name": "ID",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "last_sync",
+      "type": "state",
+      "common": {
+        "name": "Last synchronization",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "name",
+      "type": "state",
+      "common": {
+        "name": "Mower name",
+        "type": "string",
+        "role": "",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    }
+  ]
 }

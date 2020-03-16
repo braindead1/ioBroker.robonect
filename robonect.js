@@ -40,9 +40,6 @@ function startAdapter(options)
             return;
         }
 
-        // Initialize the adapter and create missing states
-        library.initialize();
-
         // Do the initial polling
         library.poll('Initial');
 
