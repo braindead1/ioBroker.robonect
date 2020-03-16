@@ -91,10 +91,11 @@
         },
         "mode": "daemon",
         "materialize": true,
+        "compact": true,
         "platform": "Javascript/Node.js",
         "loglevel": "info",
         "icon": "robonect.png",
-        "enabled": true,
+        "enabled": false,
         "extIcon": "https://raw.githubusercontent.com/braindead1/ioBroker.robonect/master/admin/robonect.png",
         "keywords": [
             "robonect",
