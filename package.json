@@ -27,7 +27,7 @@
       "email": "hufnagl@hotmail.com"
     }
   ],
-  "main": "main.js",
+  "main": "robonect.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/braindead1/ioBroker.robonect.git"
