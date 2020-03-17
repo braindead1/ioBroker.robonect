@@ -2,8 +2,20 @@
   "common": {
     "name": "robonect",
     "title": "Robonect",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "news": {
+      "0.0.7": {
+        "en": "prepared adapter for latest repository",
+        "de": "Adapter vorbereitet für das latest Repository",
+        "ru": "подготовленный адаптер для репозитория",
+        "pt": "adaptador preparado para o repositório mais recente",
+        "nl": "voorbereide adapter voor de laatste repository",
+        "fr": "adaptateur préparé pour le dernier référentiel",
+        "it": "adattatore preparato per il repository più recente",
+        "es": "Adaptador preparado para el último repositorio",
+        "pl": "przygotowany adapter do najnowszego repozytorium",
+        "zh-cn": "为最新存储库准备的适配器"
+      },
       "0.0.6": {
         "en": "fixed minor issues",
         "de": "kleinere Probleme behoben",
