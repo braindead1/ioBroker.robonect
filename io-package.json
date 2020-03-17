@@ -2,8 +2,20 @@
   "common": {
     "name": "robonect",
     "title": "Robonect",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "news": {
+      "0.0.8": {
+        "en": "fixed some issues caused by different configurations",
+        "de": "Einige Probleme behoben, die durch unterschiedliche Konfigurationen verursacht wurden",
+        "ru": "исправлены некоторые проблемы, вызванные различными конфигурациями",
+        "pt": "corrigidos alguns problemas causados por diferentes configurações",
+        "nl": "enkele problemen opgelost veroorzaakt door verschillende configuraties",
+        "fr": "correction de certains problèmes causés par différentes configurations",
+        "it": "risolti alcuni problemi causati da diverse configurazioni",
+        "es": "solucionó algunos problemas causados por diferentes configuraciones",
+        "pl": "naprawiono niektóre problemy spowodowane przez różne konfiguracje",
+        "zh-cn": "修复了不同配置导致的一些问题"
+      },
       "0.0.7": {
         "en": "prepared adapter for latest repository",
         "de": "Adapter vorbereitet für das latest Repository",

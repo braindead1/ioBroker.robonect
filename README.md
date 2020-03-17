@@ -1,6 +1,5 @@
 ![Logo](admin/robonect.png)
-ioBroker.robonect
-=============
+# ioBroker.robonect
 
 **Tests:** Linux/Mac: [![Build Status](https://travis-ci.org/braindead1/ioBroker.robonect.svg?branch=master)](https://travis-ci.org/braindead1/ioBroker.robonect)
 Windows: [![Build status](https://ci.appveyor.com/api/projects/status/yl79oamamifjvqrq?svg=true)](https://ci.appveyor.com/project/braindead1/iobroker-robonect)
@@ -22,6 +21,9 @@ The mode of the lawn mower can be controlled by changing robonect.0.status.mode.
 It is possible to control the extensions GPIO 1, GPIO 2, OUT 1 and OUT 2 of the Robonect module. Requirement is that the mode of the extension is configured as "API" via the Robonect Web-UI. If for example LEDs are connected to OUT1, it is possible to switch them on in the night and off in the morning by setting Robonect.0.extension.out1.status to "true" or "false".
 
 ## Changelog
+### 0.0.8
+* (braindead1) fixed some issues caused by different configurations
+
 ### 0.0.7
 * (braindead1) prepared adapter for latest repository
 
