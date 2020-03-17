@@ -43,7 +43,7 @@ function startAdapter(options)
         // Do the initial polling
         library.poll('Initial');
 
-        adapter.subscribeStates("*");
+        adapter.subscribeStates('*');
 
         infoInterval = setInterval(function() { library.poll('Info') }, library.infoInterval * 1000);
         statusInterval = setInterval(function() { library.poll('Status') }, library.statusInterval * 1000);
@@ -68,15 +68,15 @@ function startAdapter(options)
 	{
 		// Warning, state can be null if it was deleted
         if (typeof state == 'object' && !state.ack) {
-            if (id === adapter.namespace + ".extension.gpio1.status") {
+            if (id === adapter.namespace + '.extension.gpio1.status') {
                 library.updateExtensionStatus('gpio1', state.val);
-            } else if (id === adapter.namespace + ".extension.gpio2.status") {
+            } else if (id === adapter.namespace + '.extension.gpio2.status') {
                 library.updateExtensionStatus('gpio2', state.val);
-            } else if (id === adapter.namespace + ".extension.out1.status") {
+            } else if (id === adapter.namespace + '.extension.out1.status') {
                 library.updateExtensionStatus('out1', state.val);
-            } else if (id === adapter.namespace + ".extension.out2.status") {
+            } else if (id === adapter.namespace + '.extension.out2.status') {
                 library.updateExtensionStatus('out2', state.val);
-            } else if (id === adapter.namespace + ".status.mode") {
+            } else if (id === adapter.namespace + '.status.mode') {
                 library.updateMode(state.val);
             }
         }		
