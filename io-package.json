@@ -2,8 +2,20 @@
   "common": {
     "name": "robonect",
     "title": "Robonect",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "news": {
+      "0.0.9": {
+        "en": "adapter improvements",
+        "de": "Adapter Verbesserungen",
+        "ru": "улучшения адаптера",
+        "pt": "melhorias no adaptador",
+        "nl": "adapter verbeteringen",
+        "fr": "améliorations de l'adaptateur",
+        "it": "miglioramenti dell'adattatore",
+        "es": "mejoras del adaptador",
+        "pl": "ulepszenia adaptera",
+        "zh-cn": "适配器改进"
+      },
       "0.0.8": {
         "en": "fixed some issues caused by different configurations",
         "de": "Einige Probleme behoben, die durch unterschiedliche Konfigurationen verursacht wurden",
