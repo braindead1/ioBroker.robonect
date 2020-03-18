@@ -156,7 +156,7 @@
       "common": {
         "name": "Full capacity",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -170,7 +170,7 @@
       "common": {
         "name": "Remaining capacity",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -184,7 +184,7 @@
       "common": {
         "name": "Charge",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -198,7 +198,7 @@
       "common": {
         "name": "Current",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -212,7 +212,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -225,7 +225,7 @@
       "common": {
         "name": "Temperature",
         "type": "number",
-        "role": "",
+        "role": "value.temperature",
         "read": true,
         "write": false,
         "desc": "",
@@ -239,7 +239,7 @@
       "common": {
         "name": "Voltage",
         "type": "number",
-        "role": "",
+        "role": "value.voltage",
         "read": true,
         "write": false,
         "desc": "",
@@ -253,7 +253,7 @@
       "common": {
         "name": "Blades days",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": ""
@@ -266,10 +266,11 @@
       "common": {
         "name": "Blades hours",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
-        "desc": ""
+        "desc": "",
+        "unit": "hrs"
       },
       "native": {}
     },
@@ -279,7 +280,7 @@
       "common": {
         "name": "Blades quality",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -293,7 +294,7 @@
       "common": {
         "name": "Date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -306,7 +307,7 @@
       "common": {
         "name": "Time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -319,7 +320,7 @@
       "common": {
         "name": "Unix timestamp",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -332,7 +333,7 @@
       "common": {
         "name": "Error code",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -345,7 +346,7 @@
       "common": {
         "name": "Date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -358,7 +359,7 @@
       "common": {
         "name": "Error message",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -371,7 +372,7 @@
       "common": {
         "name": "Time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -384,7 +385,7 @@
       "common": {
         "name": "Unix timestamp",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -397,7 +398,7 @@
       "common": {
         "name": "Error code",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -410,7 +411,7 @@
       "common": {
         "name": "Date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -423,7 +424,7 @@
       "common": {
         "name": "Error message",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -436,7 +437,7 @@
       "common": {
         "name": "Time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -449,7 +450,7 @@
       "common": {
         "name": "Unix timestamp",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -462,7 +463,7 @@
       "common": {
         "name": "Error code",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -475,7 +476,7 @@
       "common": {
         "name": "Date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -488,7 +489,7 @@
       "common": {
         "name": "Error message",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -501,7 +502,7 @@
       "common": {
         "name": "Time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -514,7 +515,7 @@
       "common": {
         "name": "Unix timestamp",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -527,7 +528,7 @@
       "common": {
         "name": "Error code",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -540,7 +541,7 @@
       "common": {
         "name": "Date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -553,7 +554,7 @@
       "common": {
         "name": "Error message",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -566,7 +567,7 @@
       "common": {
         "name": "Time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -579,7 +580,7 @@
       "common": {
         "name": "Unix timestamp",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -592,7 +593,7 @@
       "common": {
         "name": "Error code",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -605,7 +606,7 @@
       "common": {
         "name": "Date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -618,7 +619,7 @@
       "common": {
         "name": "Error message",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -631,7 +632,7 @@
       "common": {
         "name": "Time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -644,7 +645,7 @@
       "common": {
         "name": "Unix timestamp",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -657,7 +658,7 @@
       "common": {
         "name": "Flash on error",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -670,7 +671,7 @@
       "common": {
         "name": "Inverted",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -683,7 +684,7 @@
       "common": {
         "name": "Status",
         "type": "boolean",
-        "role": "",
+        "role": "switch",
         "read": true,
         "write": true,
         "desc": ""
@@ -696,7 +697,7 @@
       "common": {
         "name": "Flash on error",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -709,7 +710,7 @@
       "common": {
         "name": "Inverted",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -722,7 +723,7 @@
       "common": {
         "name": "Status",
         "type": "boolean",
-        "role": "",
+        "role": "switch",
         "read": true,
         "write": true,
         "desc": ""
@@ -735,7 +736,7 @@
       "common": {
         "name": "Flash on error",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -748,7 +749,7 @@
       "common": {
         "name": "Inverted",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -761,7 +762,7 @@
       "common": {
         "name": "Status",
         "type": "boolean",
-        "role": "",
+        "role": "switch",
         "read": true,
         "write": true,
         "desc": ""
@@ -774,7 +775,7 @@
       "common": {
         "name": "Flash on error",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -787,7 +788,7 @@
       "common": {
         "name": "Inverted",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -800,7 +801,7 @@
       "common": {
         "name": "Status",
         "type": "boolean",
-        "role": "",
+        "role": "switch",
         "read": true,
         "write": true,
         "desc": ""
@@ -813,7 +814,7 @@
       "common": {
         "name": "Humidity",
         "type": "number",
-        "role": "",
+        "role": "value.humidity",
         "read": true,
         "write": false,
         "desc": "",
@@ -827,7 +828,7 @@
       "common": {
         "name": "Temperature",
         "type": "number",
-        "role": "",
+        "role": "value.temperature",
         "read": true,
         "write": false,
         "desc": "",
@@ -841,11 +842,11 @@
       "common": {
         "name": "Charge",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
-        "unit": "hours"
+        "unit": "hrs"
       },
       "native": {}
     },
@@ -855,7 +856,7 @@
       "common": {
         "name": "Number of charges",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": ""
@@ -868,7 +869,7 @@
       "common": {
         "name": "Number of errors",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": ""
@@ -881,11 +882,11 @@
       "common": {
         "name": "Mow",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
-        "unit": "hours"
+        "unit": "hrs"
       },
       "native": {}
     },
@@ -895,11 +896,11 @@
       "common": {
         "name": "Run",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
-        "unit": "hours"
+        "unit": "hrs"
       },
       "native": {}
     },
@@ -909,11 +910,11 @@
       "common": {
         "name": "Search",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
-        "unit": "hours"
+        "unit": "hrs"
       },
       "native": {}
     },
@@ -923,7 +924,7 @@
       "common": {
         "name": "Since",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -936,7 +937,7 @@
       "common": {
         "name": "Comment",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -949,7 +950,7 @@
       "common": {
         "name": "Compilation date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -962,7 +963,7 @@
       "common": {
         "name": "Version",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -975,7 +976,7 @@
       "common": {
         "name": "Production date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -988,7 +989,7 @@
       "common": {
         "name": "Serial no.",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1001,7 +1002,7 @@
       "common": {
         "name": "Compilation date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1014,7 +1015,7 @@
       "common": {
         "name": "Title",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1027,7 +1028,7 @@
       "common": {
         "name": "Version",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1040,7 +1041,7 @@
       "common": {
         "name": "Comment",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1053,7 +1054,7 @@
       "common": {
         "name": "Compilation date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1066,7 +1067,7 @@
       "common": {
         "name": "Serial no.",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1079,7 +1080,7 @@
       "common": {
         "name": "Version",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1092,7 +1093,7 @@
       "common": {
         "name": "Version",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1105,7 +1106,7 @@
       "common": {
         "name": "AT-Version",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1118,7 +1119,7 @@
       "common": {
         "name": "SDK-Version",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1144,7 +1145,7 @@
       "common": {
         "name": "Average",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -1158,7 +1159,7 @@
       "common": {
         "name": "Current",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -1172,7 +1173,7 @@
       "common": {
         "name": "Speed",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -1186,7 +1187,7 @@
       "common": {
         "name": "Current",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -1200,7 +1201,7 @@
       "common": {
         "name": "Power",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -1214,7 +1215,7 @@
       "common": {
         "name": "Speed",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -1228,7 +1229,7 @@
       "common": {
         "name": "Current",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -1242,7 +1243,7 @@
       "common": {
         "name": "Power",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -1256,7 +1257,7 @@
       "common": {
         "name": "Speed",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -1270,7 +1271,7 @@
       "common": {
         "name": "Default",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1283,7 +1284,7 @@
       "common": {
         "name": "Friendly",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1296,7 +1297,7 @@
       "common": {
         "name": "Domain",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1309,7 +1310,7 @@
       "common": {
         "name": "URL",
         "type": "string",
-        "role": "",
+        "role": "url",
         "read": true,
         "write": false,
         "desc": ""
@@ -1322,7 +1323,7 @@
       "common": {
         "name": "Connected",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1335,7 +1336,7 @@
       "common": {
         "name": "Enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1348,7 +1349,7 @@
       "common": {
         "name": "Trigger at enter",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1361,7 +1362,7 @@
       "common": {
         "name": "Trigger at leave",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1374,7 +1375,7 @@
       "common": {
         "name": "Name",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1387,7 +1388,7 @@
       "common": {
         "name": "Trigger at enter",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1400,7 +1401,7 @@
       "common": {
         "name": "Trigger at leave",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1413,7 +1414,7 @@
       "common": {
         "name": "Name",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1426,7 +1427,7 @@
       "common": {
         "name": "Trigger at enter",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1439,7 +1440,7 @@
       "common": {
         "name": "Trigger at leave",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1452,7 +1453,7 @@
       "common": {
         "name": "Name",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1465,7 +1466,7 @@
       "common": {
         "name": "Trigger at enter",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1478,7 +1479,7 @@
       "common": {
         "name": "Trigger at leave",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1491,7 +1492,7 @@
       "common": {
         "name": "Name",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1504,7 +1505,7 @@
       "common": {
         "name": "Trigger at enter",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1517,7 +1518,7 @@
       "common": {
         "name": "Trigger at leave",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1530,7 +1531,7 @@
       "common": {
         "name": "Name",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1543,7 +1544,7 @@
       "common": {
         "name": "Trigger at enter",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1556,7 +1557,7 @@
       "common": {
         "name": "Trigger at leave",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1569,7 +1570,7 @@
       "common": {
         "name": "Name",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1582,7 +1583,7 @@
       "common": {
         "name": "Trigger at enter",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1595,7 +1596,7 @@
       "common": {
         "name": "Trigger at leave",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1608,7 +1609,7 @@
       "common": {
         "name": "Name",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1621,7 +1622,7 @@
       "common": {
         "name": "Trigger at enter",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1634,7 +1635,7 @@
       "common": {
         "name": "Trigger at leave",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1647,7 +1648,7 @@
       "common": {
         "name": "Name",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1660,7 +1661,7 @@
       "common": {
         "name": "Trigger at enter",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1673,7 +1674,7 @@
       "common": {
         "name": "Trigger at leave",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1686,7 +1687,7 @@
       "common": {
         "name": "Name",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1699,7 +1700,7 @@
       "common": {
         "name": "Trigger at enter",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1712,7 +1713,7 @@
       "common": {
         "name": "Trigger at leave",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1725,7 +1726,7 @@
       "common": {
         "name": "Name",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -1738,11 +1739,11 @@
       "common": {
         "name": "Interval",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
-        "unit": "Sekunden"
+        "unit": "sec"
       },
       "native": {}
     },
@@ -1752,7 +1753,7 @@
       "common": {
         "name": "Server URL",
         "type": "string",
-        "role": "",
+        "role": "url",
         "read": true,
         "write": false,
         "desc": ""
@@ -1765,7 +1766,7 @@
       "common": {
         "name": "Battery",
         "type": "number",
-        "role": "",
+        "role": "value.battery",
         "read": true,
         "write": false,
         "desc": "",
@@ -1779,7 +1780,7 @@
       "common": {
         "name": "Status distance",
         "type": "number",
-        "role": "",
+        "role": "value.distance",
         "read": true,
         "write": false,
         "desc": "",
@@ -1793,11 +1794,11 @@
       "common": {
         "name": "Status duration",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
-        "unit": "seconds"
+        "unit": "sec"
       },
       "native": {}
     },
@@ -1807,11 +1808,11 @@
       "common": {
         "name": "Operating hours",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
-        "unit": "hours"
+        "unit": "hrs"
       },
       "native": {}
     },
@@ -1821,7 +1822,7 @@
       "common": {
         "name": "Current mode",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": true,
         "desc": "",
@@ -1841,7 +1842,7 @@
       "common": {
         "name": "Current status",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": "",
@@ -1866,7 +1867,7 @@
       "common": {
         "name": "Stopped",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1879,7 +1880,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1892,7 +1893,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1905,7 +1906,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1918,7 +1919,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1931,7 +1932,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1944,7 +1945,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1957,7 +1958,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1970,7 +1971,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1983,7 +1984,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -1996,7 +1997,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2009,7 +2010,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2022,7 +2023,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2035,7 +2036,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2048,7 +2049,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2061,7 +2062,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2074,7 +2075,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2087,7 +2088,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2100,7 +2101,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2113,7 +2114,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2126,7 +2127,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2139,7 +2140,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2152,7 +2153,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2165,7 +2166,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2178,7 +2179,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2191,7 +2192,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2204,7 +2205,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2217,7 +2218,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2230,7 +2231,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2243,7 +2244,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2256,7 +2257,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2269,7 +2270,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2282,7 +2283,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2295,7 +2296,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2308,7 +2309,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2321,7 +2322,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2334,7 +2335,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2347,7 +2348,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2360,7 +2361,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2373,7 +2374,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2386,7 +2387,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2399,7 +2400,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2412,7 +2413,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2425,7 +2426,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2438,7 +2439,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2451,7 +2452,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2464,7 +2465,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2477,7 +2478,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2490,7 +2491,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2503,7 +2504,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2516,7 +2517,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2529,7 +2530,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2542,7 +2543,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2555,7 +2556,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2568,7 +2569,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2581,7 +2582,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2594,7 +2595,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2607,7 +2608,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2620,7 +2621,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2633,7 +2634,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2646,7 +2647,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2659,7 +2660,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2672,7 +2673,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2685,7 +2686,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2698,7 +2699,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2711,7 +2712,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2724,7 +2725,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2737,7 +2738,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2750,7 +2751,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2763,7 +2764,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2776,7 +2777,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2789,7 +2790,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2802,7 +2803,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2815,7 +2816,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2828,7 +2829,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2841,7 +2842,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2854,7 +2855,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2867,7 +2868,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2880,7 +2881,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2893,7 +2894,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2906,7 +2907,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2919,7 +2920,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2932,7 +2933,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2945,7 +2946,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2958,7 +2959,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2971,7 +2972,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2984,7 +2985,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -2997,7 +2998,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3010,7 +3011,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3023,7 +3024,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3036,7 +3037,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3049,7 +3050,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3062,7 +3063,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3075,7 +3076,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3088,7 +3089,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3101,7 +3102,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3114,7 +3115,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3127,7 +3128,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3140,7 +3141,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3153,7 +3154,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3166,7 +3167,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3179,7 +3180,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3192,7 +3193,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3205,7 +3206,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3218,7 +3219,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3231,7 +3232,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3244,7 +3245,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3257,7 +3258,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3270,7 +3271,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3283,7 +3284,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3296,7 +3297,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3309,7 +3310,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3322,7 +3323,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3335,7 +3336,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3348,7 +3349,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3361,7 +3362,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3374,7 +3375,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3387,7 +3388,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3400,7 +3401,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3413,7 +3414,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3426,7 +3427,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3439,7 +3440,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3452,7 +3453,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3465,7 +3466,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3478,7 +3479,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3491,7 +3492,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3504,7 +3505,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3517,7 +3518,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3530,7 +3531,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3543,7 +3544,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3556,7 +3557,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3569,7 +3570,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3582,7 +3583,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3595,7 +3596,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3608,7 +3609,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3621,7 +3622,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3634,7 +3635,7 @@
       "common": {
         "name": "Friday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3647,7 +3648,7 @@
       "common": {
         "name": "Monday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3660,7 +3661,7 @@
       "common": {
         "name": "Saturday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3673,7 +3674,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3686,7 +3687,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3699,7 +3700,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3712,7 +3713,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3725,7 +3726,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3738,7 +3739,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3751,7 +3752,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3764,7 +3765,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3777,7 +3778,7 @@
       "common": {
         "name": "Sunday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3790,7 +3791,7 @@
       "common": {
         "name": "Thursday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3803,7 +3804,7 @@
       "common": {
         "name": "Tuesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3816,7 +3817,7 @@
       "common": {
         "name": "Wednesday",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3829,7 +3830,7 @@
       "common": {
         "name": "Timer enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3842,7 +3843,7 @@
       "common": {
         "name": "End time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3855,7 +3856,7 @@
       "common": {
         "name": "ID",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3868,7 +3869,7 @@
       "common": {
         "name": "Start time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3881,7 +3882,7 @@
       "common": {
         "name": "Next timer date",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3894,7 +3895,7 @@
       "common": {
         "name": "Next timer time",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3907,7 +3908,7 @@
       "common": {
         "name": "Next timer time",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3920,7 +3921,7 @@
       "common": {
         "name": "Timer status",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": "",
@@ -3938,7 +3939,7 @@
       "common": {
         "name": "DHCP enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3951,7 +3952,7 @@
       "common": {
         "name": "DHCP end",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3964,7 +3965,7 @@
       "common": {
         "name": "DHCP start",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3977,7 +3978,7 @@
       "common": {
         "name": "Channel",
         "type": "number",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -3990,7 +3991,7 @@
       "common": {
         "name": "AP enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4003,7 +4004,7 @@
       "common": {
         "name": "Encryption",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4016,7 +4017,7 @@
       "common": {
         "name": "Gateway",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4029,7 +4030,7 @@
       "common": {
         "name": "SSID hidden",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4042,7 +4043,7 @@
       "common": {
         "name": "IP address",
         "type": "string",
-        "role": "",
+        "role": "info.ip",
         "read": true,
         "write": false,
         "desc": ""
@@ -4055,7 +4056,7 @@
       "common": {
         "name": "MAC address",
         "type": "string",
-        "role": "",
+        "role": "info.mac",
         "read": true,
         "write": false,
         "desc": ""
@@ -4068,7 +4069,7 @@
       "common": {
         "name": "Max. connections",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": ""
@@ -4081,7 +4082,7 @@
       "common": {
         "name": "Netmask",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4094,7 +4095,7 @@
       "common": {
         "name": "Password",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -4107,7 +4108,7 @@
       "common": {
         "name": "SSID",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -4120,7 +4121,7 @@
       "common": {
         "name": "DHCP activated",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4133,7 +4134,7 @@
       "common": {
         "name": "Enabled",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4146,7 +4147,7 @@
       "common": {
         "name": "Gateway",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4159,7 +4160,7 @@
       "common": {
         "name": "IP address",
         "type": "string",
-        "role": "",
+        "role": "info.ip",
         "read": true,
         "write": false,
         "desc": ""
@@ -4172,7 +4173,7 @@
       "common": {
         "name": "MAC address",
         "type": "string",
-        "role": "",
+        "role": "info.mac",
         "read": true,
         "write": false,
         "desc": ""
@@ -4185,7 +4186,7 @@
       "common": {
         "name": "Netmask",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4198,7 +4199,7 @@
       "common": {
         "name": "Password",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -4211,7 +4212,7 @@
       "common": {
         "name": "Ping activated",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4224,7 +4225,7 @@
       "common": {
         "name": "Signal strength",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -4238,7 +4239,7 @@
       "common": {
         "name": "SSID",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -4249,9 +4250,9 @@
       "_id": "wlan.signal",
       "type": "state",
       "common": {
-        "name": "Signal strenght",
+        "name": "Signal strength",
         "type": "number",
-        "role": "",
+        "role": "value",
         "read": true,
         "write": false,
         "desc": "",
@@ -4265,7 +4266,7 @@
       "common": {
         "name": "Mower active",
         "type": "boolean",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4278,7 +4279,7 @@
       "common": {
         "name": "ID",
         "type": "string",
-        "role": "",
+        "role": "text",
         "read": true,
         "write": false,
         "desc": ""
@@ -4291,7 +4292,7 @@
       "common": {
         "name": "Last synchronization",
         "type": "string",
-        "role": "",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
@@ -4304,7 +4305,7 @@
       "common": {
         "name": "Mower name",
         "type": "string",
-        "role": "",
+        "role": "info.name",
         "read": true,
         "write": false,
         "desc": ""
