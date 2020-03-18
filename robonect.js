@@ -14,8 +14,8 @@ const Library = require('./lib/library.js');
  */
 let adapter;
 let library;
-var infoInterval;
-var statusInterval;
+let infoTimeout;
+let statusTimeout;
 
 
 /*
@@ -43,8 +43,22 @@ function startAdapter(options) {
 
         adapter.subscribeStates('*');
 
-        infoInterval = setInterval(function () { library.poll('Info') }, library.infoInterval * 1000);
-        statusInterval = setInterval(function () { library.poll('Status') }, library.statusInterval * 1000);
+        // Start regular pollings
+        if (library.infoInterval > 0) {
+            infoTimeout = setTimeout(function pollInfo() {
+                library.poll('Info');
+    
+                infoTimeout = setTimeout(pollInfo, library.infoInterval * 1000);
+            }, library.infoInterval * 1000);
+        }
+
+        if (library.statusInterval > 0) {
+            statusTimeout = setTimeout(function pollStatus() {
+                library.poll('Status');
+                
+                statusTimeout = setTimeout(pollStatus, library.statusInterval * 1000);
+            }, library.statusInterval * 1000);
+        }
 
         adapter.log.info('Done');
     });
@@ -99,8 +113,8 @@ function startAdapter(options) {
 	 */
     adapter.on('unload', function (callback) {
         try {
-            clearInterval(infoInterval);
-            clearInterval(statusInterval);
+            clearTimeout(infoTimeout);
+            clearTimeout(statusTimeout);
 
             adapter.log.info('cleaned everything up...');
             callback();
