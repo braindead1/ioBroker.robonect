@@ -240,6 +240,18 @@ systemDictionary = {
         "pl": "Wersja",
         "zh-cn": "版"
     },
+    "Weather": {
+        "en": "Weather",
+        "de": "Wetter",
+        "ru": "Погода",
+        "pt": "Clima",
+        "nl": "Weer",
+        "fr": "Météo",
+        "it": "Tempo metereologico",
+        "es": "Clima",
+        "pl": "Pogoda",
+        "zh-cn": "天气"
+    },
     "WLAN": {
         "en": "WLAN",
         "de": "WLAN",
