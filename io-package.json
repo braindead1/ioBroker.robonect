@@ -2,8 +2,20 @@
   "common": {
     "name": "robonect",
     "title": "Robonect",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "news": {
+      "0.0.10": {
+        "en": "first stable version",
+        "de": "erste stabile Version",
+        "ru": "первая стабильная версия",
+        "pt": "primeira versão estável",
+        "nl": "eerste stabiele versie",
+        "fr": "première version stable",
+        "it": "prima versione stabile",
+        "es": "primera versión estable",
+        "pl": "pierwsza stabilna wersja",
+        "zh-cn": "第一个稳定版本"
+      },
       "0.0.9": {
         "en": "adapter improvements",
         "de": "Adapter Verbesserungen",
