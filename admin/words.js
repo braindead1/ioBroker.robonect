@@ -168,6 +168,18 @@ systemDictionary = {
         "pl": "Rozszerzenia",
         "zh-cn": "扩展名"
     },
+    "GPS": {
+        "en": "GPS",
+        "de": "GPS",
+        "ru": "GPS",
+        "pt": "GPS",
+        "nl": "GPS",
+        "fr": "GPS",
+        "it": "GPS",
+        "es": "GPS",
+        "pl": "GPS",
+        "zh-cn": "全球定位系统"
+    },
     "Hours": {
         "en": "Hours",
         "de": "Betriebsstunden",

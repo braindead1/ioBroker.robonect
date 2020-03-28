@@ -164,6 +164,7 @@
     "batteryPollType": "Info",
     "errorsPollType": "Info",
     "extensionPollType": "Info",
+    "gpsPollType": "Info",
     "hoursPollType": "Info",
     "motorPollType": "Info",
     "portalPollType": "Info",
@@ -829,6 +830,45 @@
         "role": "switch",
         "read": true,
         "write": true,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "gps.latitude",
+      "type": "state",
+      "common": {
+        "name": "Latitude",
+        "type": "number",
+        "role": "value.gps.latitude",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "gps.longitude",
+      "type": "state",
+      "common": {
+        "name": "Longitude",
+        "type": "number",
+        "role": "value.gps.longitude",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "gps.satellites",
+      "type": "state",
+      "common": {
+        "name": "Latitude",
+        "type": "number",
+        "role": "value",
+        "read": true,
+        "write": false,
         "desc": ""
       },
       "native": {}
