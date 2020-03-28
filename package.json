@@ -1,6 +1,6 @@
 {
   "name": "iobroker.robonect",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "ioBroker robonect Adapter",
   "keywords": [
     "ioBroker",

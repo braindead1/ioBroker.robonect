@@ -2,8 +2,20 @@
   "common": {
     "name": "robonect",
     "title": "Robonect",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "news": {
+      "0.0.11": {
+        "en": "implemented weather and GPS polls",
+        "de": "Wetter- und GPS-Abfragen implementiert",
+        "ru": "реализованы прогнозы погоды и GPS",
+        "pt": "implementadas pesquisas meteorológicas e GPS",
+        "nl": "geïmplementeerde weer- en GPS-polls",
+        "fr": "sondages météorologiques et GPS mis en œuvre",
+        "it": "implementato sondaggi meteo e GPS",
+        "es": "encuestas meteorológicas y GPS implementadas",
+        "pl": "zaimplementowane ankiety pogodowe i GPS",
+        "zh-cn": "实施天气和GPS民意测验"
+      },
       "0.0.10": {
         "en": "first stable version",
         "de": "erste stabile Version",
