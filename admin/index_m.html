@@ -48,6 +48,12 @@
             });
             onChange(false);
             M.updateTextFields();  // function Materialize.updateTextFields(); to reinitialize all the Materialize labels on the page if you are dynamically adding inputs.
+
+            $(document).ready(function(){
+                $('.timepicker').timepicker({
+                    'twelveHour': false
+                });
+            });
         }
 
         // ... and the function save has to exist.
@@ -69,7 +75,8 @@
 
     <style>
         .sub-title {
-            margin-top: 2rem!important;
+            margin-top: 0.5rem!important;
+            margin-bottom: 0.5rem!important;
             padding: 0.5rem;
             background: #64b5f6;
             color: white;
@@ -87,7 +94,7 @@
                     <img src="robonect.png" class="logo">
                 </div>
             </div>
-            <h6 class="translate sub-title">Network</h6>
+            <div class="translate sub-title">Network</div>
             <div class="row">
                 <div class="input-field col s12 m6">
                     <input type="text" id="robonectIp" placeholder="192.168.x.x" maxlength="15" class="value" />
@@ -104,7 +111,7 @@
                     <label for="password" class="translate">Password</label>
                 </div>
             </div>
-            <h6 class="translate sub-title">Polling interval</h6>
+            <div class="translate sub-title">Polling interval</div>
             <div class="row">
                 <div class="input-field col s12 m6">
                     <input type="number" id="statusInterval" min="0" class="value" />
@@ -115,7 +122,32 @@
                     <label for="infoInterval" class="translate">Info (sec)</label>
                 </div>
             </div>
-            <h6 class="translate sub-title">Polling type</h6>
+            <div class="translate sub-title">Rest periods</div>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <div class="translate">Rest period 1</div>
+                    <div class="input-field col s6">
+                        <input type="text" id="restPeriod1Start" class="value timepicker" />
+                        <label for="period1Start" class="translate">Start</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" id="restPeriod1End" class="value timepicker" />
+                        <label for="period1End" class="translate">End</label>
+                    </div>
+                </div>
+                <div class="input-field col s12 m6">
+                    <div class="translate">Rest period 2</div>
+                    <div class="input-field col s6">
+                        <input type="text" id="restPeriod2Start" class="value timepicker" />
+                        <label for="period2Start" class="translate">Start</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" id="restPeriod2End" class="value timepicker" />
+                        <label for="period2End" class="translate">End</label>
+                    </div>
+                </div>
+            </div>
+            <div class="translate sub-title">Polling type</div>
             <div class="row">
                 <div class="input-field col s12 m6 l4">
                     <select id="batteryPollType" class="value">

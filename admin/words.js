@@ -144,6 +144,18 @@ systemDictionary = {
         "pl": "Bateria",
         "zh-cn": "电池"
     },
+    "End": {
+        "en": "End",
+        "de": "Ende",
+        "ru": "Конец",
+        "pt": "Fim",
+        "nl": "Einde",
+        "fr": "Fin",
+        "it": "Fine",
+        "es": "Fin",
+        "pl": "Koniec",
+        "zh-cn": "结束"
+    },
     "Errors": {
         "en": "Errors",
         "de": "Fehler",
@@ -227,6 +239,54 @@ systemDictionary = {
         "es": "empujar",
         "pl": "Pchać",
         "zh-cn": "推"
+    },
+    "Rest period 1": {
+        "en": "Rest period 1",
+        "de": "Ruhezeit 1",
+        "ru": "Период отдыха 1",
+        "pt": "Período de descanso 1",
+        "nl": "Rustperiode 1",
+        "fr": "Période de repos 1",
+        "it": "Periodo di riposo 1",
+        "es": "Período de descanso 1",
+        "pl": "Okres odpoczynku 1",
+        "zh-cn": "休息期1"
+    },
+    "Rest period 2": {
+        "en": "Rest period 2",
+        "de": "Ruhezeit 2",
+        "ru": "Период отдыха 2",
+        "pt": "Período de descanso 2",
+        "nl": "Rustperiode 2",
+        "fr": "Période de repos 2",
+        "it": "Periodo di riposo 2",
+        "es": "Período de descanso 2",
+        "pl": "Okres odpoczynku 2",
+        "zh-cn": "休息时间2"
+    },
+    "Rest periods": {
+        "en": "Rest periods",
+        "de": "Ruhezeiten",
+        "ru": "Периоды отдыха",
+        "pt": "Períodos de descanso",
+        "nl": "Rusttijden",
+        "fr": "Périodes de repos",
+        "it": "Periodi di riposo",
+        "es": "Períodos de descanso",
+        "pl": "Okresy odpoczynku",
+        "zh-cn": "休息时间"
+    },
+    "Start": {
+        "en": "Start",
+        "de": "Anfang",
+        "ru": "Начните",
+        "pt": "Começar",
+        "nl": "Begin",
+        "fr": "Début",
+        "it": "Inizio",
+        "es": "comienzo",
+        "pl": "Początek",
+        "zh-cn": "开始"
     },
     "Timer": {
         "en": "Timer",

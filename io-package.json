@@ -185,6 +185,10 @@
   "native": {
     "statusInterval": 60,
     "infoInterval": 900,
+    "restPeriod1Start": "",
+    "restPeriod1End": "",
+    "restPeriod2Start": "",
+    "restPeriod2End": "",
     "batteryPollType": "Info",
     "errorsPollType": "Info",
     "extensionPollType": "Info",
@@ -4733,10 +4737,23 @@
       "native": {}
     },
     {
-      "_id": "active",
+      "_id": "id",
       "type": "state",
       "common": {
-        "name": "Mower active",
+        "name": "ID",
+        "type": "string",
+        "role": "text",
+        "read": true,
+        "write": false,
+        "desc": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "online",
+      "type": "state",
+      "common": {
+        "name": "Mower is online",
         "type": "boolean",
         "role": "state",
         "read": true,
@@ -4746,12 +4763,12 @@
       "native": {}
     },
     {
-      "_id": "id",
+      "_id": "rest_time",
       "type": "state",
       "common": {
-        "name": "ID",
-        "type": "string",
-        "role": "text",
+        "name": "Current poll is in rest time",
+        "type": "boolean",
+        "role": "state",
         "read": true,
         "write": false,
         "desc": ""
