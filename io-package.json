@@ -2,8 +2,20 @@
   "common": {
     "name": "robonect",
     "title": "Robonect",
-    "version": "0.0.12",
+    "version": "0.1.0",
     "news": {
+      "0.1.0": {
+        "en": "implemented rest periods",
+        "de": "Ruhezeiten implementiert",
+        "ru": "реализованные периоды отдыха",
+        "pt": "períodos de descanso implementados",
+        "nl": "geïmplementeerde rusttijden",
+        "fr": "périodes de repos mises en œuvre",
+        "it": "periodi di riposo implementati",
+        "es": "períodos de descanso implementados",
+        "pl": "wprowadzone okresy odpoczynku",
+        "zh-cn": "已实施的休息时间"
+      },
       "0.0.12": {
         "en": "improved polling",
         "de": "Abfragen verbessert",
