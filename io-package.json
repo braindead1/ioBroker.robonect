@@ -2,8 +2,20 @@
   "common": {
     "name": "robonect",
     "title": "Robonect",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "news": {
+      "0.1.1": {
+        "en": "fixed typo",
+        "de": "Tippfehler behoben",
+        "ru": "исправлена опечатка",
+        "pt": "erro de digitação fixo",
+        "nl": "vaste typefout",
+        "fr": "faute de frappe fixe",
+        "it": "errore di battitura fisso",
+        "es": "error tipográfico fijo",
+        "pl": "poprawiona literówka",
+        "zh-cn": "固定错字"
+      },
       "0.1.0": {
         "en": "implemented rest periods",
         "de": "Ruhezeiten implementiert",
