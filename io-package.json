@@ -2,8 +2,21 @@
   "common": {
     "name": "robonect",
     "title": "Robonect",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "news": {
+      "0.1.2": {
+        "en": "fixed GPS",
+        "de": "festes GPS",
+        "ru": "фиксированный GPS",
+        "pt": "GPS fixo",
+        "nl": "vaste GPS",
+        "fr": "GPS fixe",
+        "it": "GPS fisso",
+        "es": "GPS fijo",
+        "pl": "naprawiony GPS",
+        "zh-cn": "固定GPS"
+      },
+      
       "0.1.1": {
         "en": "fixed typo",
         "de": "Tippfehler behoben",
