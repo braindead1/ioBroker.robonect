@@ -1,0 +1,53 @@
+{
+    "gps.satellites": {
+        "type": "state",
+        "common": {
+            "name": "Latitude",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "gps.satellites"
+    },
+    "gps.latitude": {
+        "type": "state",
+        "common": {
+            "name": "Latitude",
+            "type": "number",
+            "role": "value.gps.latitude",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": {
+            "convertDdmToDd": [
+                {
+                    "var": "gps.latitude"
+                }
+            ]
+        }
+    },
+    "gps.longitude": {
+        "type": "state",
+        "common": {
+            "name": "Longitude",
+            "type": "number",
+            "role": "value.gps.longitude",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": {
+            "convertDdmToDd": [
+                {
+                    "var": "gps.longitude"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,2004 @@
+{
+    "timer.0.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.id"
+    },
+    "timer.0.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.enabled"
+    },
+    "timer.0.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.start"
+    },
+    "timer.0.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.end"
+    },
+    "timer.0.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.weekdays.mo"
+    },
+    "timer.0.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.weekdays.tu"
+    },
+    "timer.0.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.weekdays.we"
+    },
+    "timer.0.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.weekdays.th"
+    },
+    "timer.0.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.weekdays.fr"
+    },
+    "timer.0.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.weekdays.sa"
+    },
+    "timer.0.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.0.weekdays.su"
+    },
+    "timer.1.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.id"
+    },
+    "timer.1.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.enabled"
+    },
+    "timer.1.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.start"
+    },
+    "timer.1.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.end"
+    },
+    "timer.1.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.weekdays.mo"
+    },
+    "timer.1.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.weekdays.tu"
+    },
+    "timer.1.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.weekdays.we"
+    },
+    "timer.1.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.weekdays.th"
+    },
+    "timer.1.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.weekdays.fr"
+    },
+    "timer.1.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.weekdays.sa"
+    },
+    "timer.1.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.1.weekdays.su"
+    },
+    "timer.2.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.id"
+    },
+    "timer.2.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.enabled"
+    },
+    "timer.2.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.start"
+    },
+    "timer.2.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.end"
+    },
+    "timer.2.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.weekdays.mo"
+    },
+    "timer.2.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.weekdays.tu"
+    },
+    "timer.2.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.weekdays.we"
+    },
+    "timer.2.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.weekdays.th"
+    },
+    "timer.2.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.weekdays.fr"
+    },
+    "timer.2.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.weekdays.sa"
+    },
+    "timer.2.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.2.weekdays.su"
+    },
+    "timer.3.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.id"
+    },
+    "timer.3.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.enabled"
+    },
+    "timer.3.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.start"
+    },
+    "timer.3.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.end"
+    },
+    "timer.3.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.weekdays.mo"
+    },
+    "timer.3.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.weekdays.tu"
+    },
+    "timer.3.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.weekdays.we"
+    },
+    "timer.3.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.weekdays.th"
+    },
+    "timer.3.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.weekdays.fr"
+    },
+    "timer.3.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.weekdays.sa"
+    },
+    "timer.3.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.3.weekdays.su"
+    },
+    "timer.4.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.id"
+    },
+    "timer.4.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.enabled"
+    },
+    "timer.4.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.start"
+    },
+    "timer.4.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.end"
+    },
+    "timer.4.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.weekdays.mo"
+    },
+    "timer.4.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.weekdays.tu"
+    },
+    "timer.4.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.weekdays.we"
+    },
+    "timer.4.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.weekdays.th"
+    },
+    "timer.4.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.weekdays.fr"
+    },
+    "timer.4.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.weekdays.sa"
+    },
+    "timer.4.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.4.weekdays.su"
+    },
+    "timer.5.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.id"
+    },
+    "timer.5.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.enabled"
+    },
+    "timer.5.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.start"
+    },
+    "timer.5.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.end"
+    },
+    "timer.5.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.weekdays.mo"
+    },
+    "timer.5.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.weekdays.tu"
+    },
+    "timer.5.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.weekdays.we"
+    },
+    "timer.5.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.weekdays.th"
+    },
+    "timer.5.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.weekdays.fr"
+    },
+    "timer.5.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.weekdays.sa"
+    },
+    "timer.5.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.5.weekdays.su"
+    },
+    "timer.6.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.id"
+    },
+    "timer.6.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.enabled"
+    },
+    "timer.6.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.start"
+    },
+    "timer.6.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.end"
+    },
+    "timer.6.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.weekdays.mo"
+    },
+    "timer.6.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.weekdays.tu"
+    },
+    "timer.6.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.weekdays.we"
+    },
+    "timer.6.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.weekdays.th"
+    },
+    "timer.6.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.weekdays.fr"
+    },
+    "timer.6.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.weekdays.sa"
+    },
+    "timer.6.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.6.weekdays.su"
+    },
+    "timer.7.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.id"
+    },
+    "timer.7.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.enabled"
+    },
+    "timer.7.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.start"
+    },
+    "timer.7.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.end"
+    },
+    "timer.7.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.weekdays.mo"
+    },
+    "timer.7.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.weekdays.tu"
+    },
+    "timer.7.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.weekdays.we"
+    },
+    "timer.7.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.weekdays.th"
+    },
+    "timer.7.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.weekdays.fr"
+    },
+    "timer.7.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.weekdays.sa"
+    },
+    "timer.7.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.7.weekdays.su"
+    },
+    "timer.8.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.id"
+    },
+    "timer.8.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.enabled"
+    },
+    "timer.8.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.start"
+    },
+    "timer.8.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.end"
+    },
+    "timer.8.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.weekdays.mo"
+    },
+    "timer.8.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.weekdays.tu"
+    },
+    "timer.8.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.weekdays.we"
+    },
+    "timer.8.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.weekdays.th"
+    },
+    "timer.8.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.weekdays.fr"
+    },
+    "timer.8.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.weekdays.sa"
+    },
+    "timer.8.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.8.weekdays.su"
+    },
+    "timer.9.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.id"
+    },
+    "timer.9.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.enabled"
+    },
+    "timer.9.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.start"
+    },
+    "timer.9.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.end"
+    },
+    "timer.9.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.weekdays.mo"
+    },
+    "timer.9.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.weekdays.tu"
+    },
+    "timer.9.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.weekdays.we"
+    },
+    "timer.9.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.weekdays.th"
+    },
+    "timer.9.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.weekdays.fr"
+    },
+    "timer.9.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.weekdays.sa"
+    },
+    "timer.9.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.9.weekdays.su"
+    },
+    "timer.10.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.id"
+    },
+    "timer.10.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.enabled"
+    },
+    "timer.10.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.start"
+    },
+    "timer.10.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.end"
+    },
+    "timer.10.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.weekdays.mo"
+    },
+    "timer.10.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.weekdays.tu"
+    },
+    "timer.10.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.weekdays.we"
+    },
+    "timer.10.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.weekdays.th"
+    },
+    "timer.10.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.weekdays.fr"
+    },
+    "timer.10.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.weekdays.sa"
+    },
+    "timer.10.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.10.weekdays.su"
+    },
+    "timer.11.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.id"
+    },
+    "timer.11.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.enabled"
+    },
+    "timer.11.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.start"
+    },
+    "timer.11.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.end"
+    },
+    "timer.11.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.weekdays.mo"
+    },
+    "timer.11.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.weekdays.tu"
+    },
+    "timer.11.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.weekdays.we"
+    },
+    "timer.11.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.weekdays.th"
+    },
+    "timer.11.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.weekdays.fr"
+    },
+    "timer.11.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.weekdays.sa"
+    },
+    "timer.11.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.11.weekdays.su"
+    },
+    "timer.12.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.id"
+    },
+    "timer.12.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.enabled"
+    },
+    "timer.12.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.start"
+    },
+    "timer.12.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.end"
+    },
+    "timer.12.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.weekdays.mo"
+    },
+    "timer.12.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.weekdays.tu"
+    },
+    "timer.12.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.weekdays.we"
+    },
+    "timer.12.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.weekdays.th"
+    },
+    "timer.12.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.weekdays.fr"
+    },
+    "timer.12.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.weekdays.sa"
+    },
+    "timer.12.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.12.weekdays.su"
+    },
+    "timer.13.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.id"
+    },
+    "timer.13.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Timer enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.enabled"
+    },
+    "timer.13.start_time": {
+        "type": "state",
+        "common": {
+            "name": "Start time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.start"
+    },
+    "timer.13.end_time": {
+        "type": "state",
+        "common": {
+            "name": "End time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.end"
+    },
+    "timer.13.weekdays.monday": {
+        "type": "state",
+        "common": {
+            "name": "Monday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.weekdays.mo"
+    },
+    "timer.13.weekdays.tuesday": {
+        "type": "state",
+        "common": {
+            "name": "Tuesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.weekdays.tu"
+    },
+    "timer.13.weekdays.wednesday": {
+        "type": "state",
+        "common": {
+            "name": "Wednesday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.weekdays.we"
+    },
+    "timer.13.weekdays.thursday": {
+        "type": "state",
+        "common": {
+            "name": "Thursday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.weekdays.th"
+    },
+    "timer.13.weekdays.friday": {
+        "type": "state",
+        "common": {
+            "name": "Friday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.weekdays.fr"
+    },
+    "timer.13.weekdays.saturday": {
+        "type": "state",
+        "common": {
+            "name": "Saturday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.weekdays.sa"
+    },
+    "timer.13.weekdays.sunday": {
+        "type": "state",
+        "common": {
+            "name": "Sunday",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.13.weekdays.su"
+    }
+}

@@ -1,0 +1,321 @@
+{
+    "name": {
+        "type": "state",
+        "common": {
+            "name": "Mower name",
+            "type": "string",
+            "role": "info.name",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "name"
+    },
+    "id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "id"
+    },
+    "status.status": {
+        "type": "state",
+        "common": {
+            "name": "Current status",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "states": {
+                "0": "Unbekannt",
+                "1": "Parken",
+                "2": "Mähen",
+                "3": "Suchen der Ladestation",
+                "4": "Laden",
+                "5": "Umsetzen",
+                "7": "Fehler",
+                "8": "Schleifensignal verloren",
+                "16": "Abgeschaltet",
+                "17": "Schlafen"
+            }
+        },
+        "native": {},
+        "value": "status.status"
+    },
+    "status.distance": {
+        "type": "state",
+        "common": {
+            "name": "Status distance",
+            "type": "number",
+            "role": "value.distance",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "meters"
+        },
+        "native": {},
+        "value": "status.distance"
+    },
+    "status.stopped": {
+        "type": "state",
+        "common": {
+            "name": "Stopped",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "status.stopped"
+    },
+    "status.duration": {
+        "type": "state",
+        "common": {
+            "name": "Status duration",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "sec"
+        },
+        "native": {},
+        "value": "status.duration"
+    },
+    "status.mode": {
+        "type": "state",
+        "common": {
+            "name": "Current mode",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": true,
+            "desc": "",
+            "states": {
+                "0": "Auto",
+                "1": "Manuell",
+                "2": "Home",
+                "98": "End of day",
+                "99": "Job"
+            }
+        },
+        "native": {},
+        "value": "status.mode"
+    },
+    "status.battery": {
+        "type": "state",
+        "common": {
+            "name": "Battery",
+            "type": "number",
+            "role": "value.battery",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "%"
+        },
+        "native": {},
+        "value": "status.battery"
+    },
+    "status.hours": {
+        "type": "state",
+        "common": {
+            "name": "Operating hours",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "hrs"
+        },
+        "native": {},
+        "value": "status.hours"
+    },
+    "timer.status": {
+        "type": "state",
+        "common": {
+            "name": "Timer status",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "states": {
+                "0": "Deaktiviert",
+                "1": "Aktiv",
+                "2": "Standby"
+            }
+        },
+        "native": {},
+        "value": "timer.status"
+    },
+    "timer.next_date": {
+        "type": "state",
+        "common": {
+            "name": "Next timer date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.next.date"
+    },
+    "timer.next_time": {
+        "type": "state",
+        "common": {
+            "name": "Next timer time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.next.time"
+    },
+    "timer.next_unix": {
+        "type": "state",
+        "common": {
+            "name": "Next timer time",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "timer.next.unix"
+    },
+    "blades.quality": {
+        "type": "state",
+        "common": {
+            "name": "Blades quality",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "%"
+        },
+        "native": {},
+        "value": "blades.quality"
+    },
+    "blades.hours": {
+        "type": "state",
+        "common": {
+            "name": "Blades hours",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "hrs"
+        },
+        "native": {},
+        "value": "blades.hours"
+    },
+    "blades.days": {
+        "type": "state",
+        "common": {
+            "name": "Blades days",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "blades.days"
+    },
+    "wlan.signal": {
+        "type": "state",
+        "common": {
+            "name": "Signal strength",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "dB"
+        },
+        "native": {},
+        "value": "wlan.signal"
+    },
+    "health.temperature": {
+        "type": "state",
+        "common": {
+            "name": "Temperature",
+            "type": "number",
+            "role": "value.temperature",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "°C"
+        },
+        "native": {},
+        "value": "health.temperature"
+    },
+    "health.humidity": {
+        "type": "state",
+        "common": {
+            "name": "Humidity",
+            "type": "number",
+            "role": "value.humidity",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "%"
+        },
+        "native": {},
+        "value": "health.humidity"
+    },
+    "clock.date": {
+        "type": "state",
+        "common": {
+            "name": "Date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "clock.date"
+    },
+    "clock.time": {
+        "type": "state",
+        "common": {
+            "name": "Time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "clock.time"
+    },
+    "clock.unix_timestamp": {
+        "type": "state",
+        "common": {
+            "name": "Unix timestamp",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "clock.unix"
+    }
+}

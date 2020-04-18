@@ -1,0 +1,426 @@
+{
+    "push.server_url": {
+        "type": "state",
+        "common": {
+            "name": "Server URL",
+            "type": "string",
+            "role": "url",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.server.url"
+    },
+    "push.interval": {
+        "type": "state",
+        "common": {
+            "name": "Interval",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "sec"
+        },
+        "native": {},
+        "value": {
+            "/": [
+                {
+                    "var": "push.trigger.interval"
+                },
+                1000
+            ]
+        }
+    },
+    "push.trigger.0.name": {
+        "type": "state",
+        "common": {
+            "name": "Name",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger0.name"
+    },
+    "push.trigger.0.enter": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at enter",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger0.enter"
+    },
+    "push.trigger.0.leave": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at leave",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger0.leave"
+    },
+    "push.trigger.1.name": {
+        "type": "state",
+        "common": {
+            "name": "Name",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger1.name"
+    },
+    "push.trigger.1.enter": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at enter",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger1.enter"
+    },
+    "push.trigger.1.leave": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at leave",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger1.leave"
+    },
+    "push.trigger.2.name": {
+        "type": "state",
+        "common": {
+            "name": "Name",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger2.name"
+    },
+    "push.trigger.2.enter": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at enter",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger2.enter"
+    },
+    "push.trigger.2.leave": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at leave",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger2.leave"
+    },
+    "push.trigger.3.name": {
+        "type": "state",
+        "common": {
+            "name": "Name",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger3.name"
+    },
+    "push.trigger.3.enter": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at enter",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger3.enter"
+    },
+    "push.trigger.3.leave": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at leave",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger3.leave"
+    },
+    "push.trigger.4.name": {
+        "type": "state",
+        "common": {
+            "name": "Name",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger4.name"
+    },
+    "push.trigger.4.enter": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at enter",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger4.enter"
+    },
+    "push.trigger.4.leave": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at leave",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger4.leave"
+    },
+    "push.trigger.5.name": {
+        "type": "state",
+        "common": {
+            "name": "Name",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger5.name"
+    },
+    "push.trigger.5.enter": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at enter",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger5.enter"
+    },
+    "push.trigger.5.leave": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at leave",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger5.leave"
+    },
+    "push.trigger.6.name": {
+        "type": "state",
+        "common": {
+            "name": "Name",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger6.name"
+    },
+    "push.trigger.6.enter": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at enter",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger6.enter"
+    },
+    "push.trigger.6.leave": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at leave",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger6.leave"
+    },
+    "push.trigger.7.name": {
+        "type": "state",
+        "common": {
+            "name": "Name",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger7.name"
+    },
+    "push.trigger.7.enter": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at enter",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger7.enter"
+    },
+    "push.trigger.7.leave": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at leave",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger7.leave"
+    },
+    "push.trigger.8.name": {
+        "type": "state",
+        "common": {
+            "name": "Name",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger8.name"
+    },
+    "push.trigger.8.enter": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at enter",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger8.enter"
+    },
+    "push.trigger.8.leave": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at leave",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger8.leave"
+    },
+    "push.trigger.9.name": {
+        "type": "state",
+        "common": {
+            "name": "Name",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger9.name"
+    },
+    "push.trigger.9.enter": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at enter",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger9.enter"
+    },
+    "push.trigger.9.leave": {
+        "type": "state",
+        "common": {
+            "name": "Trigger at leave",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "push.trigger.trigger9.leave"
+    }
+}

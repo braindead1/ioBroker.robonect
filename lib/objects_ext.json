@@ -1,0 +1,158 @@
+{
+    "extension.gpio1.flashonerror": {
+        "type": "state",
+        "common": {
+            "name": "Flash on error",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.gpio1.flashonerror"
+    },
+    "extension.gpio1.inverted": {
+        "type": "state",
+        "common": {
+            "name": "Inverted",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.gpio1.inverted"
+    },
+    "extension.gpio1.status": {
+        "type": "state",
+        "common": {
+            "name": "Status",
+            "type": "boolean",
+            "role": "switch",
+            "read": true,
+            "write": true,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.gpio1.status"
+    },
+    "extension.gpio2.flashonerror": {
+        "type": "state",
+        "common": {
+            "name": "Flash on error",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.gpio2.flashonerror"
+    },
+    "extension.gpio2.inverted": {
+        "type": "state",
+        "common": {
+            "name": "Inverted",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.gpio2.inverted"
+    },
+    "extension.gpio2.status": {
+        "type": "state",
+        "common": {
+            "name": "Status",
+            "type": "boolean",
+            "role": "switch",
+            "read": true,
+            "write": true,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.gpio2.status"
+    },
+    "extension.out1.flashonerror": {
+        "type": "state",
+        "common": {
+            "name": "Flash on error",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.out1.flashonerror"
+    },
+    "extension.out1.inverted": {
+        "type": "state",
+        "common": {
+            "name": "Inverted",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.out1.inverted"
+    },
+    "extension.out1.status": {
+        "type": "state",
+        "common": {
+            "name": "Status",
+            "type": "boolean",
+            "role": "switch",
+            "read": true,
+            "write": true,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.out1.status"
+    },
+    "extension.out2.flashonerror": {
+        "type": "state",
+        "common": {
+            "name": "Flash on error",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.out2.flashonerror"
+    },
+    "extension.out2.inverted": {
+        "type": "state",
+        "common": {
+            "name": "Inverted",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.out2.inverted"
+    },
+    "extension.out2.status": {
+        "type": "state",
+        "common": {
+            "name": "Status",
+            "type": "boolean",
+            "role": "switch",
+            "read": true,
+            "write": true,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ext.out2.status"
+    }
+}

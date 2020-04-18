@@ -28,7 +28,7 @@ function startAdapter(options) {
 	/*
 	 * ADAPTER READY
 	 */
-    adapter.on('ready', function () {
+    adapter.on('ready', async function () {
         library = new Library(adapter);
 
         if (adapter.config.robonectIp === undefined || adapter.config.robonectIp === '') {
@@ -37,6 +37,9 @@ function startAdapter(options) {
 
             return;
         }
+
+        // Create objects
+        await createObjects();
 
         // Do the initial polling
         library.poll('Initial');
@@ -61,6 +64,8 @@ function startAdapter(options) {
         }
 
         adapter.log.info('Done');
+
+        return true;
     });
 
     /*
@@ -122,6 +127,51 @@ function startAdapter(options) {
             callback();
         }
     });
+
+    async function createObjects() {
+        const objects_battery = require('./lib/objects_battery.json');
+        const objects_error = require('./lib/objects_error.json');
+        const objects_ext = require('./lib/objects_ext.json');
+        const objects_gps = require('./lib/objects_gps.json');
+        const objects_hour = require('./lib/objects_hour.json');
+        const objects_motor = require('./lib/objects_motor.json');
+        const objects_portal = require('./lib/objects_portal.json');
+        const objects_push = require('./lib/objects_push.json');
+        const objects_status = require('./lib/objects_status.json');
+        const objects_timer = require('./lib/objects_timer.json');
+        const objects_version = require('./lib/objects_version.json');
+        const objects_weather = require('./lib/objects_weather.json');
+        const objects_wlan = require('./lib/objects_wlan.json');
+
+        const objects = {
+            ...objects_battery,
+            ...objects_error,
+            ...objects_ext,
+            ...objects_gps,
+            ...objects_hour,
+            ...objects_motor,
+            ...objects_portal,
+            ...objects_push,
+            ...objects_status,
+            ...objects_timer,
+            ...objects_version,
+            ...objects_weather,
+            ...objects_wlan
+        };
+
+        for (let id in objects) {
+            if (objects[id].type && objects[id].common && objects[id].native) {
+                const object = {};
+                object.type = objects[id].type;
+                object.common = objects[id].common;
+                object.native = objects[id].native;
+
+                await adapter.setObjectAsync(id, object);
+
+                adapter.log.debug('Object \'' + id + '\' created');
+            }
+        }; 
+    }
 
     return adapter;
 };

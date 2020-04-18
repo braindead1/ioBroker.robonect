@@ -1,0 +1,203 @@
+{
+    "info.hardware.production": {
+        "type": "state",
+        "common": {
+            "name": "Production date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "mower.hardware.production"
+    },
+    "info.msw.compiled": {
+        "type": "state",
+        "common": {
+            "name": "Compilation date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "mower.msw.compiled"
+    },
+    "info.msw.title": {
+        "type": "state",
+        "common": {
+            "name": "Title",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "mower.msw.title"
+    },
+    "info.msw.version": {
+        "type": "state",
+        "common": {
+            "name": "Version",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "mower.msw.version"
+    },
+    "info.sub.version": {
+        "type": "state",
+        "common": {
+            "name": "Version",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "mower.sub.version"
+    },
+    "info.robonect.serial": {
+        "type": "state",
+        "common": {
+            "name": "Serial no.",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "serial"
+    },
+    "info.robonect.comment": {
+        "type": "state",
+        "common": {
+            "name": "Comment",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "application.comment"
+    },
+    "info.robonect.compiled": {
+        "type": "state",
+        "common": {
+            "name": "Compilation date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "application.compiled"
+    },
+    "info.robonect.version": {
+        "type": "state",
+        "common": {
+            "name": "Version",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "application.version"
+    },
+    "info.bootloader.comment": {
+        "type": "state",
+        "common": {
+            "name": "Comment",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "bootloader.comment"
+    },
+    "info.bootloader.compiled": {
+        "type": "state",
+        "common": {
+            "name": "Compilation date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "bootloader.compiled"
+    },
+    "info.bootloader.version": {
+        "type": "state",
+        "common": {
+            "name": "Version",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "bootloader.version"
+    },
+    "info.wlan.at-version": {
+        "type": "state",
+        "common": {
+            "name": "AT-Version",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "wlan.at-version"
+    },
+    "info.wlan.sdk-version": {
+        "type": "state",
+        "common": {
+            "name": "SDK-Version",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "wlan.sdk-version"
+    },
+    "info.hardware.serial": {
+        "type": "state",
+        "common": {
+            "name": "Serial no.",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": {
+            "string": [
+                {
+                    "var": "mower.hardware.serial"
+                }
+            ]
+        }
+    }
+}

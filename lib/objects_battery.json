@@ -1,0 +1,113 @@
+{
+    "batteries.0.id": {
+        "type": "state",
+        "common": {
+            "name": "ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "batteries.0.id"
+    },
+    "batteries.0.charge": {
+        "type": "state",
+        "common": {
+            "name": "Charge",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "%"
+        },
+        "native": {},
+        "value": "batteries.0.charge"
+    },
+    "batteries.0.voltage": {
+        "type": "state",
+        "common": {
+            "name": "Voltage",
+            "type": "number",
+            "role": "value.voltage",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "V"
+        },
+        "native": {},
+        "value": {
+            "/": [
+                {
+                    "var": "batteries.0.voltage"
+                },
+                1000
+            ]
+        }
+    },
+    "batteries.0.current": {
+        "type": "state",
+        "common": {
+            "name": "Current",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "mA"
+        },
+        "native": {},
+        "value": "batteries.0.current"
+    },
+    "batteries.0.temperature": {
+        "type": "state",
+        "common": {
+            "name": "Temperature",
+            "type": "number",
+            "role": "value.temperature",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "°C"
+        },
+        "native": {},
+        "value": {
+            "/": [
+                {
+                    "var": "batteries.0.temperature"
+                },
+                10
+            ]
+        }
+    },
+    "batteries.0.capacity.full": {
+        "type": "state",
+        "common": {
+            "name": "Full capacity",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "mAh"
+        },
+        "native": {},
+        "value": "batteries.0.capacity.full"
+    },
+    "batteries.0.capacity.remaining": {
+        "type": "state",
+        "common": {
+            "name": "Remaining capacity",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "mAh"
+        },
+        "native": {},
+        "value": "batteries.0.capacity.remaining"
+    }
+}

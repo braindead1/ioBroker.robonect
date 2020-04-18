@@ -1,0 +1,315 @@
+{
+    "wlan.ap.enable": {
+        "type": "state",
+        "common": {
+            "name": "AP enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.enable"
+    },
+    "wlan.ap.mac": {
+        "type": "state",
+        "common": {
+            "name": "MAC address",
+            "type": "string",
+            "role": "info.mac",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.mac"
+    },
+    "wlan.ap.hidden": {
+        "type": "state",
+        "common": {
+            "name": "SSID hidden",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.hidden"
+    },
+    "wlan.ap.ssid": {
+        "type": "state",
+        "common": {
+            "name": "SSID",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.ssid"
+    },
+    "wlan.ap.password": {
+        "type": "state",
+        "common": {
+            "name": "Password",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.password"
+    },
+    "wlan.ap.channel": {
+        "type": "state",
+        "common": {
+            "name": "Channel",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.channel"
+    },
+    "wlan.ap.encryption": {
+        "type": "state",
+        "common": {
+            "name": "Encryption",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.encryption"
+    },
+    "wlan.ap.maxconn": {
+        "type": "state",
+        "common": {
+            "name": "Max. connections",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.maxconn"
+    },
+    "wlan.ap.ip": {
+        "type": "state",
+        "common": {
+            "name": "IP address",
+            "type": "string",
+            "role": "info.ip",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.ip"
+    },
+    "wlan.ap.netmask": {
+        "type": "state",
+        "common": {
+            "name": "Netmask",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.netmask"
+    },
+    "wlan.ap.gateway": {
+        "type": "state",
+        "common": {
+            "name": "Gateway",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.gateway"
+    },
+    "wlan.ap.dhcp.enable": {
+        "type": "state",
+        "common": {
+            "name": "DHCP enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.dhcp.enable"
+    },
+    "wlan.ap.dhcp.start": {
+        "type": "state",
+        "common": {
+            "name": "DHCP start",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.dhcp.start"
+    },
+    "wlan.ap.dhcp.end": {
+        "type": "state",
+        "common": {
+            "name": "DHCP end",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "ap.dhcp.end"
+    },
+    "wlan.station.enable": {
+        "type": "state",
+        "common": {
+            "name": "Enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "station.enable"
+    },
+    "wlan.station.mac": {
+        "type": "state",
+        "common": {
+            "name": "MAC address",
+            "type": "string",
+            "role": "info.mac",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "station.mac"
+    },
+    "wlan.station.signal": {
+        "type": "state",
+        "common": {
+            "name": "Signal strength",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "dB"
+        },
+        "native": {},
+        "value": "station.signal"
+    },
+    "wlan.station.ssid": {
+        "type": "state",
+        "common": {
+            "name": "SSID",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "station.ssid"
+    },
+    "wlan.station.password": {
+        "type": "state",
+        "common": {
+            "name": "Password",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "station.password"
+    },
+    "wlan.station.dhcp": {
+        "type": "state",
+        "common": {
+            "name": "DHCP activated",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "station.dhcp"
+    },
+    "wlan.station.ping": {
+        "type": "state",
+        "common": {
+            "name": "Ping activated",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "station.ping"
+    },
+    "wlan.station.ip": {
+        "type": "state",
+        "common": {
+            "name": "IP address",
+            "type": "string",
+            "role": "info.ip",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "station.ip"
+    },
+    "wlan.station.netmask": {
+        "type": "state",
+        "common": {
+            "name": "Netmask",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "station.netmask"
+    },
+    "wlan.station.gateway": {
+        "type": "state",
+        "common": {
+            "name": "Gateway",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "station.gateway"
+    }
+}

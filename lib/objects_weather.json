@@ -1,0 +1,385 @@
+{
+    "weather.service.enable": {
+        "type": "state",
+        "common": {
+            "name": "Wather service enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "service.enable"
+    },
+    "weather.service.config.dontmowduringday": {
+        "type": "state",
+        "common": {
+            "name": "Don't mow over day",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false
+        },
+        "native": {},
+        "value": "service.config.dontmowduringday"
+    },
+    "weather.service.config.dontmowduringnight": {
+        "type": "state",
+        "common": {
+            "name": "Don't mow over night",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false
+        },
+        "native": {},
+        "value": "service.config.dontmowduringnight"
+    },
+    "weather.service.config.maxhumidity": {
+        "type": "state",
+        "common": {
+            "name": "Max. humidity",
+            "type": "number",
+            "role": "value.humidity",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "%"
+        },
+        "native": {},
+        "value": "service.config.maxhumidity"
+    },
+    "weather.service.config.maxrain": {
+        "type": "state",
+        "common": {
+            "name": "Max. rain intensity",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "%"
+        },
+        "native": {},
+        "value": "service.config.maxrain"
+    },
+    "weather.service.config.maxtemp": {
+        "type": "state",
+        "common": {
+            "name": "Max. temperature",
+            "type": "number",
+            "role": "value.temperature",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "°C"
+        },
+        "native": {},
+        "value": "service.config.maxtemp"
+    },
+    "weather.service.config.minhumidity": {
+        "type": "state",
+        "common": {
+            "name": "Min. humidity",
+            "type": "number",
+            "role": "value.humidity",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "°C"
+        },
+        "native": {},
+        "value": "service.config.minhumidity"
+    },
+    "weather.service.config.mintemp": {
+        "type": "state",
+        "common": {
+            "name": "Min. temperature",
+            "type": "number",
+            "role": "value.temperature",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "°C"
+        },
+        "native": {},
+        "value": "service.config.mintemp"
+    },
+    "weather.service.location.cityid": {
+        "type": "state",
+        "common": {
+            "name": "City-ID",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "service.location.cityid"
+    },
+    "weather.service.location.country": {
+        "type": "state",
+        "common": {
+            "name": "Zip Code",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "service.location.country"
+    },
+    "weather.service.location.zip": {
+        "type": "state",
+        "common": {
+            "name": "Zip Code",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "service.location.zip"
+    },
+    "weather.condition.day": {
+        "type": "state",
+        "common": {
+            "name": "Day",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.condition.day"
+    },
+    "weather.condition.night": {
+        "type": "state",
+        "common": {
+            "name": "Night",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.condition.night"
+    },
+    "weather.condition.toocold": {
+        "type": "state",
+        "common": {
+            "name": "Too cold",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.condition.toocold"
+    },
+    "weather.condition.toodry": {
+        "type": "state",
+        "common": {
+            "name": "Too dry",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.condition.toodry"
+    },
+    "weather.condition.toorainy": {
+        "type": "state",
+        "common": {
+            "name": "Too rainy",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.condition.toorainy"
+    },
+    "weather.condition.toowarm": {
+        "type": "state",
+        "common": {
+            "name": "Too warm",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.condition.toowarm"
+    },
+    "weather.condition.toowet": {
+        "type": "state",
+        "common": {
+            "name": "Too wet",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.condition.toowet"
+    },
+    "weather.timestamp.date": {
+        "type": "state",
+        "common": {
+            "name": "Date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.timestamp.date"
+    },
+    "weather.timestamp.time": {
+        "type": "state",
+        "common": {
+            "name": "Time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.timestamp.time"
+    },
+    "weather.timestamp.unix_timestamp": {
+        "type": "state",
+        "common": {
+            "name": "Unix timestamp",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.timestamp.unix_timestamp"
+    },
+    "weather.break": {
+        "type": "state",
+        "common": {
+            "name": "Break",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.break"
+    },
+    "weather.city": {
+        "type": "state",
+        "common": {
+            "name": "City",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.city"
+    },
+    "weather.day": {
+        "type": "state",
+        "common": {
+            "name": "Day",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.day"
+    },
+    "weather.humidity": {
+        "type": "state",
+        "common": {
+            "name": "Humidity",
+            "type": "number",
+            "role": "value.humidity",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "%"
+        },
+        "native": {},
+        "value": "weather.humidity"
+    },
+    "weather.rain": {
+        "type": "state",
+        "common": {
+            "name": "Rain intensity",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "%"
+        },
+        "native": {},
+        "value": "weather.rain"
+    },
+    "weather.sunrise": {
+        "type": "state",
+        "common": {
+            "name": "Sunrise",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.sunrise"
+    },
+    "weather.sunset": {
+        "type": "state",
+        "common": {
+            "name": "Sunset",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "weather.sunset"
+    },
+    "weather.temperature": {
+        "type": "state",
+        "common": {
+            "name": "Temperature",
+            "type": "number",
+            "role": "value.temperature",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "°C"
+        },
+        "native": {},
+        "value": "weather.temperature"
+    }
+}

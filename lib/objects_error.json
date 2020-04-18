@@ -1,0 +1,328 @@
+{
+    "error.0.code": {
+        "type": "state",
+        "common": {
+            "name": "Error code",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.0.error_code"
+    },
+    "error.0.message": {
+        "_id": "error.0.message",
+        "type": "state",
+        "common": {
+            "name": "Error message",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.0.error_message"
+    },
+    "error.0.date": {
+        "type": "state",
+        "common": {
+            "name": "Date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.0.date"
+    },
+    "error.0.time": {
+        "type": "state",
+        "common": {
+            "name": "Time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.0.time"
+    },
+    "error.0.unix_timestamp": {
+        "type": "state",
+        "common": {
+            "name": "Unix timestamp",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.0.unix"
+    },
+    "error.1.code": {
+        "type": "state",
+        "common": {
+            "name": "Error code",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.1.error_code"
+    },
+    "error.1.message": {
+        "type": "state",
+        "common": {
+            "name": "Error message",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.1.error_message"
+    },
+    "error.1.date": {
+        "type": "state",
+        "common": {
+            "name": "Date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.1.date"
+    },
+    "error.1.time": {
+        "type": "state",
+        "common": {
+            "name": "Time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.1.time"
+    },
+    "error.1.unix_timestamp": {
+        "type": "state",
+        "common": {
+            "name": "Unix timestamp",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.1.unix"
+    },
+    "error.2.code": {
+        "type": "state",
+        "common": {
+            "name": "Error code",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.2.error_code"
+    },
+    "error.2.message": {
+        "type": "state",
+        "common": {
+            "name": "Error message",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.2.error_message"
+    },
+    "error.2.date": {
+        "type": "state",
+        "common": {
+            "name": "Date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.2.date"
+    },
+    "error.2.time": {
+        "type": "state",
+        "common": {
+            "name": "Time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.2.time"
+    },
+    "error.2.unix_timestamp": {
+        "type": "state",
+        "common": {
+            "name": "Unix timestamp",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.2.unix"
+    },
+    "error.3.code": {
+        "type": "state",
+        "common": {
+            "name": "Error code",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.3.error_code"
+    },
+    "error.3.message": {
+        "type": "state",
+        "common": {
+            "name": "Error message",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.3.error_message"
+    },
+    "error.3.date": {
+        "type": "state",
+        "common": {
+            "name": "Date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.3.date"
+    },
+    "error.3.time": {
+        "type": "state",
+        "common": {
+            "name": "Time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.3.time"
+    },
+    "error.3.unix_timestamp": {
+        "type": "state",
+        "common": {
+            "name": "Unix timestamp",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.3.unix"
+    },
+    "error.4.code": {
+        "type": "state",
+        "common": {
+            "name": "Error code",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.4.error_code"
+    },
+    "error.4.message": {
+        "type": "state",
+        "common": {
+            "name": "Error message",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.4.error_message"
+    },
+    "error.4.date": {
+        "type": "state",
+        "common": {
+            "name": "Date",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.4.date"
+    },
+    "error.4.time": {
+        "type": "state",
+        "common": {
+            "name": "Time",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.4.time"
+    },
+    "error.4.unix_timestamp": {
+        "type": "state",
+        "common": {
+            "name": "Unix timestamp",
+            "type": "number",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "errors.4.unix"
+    }
+}

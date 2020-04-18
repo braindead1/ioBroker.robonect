@@ -1,0 +1,97 @@
+{
+    "hours.run": {
+        "type": "state",
+        "common": {
+            "name": "Run",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "hrs"
+        },
+        "native": {},
+        "value": "general.run"
+    },
+    "hours.mow": {
+        "type": "state",
+        "common": {
+            "name": "Mow",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "hrs"
+        },
+        "native": {},
+        "value": "general.mow"
+    },
+    "hours.search": {
+        "type": "state",
+        "common": {
+            "name": "Search",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "hrs"
+        },
+        "native": {},
+        "value": "general.search"
+    },
+    "hours.charge": {
+        "type": "state",
+        "common": {
+            "name": "Charge",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "hrs"
+        },
+        "native": {},
+        "value": "general.charge"
+    },
+    "hours.charges": {
+        "type": "state",
+        "common": {
+            "name": "Number of charges",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "general.charges"
+    },
+    "hours.errors": {
+        "type": "state",
+        "common": {
+            "name": "Number of errors",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "general.errors"
+    },
+    "hours.since": {
+        "type": "state",
+        "common": {
+            "name": "Since",
+            "type": "string",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "general.since"
+    }
+}

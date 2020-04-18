@@ -1,0 +1,128 @@
+{
+    "motor.drive.left.current": {
+        "type": "state",
+        "common": {
+            "name": "Current",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "mA"
+        },
+        "native": {},
+        "value": "drive.left.current"
+    },
+    "motor.drive.left.power": {
+        "type": "state",
+        "common": {
+            "name": "Power",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "%"
+        },
+        "native": {},
+        "value": "drive.left.power"
+    },
+    "motor.drive.left.speed": {
+        "type": "state",
+        "common": {
+            "name": "Speed",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "cm/s"
+        },
+        "native": {},
+        "value": "drive.left.speed"
+    },
+    "motor.drive.right.current": {
+        "type": "state",
+        "common": {
+            "name": "Current",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "mA"
+        },
+        "native": {},
+        "value": "drive.right.current"
+    },
+    "motor.drive.right.power": {
+        "type": "state",
+        "common": {
+            "name": "Power",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "%"
+        },
+        "native": {},
+        "value": "drive.right.power"
+    },
+    "motor.drive.right.speed": {
+        "type": "state",
+        "common": {
+            "name": "Speed",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "cm/s"
+        },
+        "native": {},
+        "value": "drive.right.speed"
+    },
+    "motor.blade.current": {
+        "type": "state",
+        "common": {
+            "name": "Current",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "mA"
+        },
+        "native": {},
+        "value": "blade.current"
+    },
+    "motor.blade.speed": {
+        "type": "state",
+        "common": {
+            "name": "Speed",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "RPM"
+        },
+        "native": {},
+        "value": "blade.speed"
+    },
+    "motor.blade.average": {
+        "type": "state",
+        "common": {
+            "name": "Average",
+            "type": "number",
+            "role": "value",
+            "read": true,
+            "write": false,
+            "desc": "",
+            "unit": "RPM"
+        },
+        "native": {},
+        "value": "blade.average"
+    }
+}

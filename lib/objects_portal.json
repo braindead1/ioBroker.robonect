@@ -1,0 +1,80 @@
+{
+    "portal.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "enabled"
+    },
+    "portal.connected": {
+        "type": "state",
+        "common": {
+            "name": "Connected",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "connected"
+    },
+    "portal.address.domain": {
+        "type": "state",
+        "common": {
+            "name": "Domain",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "address.domain"
+    },
+    "portal.address.url": {
+        "type": "state",
+        "common": {
+            "name": "URL",
+            "type": "string",
+            "role": "url",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "address.url"
+    },
+    "portal.address.host.default": {
+        "type": "state",
+        "common": {
+            "name": "Default",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "address.host.default"
+    },
+    "portal.address.host.friendly": {
+        "type": "state",
+        "common": {
+            "name": "Friendly",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "address.host.friendly"
+    }
+}
