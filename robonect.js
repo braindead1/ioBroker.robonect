@@ -25,7 +25,7 @@ function startAdapter(options) {
     options = options || {};
     adapter = new utils.Adapter({ ...options, name: adapterName });
 
-	/*
+    /*
 	 * ADAPTER READY
 	 */
     adapter.on('ready', async function () {
@@ -78,7 +78,7 @@ function startAdapter(options) {
         }
     });
 
-	/*
+    /*
 	 * STATE CHANGE
 	 */
     adapter.on('stateChange', function (id, state) {
@@ -113,7 +113,7 @@ function startAdapter(options) {
         }
     });
 
-	/*
+    /*
 	 * ADAPTER UNLOAD
 	 */
     adapter.on('unload', function (callback) {
@@ -159,7 +159,7 @@ function startAdapter(options) {
             ...objects_wlan
         };
 
-        for (let id in objects) {
+        for (const id in objects) {
             if (objects[id].type && objects[id].common && objects[id].native) {
                 const object = {};
                 object.type = objects[id].type;
@@ -170,11 +170,11 @@ function startAdapter(options) {
 
                 adapter.log.debug('Object \'' + id + '\' created');
             }
-        }; 
+        } 
     }
 
     return adapter;
-};
+}
 
 
 /*
