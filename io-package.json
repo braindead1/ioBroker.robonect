@@ -1,284 +1,284 @@
 {
-  "common": {
-    "name": "robonect",
-    "title": "Robonect",
-    "version": "0.1.1",
-    "news": {
-      "0.1.1": {
-        "en": "fixed typo",
-        "de": "Tippfehler behoben",
-        "ru": "исправлена опечатка",
-        "pt": "erro de digitação fixo",
-        "nl": "vaste typefout",
-        "fr": "faute de frappe fixe",
-        "it": "errore di battitura fisso",
-        "es": "error tipográfico fijo",
-        "pl": "poprawiona literówka",
-        "zh-cn": "固定错字"
-      },
-      "0.1.0": {
-        "en": "implemented rest periods",
-        "de": "Ruhezeiten implementiert",
-        "ru": "реализованные периоды отдыха",
-        "pt": "períodos de descanso implementados",
-        "nl": "geïmplementeerde rusttijden",
-        "fr": "périodes de repos mises en œuvre",
-        "it": "periodi di riposo implementati",
-        "es": "períodos de descanso implementados",
-        "pl": "wprowadzone okresy odpoczynku",
-        "zh-cn": "已实施的休息时间"
-      },
-      "0.0.12": {
-        "en": "improved polling",
-        "de": "Abfragen verbessert",
-        "ru": "улучшенный опрос",
-        "pt": "polling aprimorado",
-        "nl": "verbeterde polling",
-        "fr": "sondage amélioré",
-        "it": "polling migliorato",
-        "es": "sondeo mejorado",
-        "pl": "poprawione odpytywanie",
-        "zh-cn": "改进的轮询"
-      },
-      "0.0.11": {
-        "en": "implemented weather and GPS polls",
-        "de": "Wetter- und GPS-Abfragen implementiert",
-        "ru": "реализованы прогнозы погоды и GPS",
-        "pt": "implementadas pesquisas meteorológicas e GPS",
-        "nl": "geïmplementeerde weer- en GPS-polls",
-        "fr": "sondages météorologiques et GPS mis en œuvre",
-        "it": "implementato sondaggi meteo e GPS",
-        "es": "encuestas meteorológicas y GPS implementadas",
-        "pl": "zaimplementowane ankiety pogodowe i GPS",
-        "zh-cn": "实施天气和GPS民意测验"
-      },
-      "0.0.10": {
-        "en": "first stable version",
-        "de": "erste stabile Version",
-        "ru": "первая стабильная версия",
-        "pt": "primeira versão estável",
-        "nl": "eerste stabiele versie",
-        "fr": "première version stable",
-        "it": "prima versione stabile",
-        "es": "primera versión estable",
-        "pl": "pierwsza stabilna wersja",
-        "zh-cn": "第一个稳定版本"
-      },
-      "0.0.9": {
-        "en": "adapter improvements",
-        "de": "Adapter Verbesserungen",
-        "ru": "улучшения адаптера",
-        "pt": "melhorias no adaptador",
-        "nl": "adapter verbeteringen",
-        "fr": "améliorations de l'adaptateur",
-        "it": "miglioramenti dell'adattatore",
-        "es": "mejoras del adaptador",
-        "pl": "ulepszenia adaptera",
-        "zh-cn": "适配器改进"
-      },
-      "0.0.8": {
-        "en": "fixed some issues caused by different configurations",
-        "de": "Einige Probleme behoben, die durch unterschiedliche Konfigurationen verursacht wurden",
-        "ru": "исправлены некоторые проблемы, вызванные различными конфигурациями",
-        "pt": "corrigidos alguns problemas causados por diferentes configurações",
-        "nl": "enkele problemen opgelost veroorzaakt door verschillende configuraties",
-        "fr": "correction de certains problèmes causés par différentes configurations",
-        "it": "risolti alcuni problemi causati da diverse configurazioni",
-        "es": "solucionó algunos problemas causados por diferentes configuraciones",
-        "pl": "naprawiono niektóre problemy spowodowane przez różne konfiguracje",
-        "zh-cn": "修复了不同配置导致的一些问题"
-      },
-      "0.0.7": {
-        "en": "prepared adapter for latest repository",
-        "de": "Adapter vorbereitet für das latest Repository",
-        "ru": "подготовленный адаптер для репозитория",
-        "pt": "adaptador preparado para o repositório mais recente",
-        "nl": "voorbereide adapter voor de laatste repository",
-        "fr": "adaptateur préparé pour le dernier référentiel",
-        "it": "adattatore preparato per il repository più recente",
-        "es": "Adaptador preparado para el último repositorio",
-        "pl": "przygotowany adapter do najnowszego repozytorium",
-        "zh-cn": "为最新存储库准备的适配器"
-      },
-      "0.0.6": {
-        "en": "fixed minor issues",
-        "de": "kleinere Probleme behoben",
-        "ru": "исправлены мелкие проблемы",
-        "pt": "problemas menores corrigidos",
-        "nl": "kleine problemen opgelost",
-        "fr": "correction de problèmes mineurs",
-        "it": "risolti problemi minori",
-        "es": "problemas menores solucionados",
-        "pl": "naprawiono drobne problemy",
-        "zh-cn": "解决小问题"
-      },
-      "0.0.5": {
-        "en": "updated to work with Robonect HX version 1.1b",
-        "de": "aktualisiert für Robonect HX Version 1.1b",
-        "ru": "обновлен для работы с Robonect HX версии 1.1b",
-        "pt": "atualizado para funcionar com o Robonect HX versão 1.1b",
-        "nl": "bijgewerkt om te werken met Robonect HX versie 1.1b",
-        "fr": "mis à jour pour fonctionner avec Robonect HX version 1.1b",
-        "it": "aggiornato per funzionare con Robonect HX versione 1.1b",
-        "es": "actualizado para trabajar con Robonect HX versión 1.1b",
-        "pl": "zaktualizowano do pracy z Robonect HX wersja 1.1b",
-        "zh-cn": "更新为可与Robonect HX版本1.1b一起使用"
-      },
-      "0.0.4": {
-        "en": "updated to work with Robonect HX version 1.0 Beta5",
-        "de": "aktualisiert für Robonect HX Version 1.0 Beta5",
-        "ru": "обновлен для работы с Robonect HX версии 1.0 Beta5",
-        "pt": "atualizado para funcionar com o Robonect HX versão 1.0 Beta5",
-        "nl": "bijgewerkt om te werken met Robonect HX versie 1.0 Beta5",
-        "fr": "mis à jour pour fonctionner avec Robonect HX version 1.0 Beta5",
-        "it": "aggiornato per funzionare con Robonect HX versione 1.0 Beta5",
-        "es": "actualizado para trabajar con Robonect HX versión 1.0 Beta5",
-        "pl": "zaktualizowano do pracy z Robonect HX wersja 1.0 Beta5",
-        "zh-cn": "更新为可与Robonect HX版本1.0 Beta5一起使用"
-      },
-      "0.0.3": {
-        "en": "support of Admin3",
-        "de": "Unterstützung von Admin3",
-        "ru": "поддержка Admin3",
-        "pt": "suporte de Admin3",
-        "nl": "ondersteuning van Admin3",
-        "fr": "prise en charge d'Admin3",
-        "it": "supporto di Admin3",
-        "es": "soporte de Admin3",
-        "pl": "obsługa Admin3",
-        "zh-cn": "支持Admin3"
-      },
-      "0.0.2": {
-        "en": "updated to work with Robonect HX version 1.0 Beta2",
-        "de": "aktualisiert für Robonect HX Version 1.0 Beta2",
-        "ru": "обновлен для работы с Robonect HX версии 1.0 Beta2",
-        "pt": "atualizado para funcionar com o Robonect HX versão 1.0 Beta2",
-        "nl": "bijgewerkt om te werken met Robonect HX versie 1.0 Beta2",
-        "fr": "mis à jour pour fonctionner avec Robonect HX version 1.0 Beta2",
-        "it": "aggiornato per funzionare con Robonect HX versione 1.0 Beta2",
-        "es": "actualizado para trabajar con Robonect HX versión 1.0 Beta2",
-        "pl": "zaktualizowano do pracy z Robonect HX wersja 1.0 Beta2",
-        "zh-cn": "更新为可与Robonect HX版本1.0 Beta2"
-      },
-      "0.0.1": {
-        "en": "initial release",
-        "de": "Erstveröffentlichung",
-        "ru": "Первый выпуск",
-        "pt": "lançamento inicial",
-        "nl": "Eerste uitgave",
-        "fr": "Première version",
-        "it": "Versione iniziale",
-        "es": "Versión inicial",
-        "pl": "Pierwsze wydanie",
-        "zh-cn": "初始发行"
-      }
+    "common": {
+        "name": "robonect",
+        "title": "Robonect",
+        "version": "0.1.1",
+        "news": {
+            "0.1.1": {
+                "en": "fixed typo",
+                "de": "Tippfehler behoben",
+                "ru": "исправлена опечатка",
+                "pt": "erro de digitação fixo",
+                "nl": "vaste typefout",
+                "fr": "faute de frappe fixe",
+                "it": "errore di battitura fisso",
+                "es": "error tipográfico fijo",
+                "pl": "poprawiona literówka",
+                "zh-cn": "固定错字"
+            },
+            "0.1.0": {
+                "en": "implemented rest periods",
+                "de": "Ruhezeiten implementiert",
+                "ru": "реализованные периоды отдыха",
+                "pt": "períodos de descanso implementados",
+                "nl": "geïmplementeerde rusttijden",
+                "fr": "périodes de repos mises en œuvre",
+                "it": "periodi di riposo implementati",
+                "es": "períodos de descanso implementados",
+                "pl": "wprowadzone okresy odpoczynku",
+                "zh-cn": "已实施的休息时间"
+            },
+            "0.0.12": {
+                "en": "improved polling",
+                "de": "Abfragen verbessert",
+                "ru": "улучшенный опрос",
+                "pt": "polling aprimorado",
+                "nl": "verbeterde polling",
+                "fr": "sondage amélioré",
+                "it": "polling migliorato",
+                "es": "sondeo mejorado",
+                "pl": "poprawione odpytywanie",
+                "zh-cn": "改进的轮询"
+            },
+            "0.0.11": {
+                "en": "implemented weather and GPS polls",
+                "de": "Wetter- und GPS-Abfragen implementiert",
+                "ru": "реализованы прогнозы погоды и GPS",
+                "pt": "implementadas pesquisas meteorológicas e GPS",
+                "nl": "geïmplementeerde weer- en GPS-polls",
+                "fr": "sondages météorologiques et GPS mis en œuvre",
+                "it": "implementato sondaggi meteo e GPS",
+                "es": "encuestas meteorológicas y GPS implementadas",
+                "pl": "zaimplementowane ankiety pogodowe i GPS",
+                "zh-cn": "实施天气和GPS民意测验"
+            },
+            "0.0.10": {
+                "en": "first stable version",
+                "de": "erste stabile Version",
+                "ru": "первая стабильная версия",
+                "pt": "primeira versão estável",
+                "nl": "eerste stabiele versie",
+                "fr": "première version stable",
+                "it": "prima versione stabile",
+                "es": "primera versión estable",
+                "pl": "pierwsza stabilna wersja",
+                "zh-cn": "第一个稳定版本"
+            },
+            "0.0.9": {
+                "en": "adapter improvements",
+                "de": "Adapter Verbesserungen",
+                "ru": "улучшения адаптера",
+                "pt": "melhorias no adaptador",
+                "nl": "adapter verbeteringen",
+                "fr": "améliorations de l'adaptateur",
+                "it": "miglioramenti dell'adattatore",
+                "es": "mejoras del adaptador",
+                "pl": "ulepszenia adaptera",
+                "zh-cn": "适配器改进"
+            },
+            "0.0.8": {
+                "en": "fixed some issues caused by different configurations",
+                "de": "Einige Probleme behoben, die durch unterschiedliche Konfigurationen verursacht wurden",
+                "ru": "исправлены некоторые проблемы, вызванные различными конфигурациями",
+                "pt": "corrigidos alguns problemas causados por diferentes configurações",
+                "nl": "enkele problemen opgelost veroorzaakt door verschillende configuraties",
+                "fr": "correction de certains problèmes causés par différentes configurations",
+                "it": "risolti alcuni problemi causati da diverse configurazioni",
+                "es": "solucionó algunos problemas causados por diferentes configuraciones",
+                "pl": "naprawiono niektóre problemy spowodowane przez różne konfiguracje",
+                "zh-cn": "修复了不同配置导致的一些问题"
+            },
+            "0.0.7": {
+                "en": "prepared adapter for latest repository",
+                "de": "Adapter vorbereitet für das latest Repository",
+                "ru": "подготовленный адаптер для репозитория",
+                "pt": "adaptador preparado para o repositório mais recente",
+                "nl": "voorbereide adapter voor de laatste repository",
+                "fr": "adaptateur préparé pour le dernier référentiel",
+                "it": "adattatore preparato per il repository più recente",
+                "es": "Adaptador preparado para el último repositorio",
+                "pl": "przygotowany adapter do najnowszego repozytorium",
+                "zh-cn": "为最新存储库准备的适配器"
+            },
+            "0.0.6": {
+                "en": "fixed minor issues",
+                "de": "kleinere Probleme behoben",
+                "ru": "исправлены мелкие проблемы",
+                "pt": "problemas menores corrigidos",
+                "nl": "kleine problemen opgelost",
+                "fr": "correction de problèmes mineurs",
+                "it": "risolti problemi minori",
+                "es": "problemas menores solucionados",
+                "pl": "naprawiono drobne problemy",
+                "zh-cn": "解决小问题"
+            },
+            "0.0.5": {
+                "en": "updated to work with Robonect HX version 1.1b",
+                "de": "aktualisiert für Robonect HX Version 1.1b",
+                "ru": "обновлен для работы с Robonect HX версии 1.1b",
+                "pt": "atualizado para funcionar com o Robonect HX versão 1.1b",
+                "nl": "bijgewerkt om te werken met Robonect HX versie 1.1b",
+                "fr": "mis à jour pour fonctionner avec Robonect HX version 1.1b",
+                "it": "aggiornato per funzionare con Robonect HX versione 1.1b",
+                "es": "actualizado para trabajar con Robonect HX versión 1.1b",
+                "pl": "zaktualizowano do pracy z Robonect HX wersja 1.1b",
+                "zh-cn": "更新为可与Robonect HX版本1.1b一起使用"
+            },
+            "0.0.4": {
+                "en": "updated to work with Robonect HX version 1.0 Beta5",
+                "de": "aktualisiert für Robonect HX Version 1.0 Beta5",
+                "ru": "обновлен для работы с Robonect HX версии 1.0 Beta5",
+                "pt": "atualizado para funcionar com o Robonect HX versão 1.0 Beta5",
+                "nl": "bijgewerkt om te werken met Robonect HX versie 1.0 Beta5",
+                "fr": "mis à jour pour fonctionner avec Robonect HX version 1.0 Beta5",
+                "it": "aggiornato per funzionare con Robonect HX versione 1.0 Beta5",
+                "es": "actualizado para trabajar con Robonect HX versión 1.0 Beta5",
+                "pl": "zaktualizowano do pracy z Robonect HX wersja 1.0 Beta5",
+                "zh-cn": "更新为可与Robonect HX版本1.0 Beta5一起使用"
+            },
+            "0.0.3": {
+                "en": "support of Admin3",
+                "de": "Unterstützung von Admin3",
+                "ru": "поддержка Admin3",
+                "pt": "suporte de Admin3",
+                "nl": "ondersteuning van Admin3",
+                "fr": "prise en charge d'Admin3",
+                "it": "supporto di Admin3",
+                "es": "soporte de Admin3",
+                "pl": "obsługa Admin3",
+                "zh-cn": "支持Admin3"
+            },
+            "0.0.2": {
+                "en": "updated to work with Robonect HX version 1.0 Beta2",
+                "de": "aktualisiert für Robonect HX Version 1.0 Beta2",
+                "ru": "обновлен для работы с Robonect HX версии 1.0 Beta2",
+                "pt": "atualizado para funcionar com o Robonect HX versão 1.0 Beta2",
+                "nl": "bijgewerkt om te werken met Robonect HX versie 1.0 Beta2",
+                "fr": "mis à jour pour fonctionner avec Robonect HX version 1.0 Beta2",
+                "it": "aggiornato per funzionare con Robonect HX versione 1.0 Beta2",
+                "es": "actualizado para trabajar con Robonect HX versión 1.0 Beta2",
+                "pl": "zaktualizowano do pracy z Robonect HX wersja 1.0 Beta2",
+                "zh-cn": "更新为可与Robonect HX版本1.0 Beta2"
+            },
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Первый выпуск",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "初始发行"
+            }
+        },
+        "desc": {
+            "en": "Robonect HX adapter",
+            "de": "Robonect HX Adapter",
+            "ru": "Адаптер Robonect HX",
+            "pt": "Adaptador Robonect HX",
+            "nl": "Robonect HX-adapter",
+            "fr": "Adaptateur Robonect HX",
+            "it": "Adattatore Robonect HX",
+            "es": "Adaptador Robonect HX",
+            "pl": "Adapter Robonect HX",
+            "zh-cn": "Robonect HX适配器"
+        },
+        "mode": "daemon",
+        "materialize": true,
+        "compact": true,
+        "platform": "Javascript/Node.js",
+        "loglevel": "info",
+        "icon": "robonect.png",
+        "enabled": false,
+        "extIcon": "https://raw.githubusercontent.com/braindead1/ioBroker.robonect/master/admin/robonect.png",
+        "keywords": [
+            "robonect",
+            "lawn mower"
+        ],
+        "localLink": "http://%robonectIp%",
+        "readme": "https://github.com/braindead1/ioBroker.robonect/blob/master/README.md",
+        "authors": [
+            "braindead1 <os.braindead1@gmail.com>",
+            "StefSign <hufnagl@hotmail.com>"
+        ],
+        "type": "garden",
+        "license": "MIT"
     },
-    "desc": {
-      "en": "Robonect HX adapter",
-      "de": "Robonect HX Adapter",
-      "ru": "Адаптер Robonect HX",
-      "pt": "Adaptador Robonect HX",
-      "nl": "Robonect HX-adapter",
-      "fr": "Adaptateur Robonect HX",
-      "it": "Adattatore Robonect HX",
-      "es": "Adaptador Robonect HX",
-      "pl": "Adapter Robonect HX",
-      "zh-cn": "Robonect HX适配器"
+    "native": {
+        "statusInterval": 60,
+        "infoInterval": 900,
+        "restPeriod1Start": "",
+        "restPeriod1End": "",
+        "restPeriod2Start": "",
+        "restPeriod2End": "",
+        "batteryPollType": "Info",
+        "errorsPollType": "Info",
+        "extensionPollType": "Info",
+        "gpsPollType": "Info",
+        "hoursPollType": "Info",
+        "motorPollType": "Info",
+        "portalPollType": "Info",
+        "pushPollType": "Info",
+        "timerPollType": "Info",
+        "versionPollType": "Info",
+        "weatherPollType": "Info",
+        "wlanPollType": "Info"
     },
-    "mode": "daemon",
-    "materialize": true,
-    "compact": true,
-    "platform": "Javascript/Node.js",
-    "loglevel": "info",
-    "icon": "robonect.png",
-    "enabled": false,
-    "extIcon": "https://raw.githubusercontent.com/braindead1/ioBroker.robonect/master/admin/robonect.png",
-    "keywords": [
-      "robonect",
-      "lawn mower"
-    ],
-    "localLink": "http://%robonectIp%",
-    "readme": "https://github.com/braindead1/ioBroker.robonect/blob/master/README.md",
-    "authors": [
-      "braindead1 <os.braindead1@gmail.com>",
-      "StefSign <hufnagl@hotmail.com>"
-    ],
-    "type": "garden",
-    "license": "MIT"
-  },
-  "native": {
-    "statusInterval": 60,
-    "infoInterval": 900,
-    "restPeriod1Start": "",
-    "restPeriod1End": "",
-    "restPeriod2Start": "",
-    "restPeriod2End": "",
-    "batteryPollType": "Info",
-    "errorsPollType": "Info",
-    "extensionPollType": "Info",
-    "gpsPollType": "Info",
-    "hoursPollType": "Info",
-    "motorPollType": "Info",
-    "portalPollType": "Info",
-    "pushPollType": "Info",
-    "timerPollType": "Info",
-    "versionPollType": "Info",
-    "weatherPollType": "Info",
-    "wlanPollType": "Info"
-  },
-  "objects": [],
-  "instanceObjects": [
-    {
-      "_id": "info.connection",
-      "type": "state",
-      "common": {
-        "role": "indicator.connected",
-        "name": "Connected to lawn mower",
-        "type": "boolean",
-        "read": true,
-        "write": false,
-        "def": false
-      },
-      "native": {}
-    },
-    {
-      "_id": "last_sync",
-      "type": "state",
-      "common": {
-        "name": "Last synchronization",
-        "type": "string",
-        "role": "state",
-        "read": true,
-        "write": false,
-        "desc": ""
-      },
-      "native": {}
-    },
-    {
-      "_id": "online",
-      "type": "state",
-      "common": {
-        "name": "Mower is online",
-        "type": "boolean",
-        "role": "state",
-        "read": true,
-        "write": false,
-        "desc": ""
-      },
-      "native": {}
-    },
-    {
-      "_id": "rest_time",
-      "type": "state",
-      "common": {
-        "name": "Current poll is in rest time",
-        "type": "boolean",
-        "role": "state",
-        "read": true,
-        "write": false,
-        "desc": ""
-      },
-      "native": {}
-    }
-  ]
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Connected to lawn mower",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "last_sync",
+            "type": "state",
+            "common": {
+                "name": "Last synchronization",
+                "type": "string",
+                "role": "state",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "online",
+            "type": "state",
+            "common": {
+                "name": "Mower is online",
+                "type": "boolean",
+                "role": "state",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "rest_time",
+            "type": "state",
+            "common": {
+                "name": "Current poll is in rest time",
+                "type": "boolean",
+                "role": "state",
+                "read": true,
+                "write": false,
+                "desc": ""
+            },
+            "native": {}
+        }
+    ]
 }
