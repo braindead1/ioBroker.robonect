@@ -425,7 +425,7 @@ class Robonect extends utils.Adapter {
             }
 
             this.log.debug('API call ' + apiUrl + ' done');
-        });
+        }.bind(this));
     }
 
     /**
@@ -480,7 +480,7 @@ class Robonect extends utils.Adapter {
             }
 
             this.log.debug('API call ' + apiUrl + ' done');
-        });
+        }.bind(this));
     }
 
     /**
