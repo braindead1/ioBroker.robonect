@@ -24,7 +24,6 @@ class Robonect extends utils.Adapter {
             name: 'robonect',
         });
         this.on('ready', this.onReady.bind(this));
-        this.on('objectChange', this.onObjectChange.bind(this));
         this.on('stateChange', this.onStateChange.bind(this));
         this.on('unload', this.onUnload.bind(this));
 
@@ -189,21 +188,6 @@ class Robonect extends utils.Adapter {
     }
 
     /**
-	 * Is called if a subscribed object changes
-	 * @param {string} id
-	 * @param {ioBroker.Object | null | undefined} obj
-	 */
-    onObjectChange(id, obj) {
-        if (obj) {
-            // The object was changed
-            this.log.info(`object ${id} changed: ${JSON.stringify(obj)}`);
-        } else {
-            // The object was deleted
-            this.log.info(`object ${id} deleted`);
-        }
-    }
-
-    /**
 	 * Is called if a subscribed state changes
 	 * @param {string} id
 	 * @param {ioBroker.State | null | undefined} state
@@ -346,6 +330,7 @@ class Robonect extends utils.Adapter {
 
         this.log.debug('API call ' + apiUrl + ' started');
 
+        // eslint-disable-next-line no-unused-vars
         return new Promise((resolve, reject) => {
             this.request.get({ url: apiUrl }, function (err, response, body) {
                 let data;
