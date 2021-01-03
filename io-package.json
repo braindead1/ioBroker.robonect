@@ -2,8 +2,20 @@
     "common": {
         "name": "robonect",
         "title": "Robonect",
-        "version": "0.1.3",
+        "version": "0.1.4",
         "news": {
+            "0.1.4": {
+                "en": "Changed polling log level from info to debug\r\nimplemented polling of garage door status",
+                "de": "Die Abfrageprotokollstufe wurde von \"Info\" auf \"Debug\" geändert\r\nAbfrage des Garagentorstatus implementiert",
+                "ru": "Изменен уровень журнала опроса с информации на отладку\r\nреализован опрос статуса ворот гаража",
+                "pt": "Nível de registro de pesquisa alterado de informações para depuração\r\nimplementou a sondagem do status da porta da garagem",
+                "nl": "Veranderd polling-log-niveau van info naar debug\r\ngeïmplementeerd polling van garagedeurstatus",
+                "fr": "Changement du niveau du journal d'interrogation des informations au débogage\r\nimplémentation de l'interrogation de l'état de la porte de garage",
+                "it": "Cambiato il livello di log del polling da info a debug\r\nimplementato il polling dello stato della porta del garage",
+                "es": "Se modificó el nivel de registro de sondeo de información a depuración\r\nencuesta implementada del estado de la puerta del garaje",
+                "pl": "Zmieniono poziom dziennika sondowania z informacji na debugowanie\r\nwdrożono odpytywanie stanu bramy garażowej",
+                "zh-cn": "将轮询日志级别从信息更改为调试\r\n实施了车库门状态的轮询"
+            },
             "0.1.3": {
                 "en": "implemented JsonLogic & refactoring",
                 "de": "JsonLogic implementiert & Refactoring",
