@@ -314,7 +314,7 @@ class Robonect extends utils.Adapter {
                 if (this.wlanPollType !== 'NoPoll' && (pollType === 'Initial' || (this.wlanPollType === pollType && doRegularPoll)))
                     await this.pollApi('wlan');
 
-                this.log.info('Polling done');
+                this.log.debug('Polling done');
             } else {
                 this.log.error('No connection to lawn mower. Check network connection.');
             }
