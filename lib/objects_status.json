@@ -77,6 +77,19 @@
         "native": {},
         "value": "status.stopped"
     },
+    "status.dooropen": {
+        "type": "state",
+        "common": {
+            "name": "Door open",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "status.dooropen"
+    },
     "status.duration": {
         "type": "state",
         "common": {

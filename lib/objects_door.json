@@ -1,0 +1,80 @@
+{
+    "door.enabled": {
+        "type": "state",
+        "common": {
+            "name": "Enabled",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "door.enabled"
+    },
+    "door.state.open": {
+        "type": "state",
+        "common": {
+            "name": "Open",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "door.state.open"
+    },
+    "door.state.close": {
+        "type": "state",
+        "common": {
+            "name": "Closed",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "door.state.close"
+    },
+    "door.pending.open": {
+        "type": "state",
+        "common": {
+            "name": "Open",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "door.pending.open"
+    },
+    "door.pending.close": {
+        "type": "state",
+        "common": {
+            "name": "Closed",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "door.pending.close"
+    },
+    "door.arrested": {
+        "type": "state",
+        "common": {
+            "name": "Arrested",
+            "type": "boolean",
+            "role": "state",
+            "read": true,
+            "write": false,
+            "desc": ""
+        },
+        "native": {},
+        "value": "door.arrested"
+    }
+}

@@ -238,6 +238,7 @@
         "restPeriod2Start": "",
         "restPeriod2End": "",
         "batteryPollType": "Info",
+        "doorPollType": "Info",
         "errorsPollType": "Info",
         "extensionPollType": "Info",
         "gpsPollType": "Info",

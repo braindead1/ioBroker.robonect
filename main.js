@@ -45,6 +45,7 @@ class Robonect extends utils.Adapter {
         this.currentStatus;        
 
         this.batteryPollType;
+        this.doorPollType;
         this.errorsPollType;
         this.extensionPollType;
         this.gpsPollType;
@@ -85,6 +86,7 @@ class Robonect extends utils.Adapter {
         this.restPeriod2End = this.config.restPeriod2End;
 
         this.batteryPollType = this.config.batteryPollType;
+        this.doorPollType = this.config.doorPollType;
         this.errorsPollType = this.config.errorsPollType;
         this.extensionPollType = this.config.extensionPollType;
         this.gpsPollType = this.config.gpsPollType;
@@ -214,6 +216,7 @@ class Robonect extends utils.Adapter {
      */
     async initializeObjects() {
         const objects_battery = require('./lib/objects_battery.json');
+        const objects_door = require('./lib/objects_door.json');
         const objects_error = require('./lib/objects_error.json');
         const objects_ext = require('./lib/objects_ext.json');
         const objects_gps = require('./lib/objects_gps.json');
@@ -229,6 +232,7 @@ class Robonect extends utils.Adapter {
 
         const objects = {
             ...objects_battery,
+            ...objects_door,
             ...objects_error,
             ...objects_ext,
             ...objects_gps,
@@ -240,7 +244,7 @@ class Robonect extends utils.Adapter {
             ...objects_timer,
             ...objects_version,
             ...objects_weather,
-            ...objects_wlan
+            ...objects_wlan,
         };
 
         for (const id in objects) {
@@ -291,6 +295,8 @@ class Robonect extends utils.Adapter {
 
                 if (this.batteryPollType !== 'NoPoll' && (pollType === 'Initial' || (this.batteryPollType === pollType && doRegularPoll)))
                     await this.pollApi('battery');
+                if (this.doorPollType !== 'NoPoll' && (pollType === 'Initial' || (this.doorPollType === pollType && doRegularPoll)))
+                    await this.pollApi('door');
                 if (this.errorsPollType !== 'NoPoll' && (pollType === 'Initial' || (this.errorsPollType === pollType && doRegularPoll)))
                     await this.pollApi('error');
                 if (this.extensionPollType !== 'NoPoll' && (pollType === 'Initial' || (this.extensionPollType === pollType && doRegularPoll)))
